@@ -111,6 +111,16 @@ display:none;
 {
     margin-top:20px;
 }
+.answer
+{
+    padding:10px;
+    border:1px solid #f1f1f1;
+}
+.commentbox
+{
+    background-color:#f4f4f4;
+    padding:10px;
+}
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
