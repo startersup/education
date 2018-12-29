@@ -14,9 +14,20 @@
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Noto+Serif|Poppins|Signika" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/sidenav.js"></script>
+        <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="631886566864-seb63rcuar63jirphjs4ro7ntrh75fsn.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 
 <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=446635862374489&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
     <div class="topnav navbar-fixed-top" id="myTopnav">
         <a class="openbtn" onclick="openNav()"><i class="fa fa-bars"></i>&nbsp;&nbsp;Engineer Kit</a>
         <div class="nav-right hidden-xs hidden-sm" style="padding-left:100px;">
@@ -84,12 +95,12 @@
                             <form role="form">
                                 <div class="form-group">
                                     <label for="inputUsernameEmail">Username or email</label>
-                                    <input type="text" class="form-control" id="inputUsernameEmail">
+                                    <input type="text" class="controls varinput" id="inputUsernameEmail" placeholder="Enter Username or Email">
                                 </div>
                                 <div class="form-group">
                                     <a class="pull-right" href="#">Forgot password?</a>
                                     <label for="inputPassword">Password</label>
-                                    <input type="password" class="form-control" id="inputPassword">
+                                    <input type="password" class="controls varinput" id="inputPassword" placeholder="Enter Password">
                                 </div>
                                 <div class="checkbox pull-right">
                                     <label>
@@ -107,10 +118,10 @@
                         <div class="log">
                             <div class="row">
                                 <div class="col-xs-6 col-sm-6 col-md-6">
-                                    <a href="#" class="btn btn-lg btn-primary btn-block">Facebook</a>
+                                    <a href="#" ><div class="fb-login-button" data-width="40" data-max-rows="1" data-size="medium" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>   </a>
                                 </div>
                                 <div class="col-xs-6 col-sm-6 col-md-6">
-                                    <a href="#" class="btn btn-lg btn-info btn-block">Google</a>
+                                    <a href="#" > <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div></a>
                                 </div>
                             </div>
                             <div class="login-or">
@@ -121,26 +132,26 @@
                             <form role="form">
                                      <div class="form-group">
                                     <label for="inputuser">Username</label>
-                                    <input type="text" class="form-control" id="inputUser">
+                                    <input type="text" class="controls varinput" placeholder="Enter Username">
                                 </div>
                                 <div class="form-group">
                                     <label for="inputemail"> Email</label>
-                                    <input type="text" class="form-control" id="inputEmail">
+                                    <input type="text" class="controls varinput" placeholder="Enter Email Address">
                                 </div>
                                 <div class="form-group">
                                     <label for="inputPassword">Password</label>
-                                    <input type="password" class="form-control" id="inputPassword">
+                                    <input type="password" class="controls varinput" placeholder="Enter Password..">
                                 </div>
                                    <div class="form-group">
                                     <label for="inputPassword">Re-enter Password</label>
-                                    <input type="password" class="form-control" id="inputPassword">
+                                    <input type="password" class="controls varinput" placeholder="Enter Password Again..">
                                 </div>
                                 <div class="checkbox pull-right">
                                     <label>
                                         <input type="checkbox">Remember me</label>
                                 </div>
                                 <button type="submit" class="btn btn btn-primary">
-                                    Signup Up
+                                    Sign Up
                                 </button>
                             </form>
 
