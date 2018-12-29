@@ -217,7 +217,10 @@ display:none;
 {
     background-color: #f1d7ff;
 }
-
+.topics
+{
+    text-align:center;
+}
 .main
 {
     margin-top:60px;
@@ -308,6 +311,25 @@ h4,h5
 #main {
   transition: margin-left .5s;
   padding: 16px;
+}
+.display
+{
+    display:inline-block;
+    float:right;
+    font-size:16px;
+    cursor: pointer;
+     font-family: Roboto, sans-serif;
+}
+.display  span
+{
+    font-size:14px;
+    padding:5px;
+    background-color:#f4f4f4;
+}
+
+.btn
+{
+     font-family: Roboto, sans-serif;
 }
 .content {display:none;}
 .preload { width:100%;
