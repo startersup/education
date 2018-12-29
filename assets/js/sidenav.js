@@ -17,3 +17,8 @@ $(window).on('load', function() { // makes sure the whole site is loaded
   $('#preloader').delay(300).fadeOut('slow'); // will fade out the white DIV that covers the website. 
   $('load').delay(300).css({'overflow':'visible'});
 })
+
+	// Prevent dropdown menu from closing when click inside the form
+	$(document).on("click", ".navbar-right .dropdown-menu", function(e){
+		e.stopPropagation();
+	});
