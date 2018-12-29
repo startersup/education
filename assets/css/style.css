@@ -107,7 +107,10 @@ display:none;
 {
     font-size:16px;
 }
-
+.collapse
+{
+    margin-top:20px;
+}
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
@@ -128,7 +131,7 @@ display:none;
 {
     font-size:11px;
     padding:5px;
-    background-color:#f4f4f4;
+    background-color:#ffee8a;
 }
     .topping
     {
@@ -152,7 +155,7 @@ display:none;
     .display span {
     font-size: 13px;
     padding: 5px;
-    background-color: #f4f4f4;
+  background-color:#ffee8a;
 }
     
 * {
@@ -362,7 +365,8 @@ h4,h5
 {
     font-size:14px;
     padding:5px;
-    background-color:#f4f4f4;
+     background-color:#ffee8a;
+    border-radius:4px;
 }
 
 .btn
