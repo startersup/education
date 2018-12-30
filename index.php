@@ -1,10 +1,4 @@
-<?php
-session_start();
-if(isset($_SESSION['userid'])&&!empty($_SESSION['userid']))
-{
-  echo '<script language="javascript"> document.getElementById("log").innerHtml="Logout"; document.getElementById("log").setAttribute("href","logout.php");</script>'
-}
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -119,7 +113,8 @@ $(function() {
         $(".content").fadeIn(500);        
     });
 });
-    
+
+
     
     
     </script>
