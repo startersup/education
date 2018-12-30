@@ -1,3 +1,57 @@
+<?php
+ session_start(); 
+ if(isset($_SESSION["userid"]))
+ {
+    echo '<script language="javascript">window.onload = function() {document.getElementById("log").text="'.$_SESSION["uname"].'";
+          document.getElementById("sign").text="Logout";}</script>';
+}
+  
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+include 'config.php';
+  if (isset($_POST["login"])) {
+     $logname=$_POST['logname'];
+     $logpass=$_POST['logpass'];
+     $sql="select userid from users where (uname='".$logname."' OR email ='".$logname."') AND password='".$logpass."'";    
+     $query=mysqli_query($conn,$sql);
+     $numrows=mysqli_num_rows($query);
+     if($numrows>0)
+     {
+      $row = mysqli_fetch_assoc($result);
+      $_SESSION["userid"]= $row['userid']; 
+      $_SESSION["uname"]= $row['uname'];
+      session_write_close();
+      header('Location: index.php');
+      exit();
+     }
+     else
+     {
+      echo '<script language="javascript">';
+        echo 'alert("Invalid Credentials")';
+         echo '</script>';
+     }
+}else if(isset($_POST["signup"])){  
+  $id=uniqid('USR');
+  $uname = $_POST["user"];
+  $email = $_POST["email"];
+  $pass =  $_POST["pass"];
+  $sql = "INSERT INTO users (userid, uname, email, password)
+   VALUES ('".$id."', '".$uname."', '".$email."','".$pass."')";
+
+if ($conn->query($sql) === TRUE) {
+    $_SESSION["userid"]= $id; 
+    $_SESSION["uname"]= $uname;
+    session_write_close();
+    header('Location: index.php');
+     exit();
+} else {
+  echo '<script language="javascript">';
+    echo 'alert("Try Again")';
+    echo '</script>';
+}
+}
+mysqli_close($conn);
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -75,7 +129,17 @@ $(function() {
         $(".content").fadeIn(500);        
     });
 });
+ function check() {
+          if (document.getElementsByName('pass')[0].value ==
+            document.getElementsByName('repass')[0].value) {
+        document.getElementsByName('signup')[0].disabled = false;
+                document.getElementsByName("repass")[0].style.outline = "#ffffff";
 
+    } else {
+        document.getElementsByName('signup')[0].disabled = true;
+        document.getElementsByName("repass")[0].style.outline = "3px solid red";
+    }
+   }
 
     
     
