@@ -12,6 +12,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       session_start();
       $row = mysqli_fetch_assoc($result)
       $_SESSION['userid']= $row['userid']; 
+      header('Location: index.html')
+     }
+     else
+     {
+     	echo '<script language="javascript">';
+        echo 'alert("Invalid Credentials")';
+         echo '</script>';
      }
 }else if(isset($POST["signup"])){  
   $id=uniqid('USR');
@@ -30,9 +37,10 @@ if ($conn->query($sql) === TRUE) {
     echo 'alert("Try Again")';
     echo '</script>';
 }
-$conn->close();
 }
+mysql_close($conn);
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
