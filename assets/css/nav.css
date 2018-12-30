@@ -227,6 +227,10 @@ body{
 			background: transparent;
 			border: none;
 		}
+        .hidden
+        {
+            display:none;
+        }
 		.navbar .form-inline {
 			display: block;
 		}
@@ -272,7 +276,10 @@ body{
   font-size: 36px;
 }
 
-
+.fa-bars
+{
+    float:right;
+}
 
 
 
