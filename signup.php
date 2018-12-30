@@ -2,12 +2,12 @@
 include 'config.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	if (isset($_POST["login"])) {
-     $logname=$POST['logname'];
-     $logpass=$POST['logpass'];
-     $sql="select id from users where uname='".$logname."' or email ='".$logname."' AND password='".$logpass."'";    
-     $query=mysql_query($conn,$sql);
-     $numrows=mysql_num_rows($query);
-     if($numrows!=0)
+     $logname=$_POST['logname'];
+     $logpass=$_POST['logpass'];
+     $sql="select userid from users where (uname='".$logname."' OR email ='".$logname."') AND password='".$logpass."'";    
+     $query=mysqli_query($conn,$sql);
+     $numrows=mysqli_num_rows($query);
+     if($numrows>0)
      {
       session_start();
       $row = mysqli_fetch_assoc($result);
@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo 'alert("Invalid Credentials")';
          echo '</script>';
      }
-}else if(isset($POST["signup"])){  
+}else if(isset($_POST["signup"])){  
   $id=uniqid('USR');
   $uname = $_POST["user"];
   $email = $_POST["email"];
@@ -38,7 +38,7 @@ if ($conn->query($sql) === TRUE) {
     echo '</script>';
 }
 }
-mysql_close($conn);
+mysqli_close($conn);
 }
 
 ?>
@@ -173,7 +173,7 @@ mysql_close($conn);
                                 <span class="span-or">or</span>
                             </div>
 
-                            <form method="post" action="signup.php" role="form">
+                            <form method="post" action="" role="form">
                                      <div class="form-group">
                                     <label for="inputuser">Username</label>
                                     <input type="text" class="controls varinput" name="user" placeholder="Enter Username">
