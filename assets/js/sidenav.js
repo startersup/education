@@ -22,3 +22,7 @@ $(window).on('load', function() { // makes sure the whole site is loaded
 	$(document).on("click", ".navbar-right .dropdown-menu", function(e){
 		e.stopPropagation();
 	});
+
+
+
+
