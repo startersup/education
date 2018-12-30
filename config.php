@@ -1,5 +1,5 @@
 <?php
-$servername = "sql124.main-hosting.eu";
+$servername = "localhost";
 $username = "u495928617_user";
 $password = "hello123";
 $dbname = "u495928617_edu";
