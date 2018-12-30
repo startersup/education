@@ -188,13 +188,13 @@ mysqli_close($conn);
                                 </div>
                                    <div class="form-group">
                                     <label for="inputPassword">Re-enter Password</label>
-                                    <input type="password" class="controls varinput" placeholder="Enter Password Again..">
+                                    <input type="password" class="controls varinput" onkeyup="check();" name="repass" placeholder="Enter Password Again..">
                                 </div>
                                 <div class="checkbox pull-right">
                                     <label>
                                         <input type="checkbox">Remember me</label>
                                 </div>
-                                <button name="signup" type="submit" class="btn btn btn-primary">
+                                <button name="signup" type="submit" class="btn btn btn-primary" disabled="true">
                                     Sign Up
                                 </button>
                             </form>
@@ -218,6 +218,17 @@ mysqli_close($conn);
                 $(".content").fadeIn(500);
             });
         });
+        function check() {
+        	if (document.getElementsByName('pass')[0].value ==
+            document.getElementsByName('repass')[0].value) {
+        document.getElementsByName('signup')[0].disabled = false;
+                document.getElementsByName("repass")[0].style.outline = "#ffffff";
+
+    } else {
+        document.getElementsByName('signup')[0].disabled = true;
+        document.getElementsByName("repass")[0].style.outline = "3px solid red";
+    }
+   }
     </script>
 </body>
 
