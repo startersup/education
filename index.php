@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Engineering Kit</title>
-    <link rel="icon" href="./assets/images/speed.png" type="image/gif" sizes="16x16">
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Roboto:500" rel="stylesheet">
-<link rel="stylesheet" href="./assets/css/style.css">
-  <script src="./assets/js/sidenav.js"></script>  
-<?php include 'navbar.html' ?>
     <div class="preload"><p style="float:inherit;font-size:20px;margin-left:5%;">Preparing Kit for you.....</p><img style="width:350px;" src="./assets/images/book-gif.gif">
 </div>
     <div class="content">
+<title>Engineering Kit</title>
+<?php  include("navbar.html")  ?>
+
     <section class="main" id="main">
         <div class="container">
     <div class="row">

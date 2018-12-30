@@ -1,7 +1,7 @@
 <title>Engineering Kit</title>
     <?php include 'navbar.html' ?>
     <section class="main" id="main">
-        <div class="container1">
+        <div class="container">
     <div class="row">
         <div class="col-md-10">
          <div class="Education">
@@ -75,14 +75,10 @@
 </div></div>
             </div>
         </div>
-          <div class="col-md-2">
-         <div class="card fixed container">
-             <h4>Interested</h4>
-             <br>
-             <p>#Placements</p><br><p>#symposium</p><br><p>#conference</p><br><p>#presentation</p><br><p>#Culturals</p><br><p>#intercollege </p>
-            </div>
+        <div class="col-md-2">
+        <div class="card fixed"><h4>Popular Tags</h4> </div>
+        
         </div>
         </div>
              </div>
     </section>
-    </body></html>
