@@ -42,6 +42,13 @@ body {
     .admin h4
             {
                color:#000;
-                border-bottom:2px solid #a50b69;
+                padding:5px;
       font-family: Roboto,helvetica neue,sans-serif;
   }
+
+.formtab
+{
+   
+    padding:10px;
+    background-color:#F3F3F3;
+}
