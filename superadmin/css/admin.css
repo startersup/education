@@ -37,11 +37,16 @@ body {
     margin-left:150px;
 }
 
+.fa-dashboard
+{
+    font-size:25px;
+    color:lightgreen;
+}
 
 
     .admin h4
             {
-               color:#000;
+               color:#fff;
                 padding:5px;
       font-family: Roboto,helvetica neue,sans-serif;
   }
@@ -51,4 +56,9 @@ body {
    
     padding:10px;
     background-color:#F3F3F3;
+}
+
+.navbar-fixed-top
+{
+    background-color:#000;
 }
