@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
      if($numrows!=0)
      {
       session_start();
-      $row = mysqli_fetch_assoc($result)
+      $row = mysqli_fetch_assoc($result);
       $_SESSION['userid']= $row['userid']; 
       header('Location: index.html')
      }
