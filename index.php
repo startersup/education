@@ -2,23 +2,24 @@
  session_start(); 
  if(isset($_SESSION["userid"]))
  {
-    echo '<script language="javascript">window.onload = function() {document.getElementById("log").text="'.$_SESSION["uname"].'";
-          document.getElementById("sign").text="Logout";}</script>';
+    echo '<script language="javascript">window.onload = function() {document.getElementById("log").text="Welcome '.$_SESSION["uname"].'!";
+         document.getElementById("log").setAttribute("data-toggle","false"); document.getElementById("sign").text="Logout"; document.getElementById("sign").setAttribute("data-toggle","false");
+            document.getElementById("sign").setAttribute("href","logout.php");}</script>';
 }
   
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-include 'config.php';
+include 'configtemp.php';
   if (isset($_POST["login"])) {
      $logname=$_POST['logname'];
      $logpass=$_POST['logpass'];
-     $sql="select userid from users where (uname='".$logname."' OR email ='".$logname."') AND password='".$logpass."'";    
+     $sql="select userid ,uname from users where (uname='".$logname."' OR email ='".$logname."') AND password='".$logpass."'";    
      $query=mysqli_query($conn,$sql);
      $numrows=mysqli_num_rows($query);
      if($numrows>0)
      {
-      $row = mysqli_fetch_assoc($result);
-      $_SESSION["userid"]= $row['userid']; 
-      $_SESSION["uname"]= $row['uname'];
+      $row = mysqli_fetch_assoc($query);
+      $_SESSION["userid"]= $row["userid"]; 
+      $_SESSION["uname"]= $row["uname"];
       session_write_close();
       header('Location: index.php');
       exit();
