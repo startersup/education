@@ -1,3 +1,25 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+include 'configtemp.php';
+$id=uniqid("QNS");
+$qn = $_POST["qn"];
+$op1 = $_POST["op1"];
+$op2 = $_POST["op2"];
+$op3 = $_POST["op3"];
+$op4 = $_POST["op4"];
+$ans = $_POST["ans"];
+$cat = $_POST["cat"];
+$app = $_POST["app"];
+$exp = $_POST["exp"];
+$name= "Height and weight";
+$sql = "INSERT INTO questions (qid, qname, question, op1,op2,op3,op4,answer,explanation,appeared,category)
+   VALUES ('".$id."', '".$name."', '".$qn."','".$op1."','".$op2."','".$op3."','".$op4."','".$ans."','".$exp."','".$app."','".$cat."')";
+if ($conn->query($sql) === TRUE) {
+     header('Location: load.php');
+}
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -53,30 +75,30 @@
             <div class="tab-content" style="padding:0px;">
                 <div role="tabpanel" class="tab-pane active" id="1">
                     <div class="formtab card fixed">
-                        <form class="form" action="/action_page.php">
+                        <form class="form" action="" method="post">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <p>Question :</p>
-                                        <textarea class="form-control" rows="7" id="comment"></textarea>
+                                        <textarea name="qn" class="form-control" rows="7" id="comment"></textarea>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-md-3">
                                             <p>Option 1:</p>
-                                            <input type="text" class="form-control" placeholder="">
+                                            <input name="op1" type="text" class="form-control" placeholder="">
                                         </div>
 
                                         <div class="col-md-3">
                                             <p>Option 2:</p>
-                                            <input type="text" class="form-control" placeholder="">
+                                            <input name="op2" type="text" class="form-control" placeholder="">
                                         </div>
                                         <div class="col-md-3">
                                             <p>Option 3:</p>
-                                            <input type="text" class="form-control" placeholder="">
+                                            <input name="op3" type="text" class="form-control" placeholder="">
                                         </div>
                                         <div class="col-md-3">
                                             <p>Option 4:</p>
-                                            <input type="text" class="form-control" placeholder="">
+                                            <input name="op4" type="text" class="form-control" placeholder="">
                                         </div>
                                     </div>
                                 </div>
@@ -85,22 +107,22 @@
                                     <div class="form-group">
                                         <div class="col-md-6">
                                             <p>Answer:</p>
-                                            <input type="text" class="form-control" placeholder="">
+                                            <input name="ans" type="text" class="form-control" placeholder="">
                                             <br>
                                             <p>Question Type:</p>
-                                            <select class="form-control" id="sel1">
+                                            <select name="cat" class="form-control" id="sel1">
                                                 <option>Quantitative Ability</option>
                                                 <option>Logical Reasoning</option>
                                                 <option>Verbal Ability</option>
                                             </select>
                                             <br>
                                             <p>Asked in:</p>
-                                            <input type="text" class="form-control" placeholder="Eg:CTS,TCS, Infosys...">
+                                            <input name="app" type="text" class="form-control" placeholder="Eg:CTS,TCS, Infosys...">
                                         </div>
 
                                         <div class="col-md-6">
                                             <p>Explanation:</p>
-                                            <textarea class="form-control" rows="11" id="comment"></textarea>
+                                            <textarea name="exp" class="form-control" rows="11" id="comment"></textarea>
                                         </div>
 
                                     </div>
