@@ -113,7 +113,7 @@ $(function() {
         $(".content").fadeIn(500);        
     });
 });
-   document.getElementById("log").text="Logout"; document.getElementById("log").setAttribute("href","logout.php");
+
 
     
     
