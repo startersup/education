@@ -1,6 +1,19 @@
 <?php
 include 'config.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	if (isset($_POST["login"])) {
+     $logname=$POST['logname'];
+     $logpass=$POST['logpass'];
+     $sql="select id from users where uname='".$logname."' or email ='".$logname."' AND password='".$logpass."'";    
+     $query=mysql_query($conn,$sql);
+     $numrows=mysql_num_rows($query);
+     if($numrows!=0)
+     {
+      session_start();
+      $row = mysqli_fetch_assoc($result)
+      $_SESSION['userid']= $row['userid']; 
+     }
+}else if(isset($POST["signup"])){  
   $id=uniqid('USR');
   $uname = $_POST["user"];
   $email = $_POST["email"];
@@ -18,6 +31,7 @@ if ($conn->query($sql) === TRUE) {
     echo '</script>';
 }
 $conn->close();
+}
 }
 ?>
 <!DOCTYPE html>
@@ -114,21 +128,21 @@ $conn->close();
             <div class="tab-content card" >
                 <div role="tabpanel" class="tab-pane active" id="login">
                         <div class="log">
-                            <form role="form">
+                            <form action="" method="post" role="form">
                                 <div class="form-group">
                                     <label for="inputUsernameEmail">Username or email</label>
-                                    <input type="text" class="controls varinput" id="inputUsernameEmail" placeholder="Enter Username or Email">
+                                    <input type="text" class="controls varinput" name="logname" placeholder="Enter Username or Email">
                                 </div>
                                 <div class="form-group">
                                     <a class="pull-right" href="#">Forgot password?</a>
                                     <label for="inputPassword">Password</label>
-                                    <input type="password" class="controls varinput" id="inputPassword" placeholder="Enter Password">
+                                    <input type="password" class="controls varinput" name="logpass" placeholder="Enter Password">
                                 </div>
                                 <div class="checkbox pull-right">
                                     <label>
                                         <input type="checkbox">Remember me</label>
                                 </div>
-                                <button type="submit" class="btn btn btn-primary">
+                                <button name="login" type="submit" class="btn btn btn-primary">
                                     Log In
                                 </button>
                             </form>
@@ -172,7 +186,7 @@ $conn->close();
                                     <label>
                                         <input type="checkbox">Remember me</label>
                                 </div>
-                                <button type="submit" class="btn btn btn-primary">
+                                <button name="signup" type="submit" class="btn btn btn-primary">
                                     Sign Up
                                 </button>
                             </form>
