@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       session_start();
       $row = mysqli_fetch_assoc($result);
       $_SESSION['userid']= $row['userid']; 
-      header('Location: index.html')
+      header('Location: index.html');
      }
      else
      {
