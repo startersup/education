@@ -15,12 +15,15 @@ body{
 		padding: 0 !important;
 	}	
 	.navbar {
-		background: #f2f2f2;
-		padding-left: 16px;
-		padding-right: 16px;
+		background: #f3f3f3;
+		padding-left: 10px;
+		padding-right: 10px;
 		border-bottom: 1px solid #dfe3e8;
 		border-radius: 0;
 	}
+.navbar-default {
+    border-color: #e7e7e7;
+}
 	.nav-link img {
 		border-radius: 50%;
 		width: 36px;
@@ -126,7 +129,7 @@ body{
 		padding: 20px;
 		left: auto;
 		right: 0;
-        font-size: 14px;
+        font-size:14px;
 	}
 	.navbar .dropdown-menu.form-wrapper a {		
 		color: #33cabb;
@@ -255,8 +258,6 @@ body{
   background: #555; 
 }
 
-
-
 .icon-bar {
   position: fixed;
   top: 50%;
@@ -298,53 +299,5 @@ body{
   color: white;
 }
 
-.youtube {
-  background: #bb0000;
-  color: white;
-}
 
 
-
-
-
-
-
-.card {
-  transition: 0.3s;
-    width: 100%;
-    z-index: -1000;
-    background-color: #ffffff;
-    padding:20px;
-    margin-top:10px;
-}
-.curve
-{
-    border-radius:10px 20px;
-    font-size:16px;
-    color:black;
-    padding:8px 15px;
-}
-
-.curve p
-{
-    color:#000000;
-    font-size:14px;
-}
-
-.color1
-{
-    background-color: #f9ff97;
-
-}
-.color2
-{
-      background-color:#eae8ff;
-}
-.color3
-{
-    background-color: #c2ff9b;
-}
-.color4
-{
-    background-color: #f1d7ff;
-}

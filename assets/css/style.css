@@ -3,45 +3,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.topnav {
-  overflow: hidden;
-background-color:#322c61;box-shadow: 0 0px 3px 0 rgba(0,0,0,0.2);
-}
-.top li
-{
-display: inline-block;
-    margin-top:100px;
-    padding:0px 20px;
-  text-decoration: none; 
-}
-.topnav a {
-  float: left;
-  display: block;
-  color: #f4f4f4;
-  text-align: center;
-  padding:10px 16px;
-  text-decoration: none;
-    letter-spacing: 0.7px;
-       font-family: Roboto,helvetica neue,sans-serif;
-    font-size: 15px;
-     border-bottom: 3px solid transparent;
-}
-.nav-right a:hover{
-    color:yellow;
-    border-bottom: 3px solid yellow;
-}
-.topnav .search-container {
-  float: right;
-}
-
-.topnav input[type=text] {
-  padding: 5px 10px;
-  margin-top:7px;
-  font-size: 14px;
-  border: none;
-font-family: Roboto,helvetica neue,sans-serif;
-    border-radius:12px;
-}
 
 .bold
 {
