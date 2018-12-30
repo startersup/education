@@ -2,6 +2,7 @@
 </div>
     <div class="content">
 <title>Engineering Kit</title>
+        <link rel="icon" href="./assets/images/speed.png" type="image/gif" sizes="16x16">
 <?php  include("navbar.html")  ?>
 
     <section class="main" id="main">

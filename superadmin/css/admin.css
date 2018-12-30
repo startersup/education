@@ -1,18 +1,18 @@
 body {
-      background-color: #f4f4f4;
+      background-color: #fdfdfd;
   }
       .sidepanel {
           width: 130px;
           position: fixed;
-          z-index: 1;
+          z-index: -1;
           height: 100vh;
           top: 0;
           left: 0;
-          background - color: #ffffff;
+          background-color: #ffffff;
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          overflow - x: hidden;
+          overflow-x: hidden;
           transition: 0.5s;
-          padding - top: 50px;
+          padding-top: 50px;
   }
 
   .sidepanel a {
@@ -29,9 +29,18 @@ body {
     top: 0;
     right: 0px;
     font-size: 36px;
-}            
+}  
+
+.main
+{
+    margin-top:60px;
+    margin-left:150px;
+}
+
+
+
     .admin h4
             {
-               color:#ffffff;
+               color:#000;
       font-family: Roboto,helvetica neue,sans-serif;
   }
