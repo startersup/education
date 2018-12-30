@@ -1,5 +1,5 @@
 <?php
-include 'config.php';
+include 'configtemp.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	if (isset($_POST["login"])) {
      $logname=$_POST['logname'];
@@ -11,9 +11,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
      {
       session_start();
       $row = mysqli_fetch_assoc($result);
-      $_SESSION['userid']= $row['userid']; 
-      $_SESSION['uname']= $row['uname'];
-      header('Location: index.html');
+      $_SESSION["userid"]= $row['userid']; 
+      $_SESSION["uname"]= $row['uname'];
+      header('Location: index.php');
      }
      else
      {
@@ -31,9 +31,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 if ($conn->query($sql) === TRUE) {
 	session_start();
-    $_SESSION['userid']= $id; 
-    $_SESSION['uname']=$uname;
-    header('Location: index.html');
+    $_SESSION["userid"]= $id; 
+    $_SESSION["uname"]= $uname;
+    header('Location: index.php');
 } else {
 	echo '<script language="javascript">';
     echo 'alert("Try Again")';
