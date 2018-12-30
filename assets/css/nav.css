@@ -227,10 +227,7 @@ body{
 			background: transparent;
 			border: none;
 		}
-        .hidden
-        {
-            display:none;
-        }
+   
 		.navbar .form-inline {
 			display: block;
 		}

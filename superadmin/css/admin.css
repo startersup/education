@@ -42,5 +42,6 @@ body {
     .admin h4
             {
                color:#000;
+                border-bottom:2px solid #a50b69;
       font-family: Roboto,helvetica neue,sans-serif;
   }
