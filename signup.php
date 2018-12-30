@@ -12,6 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       session_start();
       $row = mysqli_fetch_assoc($result);
       $_SESSION['userid']= $row['userid']; 
+      $_SESSION['uname']= $row['uname'];
       header('Location: index.html');
      }
      else
@@ -31,6 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 if ($conn->query($sql) === TRUE) {
 	session_start();
     $_SESSION['userid']= $id; 
+    $_SESSION['uname']=$uname;
     header('Location: index.html');
 } else {
 	echo '<script language="javascript">';
