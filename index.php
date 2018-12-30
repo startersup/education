@@ -18,42 +18,6 @@
     <div class="preload"><p style="float:inherit;font-size:20px;margin-left:5%;">Preparing Kit for you.....</p><img style="width:350px;" src="./assets/images/book-gif.gif">
 </div>
     <div class="content">
-<div class="topnav navbar-fixed-top" id="myTopnav">
-    <a class="openbtn" onclick="openNav()"><i class="fa fa-bars"></i>&nbsp;&nbsp;Engineer Kit</a>
-    <div class="nav-right hidden-xs hidden-sm" style="padding-left:100px;">
-    <a href="./index.html">Home</a> 
-    <a href="./event.html">Events</a>  
-  <a href="./job.html">Job Alert</a>  
-  <a href="./aptitude.html">Aptitude</a>
-  <a href="./exam.html">Online Exams</a>    
-  <a href="./qbank.html">Question Banks</a> 
-  <a href="./review.html">Company Reviews</a>   
-  <a id="log" href="signup.php">Login</a>  
-   <div class="search-container">
-    <form action="/action_page.php" class="hidden-xs hidden-sm">
-      <input type="text" placeholder="Search for terms.." name="search" class="search" >
-    </form>
-  </div></div>
-
-    </div>
-    <div id="mySidebar" class="sidepanel" >
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="margin-top:50px;">×</a>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="#about">Workshops</a>        
-  <a href="#about">Placements</a>  
-  <a href="#about">Engineering</a> 
-  <a href="#about">Internships</a>
-  <a href="#about">Public Forum</a>  
-  <a class="visible-xs" href="#about">Aptitude</a>
-  <a  href="#about">Online Exams</a>        
-  <a href="#about">Online Training</a>     
-  <a href="#about">Question Banks</a> 
-  <a href="#about">Company Reviews</a>  
-  <a href="#about">Ebooks & Manuals</a>  
-  <a href="#about" >Login / signup</a>  
-</div>
-
     <section class="main" id="main">
         <div class="container">
     <div class="row">
