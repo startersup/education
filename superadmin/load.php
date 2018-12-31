@@ -101,8 +101,11 @@ if ($conn->query($sql) === TRUE) {
                                             <p>Option 4:</p>
                                             <input name="op4" type="text" class="form-control" placeholder="">
                                         </div>
-
+                                          <div class="col-md-3">
+                               <p>Question Name:</p>
+                                     <input type="text" class="form-control" placeholder="Eg:xyzzz....">
                                     </div>
+                                    
                                 </div>
                                 <div class="col-md-6">
 
@@ -120,7 +123,7 @@ if ($conn->query($sql) === TRUE) {
                                             <br>
 <!-- HEAD:superadmin/load.html-->
                                               <p>Subcategory:</p>
-                                            <input type="text" class="form-control" placeholder="Eg:Number systems, time & speed...">
+                                     <input type="text" class="form-control" placeholder="Eg:Number systems, time & speed...">
 <!-- c0f4e1839a5f7eb27a33df6a036df1406818546a:superadmin/load.php-->
                                         </div>
  <!--HEAD:superadmin/load.html-->
