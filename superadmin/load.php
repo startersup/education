@@ -1,3 +1,4 @@
+@@ -0,0 +1,358 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 include 'configtemp.php';
@@ -117,27 +118,20 @@ if ($conn->query($sql) === TRUE) {
                                                 <option>Verbal Ability</option>
                                             </select>
                                             <br>
-<<<<<<< HEAD:superadmin/load.html
+<!-- HEAD:superadmin/load.html-->
                                               <p>Subcategory:</p>
                                             <input type="text" class="form-control" placeholder="Eg:Number systems, time & speed...">
-
-=======
-                                            <p>Asked in:</p>
-                                            <input name="app" type="text" class="form-control" placeholder="Eg:CTS,TCS, Infosys...">
->>>>>>> c0f4e1839a5f7eb27a33df6a036df1406818546a:superadmin/load.php
+<!-- c0f4e1839a5f7eb27a33df6a036df1406818546a:superadmin/load.php-->
                                         </div>
-
+ <!--HEAD:superadmin/load.html-->
                                         <div class="col-md-6">
                                             <p>Explanation:</p>
-<<<<<<< HEAD:superadmin/load.html
                                             <textarea class="form-control" rows="7" id="comment"></textarea>
-                                             <p>Asked in:</p>
-                                            <input type="text" class="form-control" placeholder="Eg:CTS,TCS, Infosys...">
-=======
-                                            <textarea name="exp" class="form-control" rows="11" id="comment"></textarea>
->>>>>>> c0f4e1839a5f7eb27a33df6a036df1406818546a:superadmin/load.php
-                                        </div>
-
+                                          <p>Asked in:</p>
+                                            <input name="app" type="text" class="form-control" placeholder="Eg:CTS,TCS, Infosys...">
+<!-- c0f4e1839a5f7eb27a33df6a036df1406818546a:superadmin/load.php-->
+                                    
+                                            
                                     </div>
                                     <div class="form-group">
                                         <div class="col-md-6">
@@ -151,7 +145,7 @@ if ($conn->query($sql) === TRUE) {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                                </div></div>
                         </form>
                     </div>
                 </div>
@@ -345,13 +339,11 @@ if ($conn->query($sql) === TRUE) {
                             </div>
                         </form>
                     </div>
-
+                </div></div>
 
                 </div>
-
-            </div>
-        </div>
     </section>
+      
 
 </body>
 
