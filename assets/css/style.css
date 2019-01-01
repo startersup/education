@@ -29,7 +29,10 @@ body {
     border:none !important;
     color:#ffffff;
 }
-
+    .event h4
+{
+    line-height:30px;
+}
 
    @media only screen and (min-device-width: 800px) and (max-device-width: 1024px) {
 
