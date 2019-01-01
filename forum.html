@@ -1,295 +1,185 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
- <link rel="stylesheet" href="./assets/css/forum.css">
-<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-        crossorigin="anonymous">
-        
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-        
-<nav class="navbar navbar-light bg-white">
-        <a href="#" class="navbar-brand">Bootsbook</a>
-        <form class="form-inline">
-            <div class="input-group">
-                <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="button-addon2">
-                <div class="input-group-append">
-                    <button class="btn btn-outline-primary" type="button" id="button-addon2">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </div>
-            </div>
-        </form>
-    </nav>
-
-
-    <div class="container-fluid gedf-wrapper">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="h5">@LeeCross</div>
-                        <div class="h7 text-muted">Fullname : Miracles Lee Cross</div>
-                        <div class="h7">Developer of web applications, JavaScript, PHP, Java, Python, Ruby, Java, Node.js,
-                            etc.
-                        </div>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="h6 text-muted">Followers</div>
-                            <div class="h5">5.2342</div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="h6 text-muted">Following</div>
-                            <div class="h5">6758</div>
-                        </li>
-                        <li class="list-group-item">Vestibulum at eros</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-6 gedf-main">
-
-                <div class="card gedf-card">
-                    <div class="card-header">
-                        <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="posts-tab" data-toggle="tab" href="#posts" role="tab" aria-controls="posts" aria-selected="true">Make
-                                    a publication</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="images-tab" data-toggle="tab" role="tab" aria-controls="images" aria-selected="false" href="#images">Images</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card-body">
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="posts" role="tabpanel" aria-labelledby="posts-tab">
-                                <div class="form-group">
-                                    <label class="sr-only" for="message">post</label>
-                                    <textarea class="form-control" id="message" rows="3" placeholder="What are you thinking?"></textarea>
-                                </div>
-
-                            </div>
-                            <div class="tab-pane fade" id="images" role="tabpanel" aria-labelledby="images-tab">
-                                <div class="form-group">
-                                    <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="customFile">
-                                        <label class="custom-file-label" for="customFile">Upload image</label>
-                                    </div>
-                                </div>
-                                <div class="py-4"></div>
-                            </div>
-                        </div>
-                        <div class="btn-toolbar justify-content-between">
-                            <div class="btn-group">
-                                <button type="submit" class="btn btn-primary">share</button>
-                            </div>
-                            <div class="btn-group">
-                                <button id="btnGroupDrop1" type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    <i class="fa fa-globe"></i>
-                                </button>
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="btnGroupDrop1">
-                                    <a class="dropdown-item" href="#"><i class="fa fa-globe"></i> Public</a>
-                                    <a class="dropdown-item" href="#"><i class="fa fa-users"></i> Friends</a>
-                                    <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Just me</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Post /////-->
-
-                <!--- \\\\\\\Post-->
-                <div class="card gedf-card">
-                    <div class="card-header">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="mr-2">
-                                    <img class="rounded-circle" width="45" src="https://picsum.photos/50/50" alt="">
-                                </div>
-                                <div class="ml-2">
-                                    <div class="h5 m-0">@LeeCross</div>
-                                    <div class="h7 text-muted">Miracles Lee Cross</div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="dropdown">
-                                    <button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fa fa-ellipsis-h"></i>
-                                    </button>
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
-                                        <div class="h6 dropdown-header">Configuration</div>
-                                        <a class="dropdown-item" href="#">Save</a>
-                                        <a class="dropdown-item" href="#">Hide</a>
-                                        <a class="dropdown-item" href="#">Report</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="card-body">
-                        <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>10 min ago</div>
-                        <a class="card-link" href="#">
-                            <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adip.</h5>
-                        </a>
-
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo recusandae nulla rem eos ipsa praesentium esse magnam nemo dolor
-                            sequi fuga quia quaerat cum, obcaecati hic, molestias minima iste voluptates.
-                        </p>
-                    </div>
-                    <div class="card-footer well">
-                        <a href="#" class="card-link"><i class="fa fa-gittip"></i> Like</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<title>Engineering Kit</title>
+        <link rel="icon" href="./assets/images/speed.png" type="image/gif" sizes="16x16">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Roboto:500" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/sidenav.js"></script>  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Charm|Open+Sans|Roboto:500" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/nav.css">
+      <link rel="stylesheet" href="./assets/css/forum.css">
+      <script src="./assets/js/sidenav.js"></script> 
+</head>
+<body style="background-color:#f4f4f4;">
+<nav class="navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-light">
+	<div class="navbar-header d-flex col">
+		<a class="navbar-brand" href="#">Educate<b>Kid</b><span> Forum</span></a>  		
+			<i data-target="#navbarCollapse" onclick="openNav()" data-toggle="collapse" class="navbar-toggle navbar-toggler visible-xs visible-sm ml-auto fa fa-bars" ></i>
+	</div>
+	<div class="hidden-xs hidden-sm">
+		<ul class="nav navbar-nav">
+			<li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
+			<li class="nav-item"><a href="event.html" class="nav-link">Events</a></li>			
+			<li class="nav-item dropdown">
+				<a data-toggle="dropdown" class="nav-link dropdown-toggle">Services<b class="caret"></b></a>
+				<ul class="dropdown-menu">					
+					<li><a href="#" class="dropdown-item">Engineering E-Books</a></li>
+					<li><a href="qbank.html" class="dropdown-item">Engineering Question Banks</a></li>
+                    <li><a href="aptitude.php" class="dropdown-item">Aptitude</a></li>
+					<li><a href="#" class="dropdown-item">Placement Papers</a></li>
+					<li><a href="job.html" class="dropdown-item">Job Alerts</a></li>
+				</ul>
+			</li>
+			<li class="nav-item "><a href="#" class="nav-link">Online Exams</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Company Reviews</a></li>
+		</ul>
+            
+		<form class="navbar-form form-inline">
+			<div class="input-group search-box">								
+				<input type="text" id="search" class="form-control" placeholder="Search here...">
+				<span class="input-group-addon"><i class="fa fa-search"></i></span>
+			</div>
+		</form>
+		<ul class="nav navbar-nav navbar-right ml-auto">			
+			<li class="nav-item">
+				<a id="log" data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Login</a>
+				<ul class="dropdown-menu form-wrapper">					
+					<li>
+						<form action="" method="post">
+							<p class="hint-text">Sign in with your social media account</p>
+							<div class="form-group social-btn clearfix">
+								<a href="#" class="btn btn-primary pull-left"><i class="fa fa-facebook"></i> Facebook</a>
+								<a href="#" class="btn btn-info pull-right"><i class="fa fa-twitter"></i> Twitter</a>
+							</div>
+							<div class="or-seperator"><b>or</b></div>
+							<div class="form-group">
+								<input type="text" name="logname" class="form-control" placeholder="Username or Email " required="required">
+							</div>
+							<div class="form-group">
+								<input type="password" name="logpass" class="form-control" placeholder="Password" required="required">
+							</div>
+							<input name="login" type="submit" class="btn btn-primary btn-block" value="Login">
+							<div class="form-footer">
+								<a href="#">Forgot Your password?</a>
+							</div>
+						</form>
+					</li>
+				</ul>
+			</li>
+			<li class="nav-item">
+				<a id="sign"  href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1">Sign up</a>
+				<ul class="dropdown-menu form-wrapper">					
+					<li>
+						<form action="" method="post">
+							<p class="hint-text">Fill in this form to create your account!</p>
+							<div class="form-group">
+								<input name="user" type="text" class="form-control" placeholder="Username" required="required">
+							</div>
+                            <div class="form-group">
+								<input name="email" type="text" class="form-control" placeholder="Email Address" required="required">
+							</div>
+							<div class="form-group">
+								<input name="pass" type="password" class="form-control" placeholder="Password" required="required">
+							</div>
+							<div class="form-group">
+								<input name="repass" onkeyup="check();" type="password" class="form-control" placeholder="Confirm Password" required="required">
+							</div>
+							<div class="form-group">
+                                <label class="checkbox-inline"><input type="checkbox" required="required">Remember me</label>   
+							</div>
+							<input name="signup" type="submit" class="btn btn-primary btn-block" value="Sign up" disabled="true">
+						</form>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+    <div id="mySidebar" class="sidepanel" >
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="margin-top:50px;">×</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="#about">Workshops</a>        
+  <a href="#about">Placements</a>  
+  <a href="#about">Engineering</a> 
+  <a href="#about">Internships</a>
+  <a href="#about">Public Forum</a>  
+  <a href="#about">Aptitude</a>
+  <a  href="#about">Online Exams</a>        
+  <a href="#about">Online Training</a>     
+  <a href="#about">Question Banks</a> 
+  <a href="#about">Company Reviews</a>  
+  <a href="#about">Ebooks & Manuals</a>  
+  <a href="#about" >Login / signup</a>  
+</div>
+</nav>
+ <section>
+   <div class="forumpad">
+     <div class="col-md-3">
+       <div class="card divfix">
+         <h4>@ Saicharan</h4><hr>
+           <p><span class="bold">Interest:</span> Cloud Computing, Digital Marketing, Core Java.</p>
+         
+         </div>
+     </div>
+       <div class="col-md-6">
+       <div class="card">
+           <div class="border">
+        <div class="head"><p style="display:inline;">Vinodhan</p><p style="float:right;">posted 2 hrs ago</p></div>
+           <br>
+           <p class="ptag">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                 <div class="card-footer">
+                        <a href="#" class="card-link"><i class="fa fa-thumbs-up"></i> Like</a>
                         <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
                         <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
                     </div>
-                </div>
-                <!-- Post /////-->
-
-
-                <!--- \\\\\\\Post-->
-                <div class="card gedf-card">
-                    <div class="card-header">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="mr-2">
-                                    <img class="rounded-circle" width="45" src="https://picsum.photos/50/50" alt="">
-                                </div>
-                                <div class="ml-2">
-                                    <div class="h5 m-0">@LeeCross</div>
-                                    <div class="h7 text-muted">Miracles Lee Cross</div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="dropdown">
-                                    <button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fa fa-ellipsis-h"></i>
-                                    </button>
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
-                                        <div class="h6 dropdown-header">Configuration</div>
-                                        <a class="dropdown-item" href="#">Save</a>
-                                        <a class="dropdown-item" href="#">Hide</a>
-                                        <a class="dropdown-item" href="#">Report</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="card-body">
-                        <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i> 10 min ago</div>
-                        <a class="card-link" href="#">
-                            <h5 class="card-title"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consectetur
-                                deserunt illo esse distinctio.</h5>
-                        </a>
-
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam omnis nihil, aliquam est, voluptates officiis iure soluta
-                            alias vel odit, placeat reiciendis ut libero! Quas aliquid natus cumque quae repellendus. Lorem
-                            ipsum dolor sit amet consectetur adipisicing elit. Ipsa, excepturi. Doloremque, reprehenderit!
-                            Quos in maiores, soluta doloremque molestiae reiciendis libero expedita assumenda fuga quae.
-                            Consectetur id molestias itaque facere? Hic!
-                        </p>
-                        <div>
-                            <span class="badge badge-primary">JavaScript</span>
-                            <span class="badge badge-primary">Android</span>
-                            <span class="badge badge-primary">PHP</span>
-                            <span class="badge badge-primary">Node.js</span>
-                            <span class="badge badge-primary">Ruby</span>
-                            <span class="badge badge-primary">Paython</span>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="card-link"><i class="fa fa-gittip"></i> Like</a>
+         </div>
+           <hr>
+                      <div class="border">
+        <div class="head"><p style="display:inline;">Vinodhan</p><p style="float:right;">posted 2 hrs ago</p></div>
+           <br>
+           <p class="ptag">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                 <div class="card-footer">
+                        <a href="#" class="card-link"><i class="fa fa-thumbs-up"></i> Like</a>
                         <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
                         <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
                     </div>
-                </div>
-                <!-- Post /////-->
-
-
-                <!--- \\\\\\\Post-->
-                <div class="card gedf-card">
-                    <div class="card-header">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="mr-2">
-                                    <img class="rounded-circle" width="45" src="https://picsum.photos/50/50" alt="">
-                                </div>
-                                <div class="ml-2">
-                                    <div class="h5 m-0">@LeeCross</div>
-                                    <div class="h7 text-muted">Miracles Lee Cross</div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="dropdown">
-                                    <button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fa fa-ellipsis-h"></i>
-                                    </button>
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
-                                        <div class="h6 dropdown-header">Configuration</div>
-                                        <a class="dropdown-item" href="#">Save</a>
-                                        <a class="dropdown-item" href="#">Hide</a>
-                                        <a class="dropdown-item" href="#">Report</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="card-body">
-                        <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i> Hace 40 min</div>
-                        <a class="card-link" href="#">
-                            <h5 class="card-title">Totam non adipisci hic! Possimus ducimus amet, dolores illo ipsum quos
-                                cum.</h5>
-                        </a>
-
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sunt fugit reprehenderit consectetur exercitationem odio,
-                            quam nobis? Officiis, similique, harum voluptate, facilis voluptas pariatur dolorum tempora sapiente
-                            eius maxime quaerat.
-                            <a href="https://mega.nz/#!1J01nRIb!lMZ4B_DR2UWi9SRQK5TTzU1PmQpDtbZkMZjAIbv97hU" target="_blank">https://mega.nz/#!1J01nRIb!lMZ4B_DR2UWi9SRQK5TTzU1PmQpDtbZkMZjAIbv97hU</a>
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="card-link"><i class="fa fa-gittip"></i> Like</a>
+         </div>
+           
+            <hr>
+                      <div class="border">
+        <div class="head"><p style="display:inline;">Vinodhan</p><p style="float:right;">posted 2 hrs ago</p></div>
+           <br>
+           <p class="ptag">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                 <div class="card-footer">
+                        <a href="#" class="card-link"><i class="fa fa-thumbs-up"></i> Like</a>
                         <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
                         <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
                     </div>
-                </div>
-                <!-- Post /////-->
+         </div>
+           
+         </div>
+       </div>
+       
+        <div class="col-md-3">
+       <div class="card divfix">
+         <h4>Trending Forum</h4><hr>
+           <p><span class="bold">Interest:</span> Cloud Computing, Digital Marketing, Core Java.</p>
+         
+         </div>
+     </div>
+       
+       
+     </div> 
+</section>      
+</body></html>
 
 
-
-            </div>
-            <div class="col-md-3">
-                <div class="card gedf-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
-                    </div>
-                </div>
-                <div class="card gedf-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                card's content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </div>
+    

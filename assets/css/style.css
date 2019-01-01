@@ -15,7 +15,11 @@ body {
 .topnav a:hover {
 
 }
-
+.navbar-brand span
+{
+    font-size:17px;
+   font-family: 'Charm', cursive;
+}
 .topnav .icon {
   display: none;
 }
