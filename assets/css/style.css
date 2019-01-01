@@ -24,7 +24,11 @@ body {
     margin:0 10px;
 }
 
-
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    border:none !important;
+    color:#ffffff;
+}
 
 
    @media only screen and (min-device-width: 800px) and (max-device-width: 1024px) {
@@ -60,6 +64,21 @@ body {
     cursor: pointer;
      font-family: Roboto, sans-serif;
 }
+    .event h4
+{
+color:#007bff;
+    font-size:20px;
+    line-height:25px;
+}
+  .event ul>li
+    {
+        font-size:12px;
+    }
+    
+    .container1
+    {
+        margin:0px !important;
+    }
 .display  span
 {
     font-size:11px;
@@ -454,14 +473,18 @@ td
 }
 .nav-tabs { border-bottom: 2px solid #DDD;font-family: Roboto, sans-serif;  letter-spacing:0.5px; }
     .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
-    .nav-tabs > li > a { border: none; color: #666;font-size:15px; }
+    .nav-tabs > li > a { border: none !important; color: #666;font-size:15px; }
         .nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none; color: #4285F4 !important; background: transparent; }
         .nav-tabs > li > a::after { content: ""; background: #4285F4; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
     .nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
 .tab-nav > li > a::after { background: #21527d none repeat scroll 0% 0%; color: #fff; }
 .tab-pane { padding: 15px 0; }
 .tab-content{padding:20px}
-
+.table>thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+    text-align: center;
+}
 
 
 
@@ -481,8 +504,50 @@ td
     font-family: 'Bree Serif', serif;
 }
 
-
-
+.checked {
+  color: orange;
+}
+.event
+{
+    border:1px solid #f0f0f0;
+}
+.event h4
+{
+color:#007bff;    
+}
+.inline
+{
+   background-color:#f4f4f4;
+    min-height:30px;
+    padding:5px;
+}
+.event ul>li
+{
+    display:inline;margin:5px 5px;
+    line-height:40px;
+    padding: 5px;
+    color:#000000;
+    border-radius:12px;
+}
+.event ul {
+  display: block;
+  list-style-type: none
+}
+.event li {
+  display:list-item;
+  width: 100%; /* sometimes firefox gives issue*/
+  word-break: break-all; /* break word in next line, if no space*/
+}
+.card-footer
+{
+    background-color:#f4f4f4;
+    min-height:30px;
+    padding:10px;
+}
+.card-footer a
+{
+    margin:0px 10px;
+}
 .login-or {
     position: relative;
     font-size: 18px;
@@ -508,3 +573,4 @@ td
     margin-top: 0px !important;
     margin-bottom: 0px !important;
   }
+
