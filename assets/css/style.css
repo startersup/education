@@ -70,6 +70,14 @@ color:#007bff;
     font-size:20px;
     line-height:25px;
 }
+    .card
+    {
+        padding:10px !important;
+    }
+    .weller
+{
+    padding:0px !important;
+}
   .event ul>li
     {
         font-size:12px;
@@ -573,4 +581,7 @@ color:#007bff;
     margin-top: 0px !important;
     margin-bottom: 0px !important;
   }
-
+.weller
+{
+    padding:20px;
+}
