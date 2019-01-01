@@ -6,6 +6,7 @@
 .bold
 {
     color:#1CBFBB;
+    font-size:14px;
 }
 .divfix
 {
@@ -15,7 +16,7 @@
 }
 .head
 {
-    background-color:#1DA1F2;
+    background-color:#31bfb1;
     padding:6px 10px;
     color:#ffffff;
    border-top-left-radius: 6px;
@@ -50,5 +51,10 @@
     {
         padding:0px;
     }
-
+.divfix
+{
+   position:relative;
+    max-width:400px;
+    width:100%;
+}
 }
