@@ -1,4 +1,5 @@
 RewriteEngine on
 
-RewriteRule ^/quest/([0-9a-zA-Z_-]+)/([0-9a-zA-Z_-]+)$ /quest.php?cat=$1&sub=$2 [NC,L]
-RewriteRule ^/quants/([0-9a-zA-Z_-]+)$ /quants.php?cat=$1 [NC,L]
+RewriteRule ^quest/([0-9a-zA-Z_-]+)/([0-9a-zA-Z_-]+)$ quest.php?cat=$1&sub=$2 [NC,L]
+
+RewriteRule ^quants/([0-9a-zA-Z_-]+)$ quants.php?cat=$1 [NC,L]
