@@ -101,12 +101,12 @@ if ($conn->query($sql) === TRUE) {
                                             <p>Option 4:</p>
                                             <input name="op4" type="text" class="form-control" placeholder="">
                                         </div>
-                                          <div class="col-md-3">
+                                          <div class="col-md-12">
                                <p>Question Name:</p>
                                      <input type="text" class="form-control" placeholder="Eg:xyzzz....">
                                     </div>
                                     
-                                </div>
+                                </div></div>
                                 <div class="col-md-6">
 
                                     <div class="form-group">
@@ -148,9 +148,8 @@ if ($conn->query($sql) === TRUE) {
                                         </div>
                                     </div>
                                 </div>
-                                </div></div>
-                        </form>
-                    </div>
+                                    </div></div>
+                        </form></div>
                 </div>
 
                 <div role="tabpanel" class="tab-pane" id="2">
@@ -342,7 +341,7 @@ if ($conn->query($sql) === TRUE) {
                             </div>
                         </form>
                     </div>
-                </div></div>
+                </div>
 
                 </div>
     </section>
