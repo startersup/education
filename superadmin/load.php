@@ -1,4 +1,3 @@
-@@ -0,0 +1,358 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 include 'configtemp.php';
@@ -12,9 +11,10 @@ $ans = $_POST["ans"];
 $cat = $_POST["cat"];
 $app = $_POST["app"];
 $exp = $_POST["exp"];
-$name= "Height and weight";
-$sql = "INSERT INTO questions (qid, qname, question, op1,op2,op3,op4,answer,explanation,appeared,category)
-   VALUES ('".$id."', '".$name."', '".$qn."','".$op1."','".$op2."','".$op3."','".$op4."','".$ans."','".$exp."','".$app."','".$cat."')";
+$name= $_POST["qname"];
+$subcat= $_POST["subcat"];
+$sql = "INSERT INTO questions (qid, qname, question, op1,op2,op3,op4,answer,explanation,appeared,category,sub)
+   VALUES ('".$id."', '".$name."', '".$qn."','".$op1."','".$op2."','".$op3."','".$op4."','".$ans."','".$exp."','".$app."','".$cat."','".$subcat."')";
 if ($conn->query($sql) === TRUE) {
      header('Location: load.php');
 }
@@ -103,7 +103,7 @@ if ($conn->query($sql) === TRUE) {
                                         </div>
                                           <div class="col-md-12">
                                <p>Question Name:</p>
-                                     <input type="text" class="form-control" placeholder="Eg:xyzzz....">
+                                     <input name="qname" type="text" class="form-control" placeholder="Eg:xyzzz....">
                                     </div>
                                     
                                 </div></div>
@@ -123,13 +123,13 @@ if ($conn->query($sql) === TRUE) {
                                             <br>
 <!-- HEAD:superadmin/load.html-->
                                               <p>Subcategory:</p>
-                                     <input type="text" class="form-control" placeholder="Eg:Number systems, time & speed...">
+                                     <input name="subcat" type="text" class="form-control" placeholder="Eg:Number systems, time & speed...">
 <!-- c0f4e1839a5f7eb27a33df6a036df1406818546a:superadmin/load.php-->
                                         </div>
  <!--HEAD:superadmin/load.html-->
                                         <div class="col-md-6">
                                             <p>Explanation:</p>
-                                            <textarea class="form-control" rows="7" id="comment"></textarea>
+                                            <textarea name="exp" class="form-control" rows="7" id="comment"></textarea>
                                           <p>Asked in:</p>
                                             <input name="app" type="text" class="form-control" placeholder="Eg:CTS,TCS, Infosys...">
 <!-- c0f4e1839a5f7eb27a33df6a036df1406818546a:superadmin/load.php-->

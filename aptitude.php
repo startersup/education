@@ -1,3 +1,11 @@
+<?php  
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -152,7 +160,7 @@
                     <li>Ratio & Proportion</li>  
                 </ul>
                 
-               <center><a href="./quants.html"><button class="button black">Start Practice</button></a></center>
+               <center><a href="./quants.php?cat=Quantitative-Ability"><button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
