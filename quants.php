@@ -32,7 +32,7 @@
             <br>
         <div class="col-md-4">
             <div class="card hover topics"><h4>Number System</h4>
-               <center><a href="quest.php?cat=Quantitative-Ability&sub=Number-Systems"> <button class="button black">Start Practice</button></a></center>
+               <center><a href="quest.php?cat=Quantitative-Ability&sub=Number-System"> <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
