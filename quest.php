@@ -1,12 +1,10 @@
-<?php
-
-?>
 
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+<base href="/education/">
     <title>Engineering Kit</title>
     <link rel="icon" href="./assets/images/speed.png" type="image/gif" sizes="16x16">
     <meta charset="utf-8">
