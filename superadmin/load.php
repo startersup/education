@@ -13,8 +13,8 @@ $app = $_POST["app"];
 $exp = $_POST["exp"];
 $name= $_POST["qname"];
 $subcat= $_POST["subcat"];
-$sql = "INSERT INTO questions (qid, qname, question, op1,op2,op3,op4,answer,explanation,appeared,category,sub)
-   VALUES ('".$id."', '".$name."', '".$qn."','".$op1."','".$op2."','".$op3."','".$op4."','".$ans."','".$exp."','".$app."','".$cat."','".$subcat."')";
+$sql = "INSERT INTO questions (qid, question, op1,op2,op3,op4,answer,explanation,appeared,category,sub)
+   VALUES ('".$id."', '".$qn."','".$op1."','".$op2."','".$op3."','".$op4."','".$ans."','".$exp."','".$app."','".$cat."','".$subcat."')";
 if ($conn->query($sql) === TRUE) {
      header('Location: load.php');
 }

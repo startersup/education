@@ -8,7 +8,7 @@
 }
   
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-include 'configtemp.php';
+include 'config.php';
   if (isset($_POST["login"])) {
      $logname=$_POST['logname'];
      $logpass=$_POST['logpass'];
