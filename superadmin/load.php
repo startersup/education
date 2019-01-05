@@ -84,20 +84,20 @@ if ($conn->query($sql) === TRUE) {
                                         <textarea name="qn" class="form-control" rows="7" id="comment"></textarea>
                                     </div>
                                     <div class="form-group">
-                                        <div class="col-md-3">
+                                        <div class="col-md-3 col-xs-3">
                                             <p>Option 1:</p>
                                             <input name="op1" type="text" class="form-control" placeholder="">
                                         </div>
 
-                                        <div class="col-md-3">
+                                        <div class="col-md-3 col-xs-3">
                                             <p>Option 2:</p>
                                             <input name="op2" type="text" class="form-control" placeholder="">
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-3 col-xs-3">
                                             <p>Option 3:</p>
                                             <input name="op3" type="text" class="form-control" placeholder="">
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-3 col-xs-3">
                                             <p>Option 4:</p>
                                             <input name="op4" type="text" class="form-control" placeholder="">
                                         </div>
