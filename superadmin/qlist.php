@@ -57,7 +57,7 @@
                  <td>20</td>
                 <td>13 15 20 25</td>
                  <td>bla bla bla bla bla bla bla</td>
-                <td><button class="btn btn-success">Update</button></td>
+                <td><button class="btn btn-success"  data-toggle="modal" data-target="#myModal2">Update</button></td>
             </tr>
                  <tr>
                 <td>134</td>
@@ -65,7 +65,7 @@
                  <td>20</td>
                 <td>13 15 20 25</td>
                  <td>bla bla bla bla bla bla bla</td>
-                <td><button class="btn btn-success">Update</button></td>
+                <td><button class="btn btn-success" data-toggle="modal" data-target="#myModal2">Update</button></td>
             </tr>
              <tr>
                 <td>134</td>
@@ -153,6 +153,46 @@
     </table>
 	</div>
 </div>
+        
+        <!-- Modal -->
+	<div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel2">Edit Question #134</h4>
+				</div>
+
+				<div class="modal-body noborder" style="background-color:#FAFAFA;">
+				  <p>Question</p>
+                    <textarea class="question form-control" rows="6" cols="30">
+A number when divided by a divisor leaves a remainder of 24.When twice the original number is divided by the same divisor, the remainder is 11. What is the value of the divisor?
+                 </textarea><br>
+                     <p>Answer</p>
+                    <input type="text" class="form-control" value="20"><br>
+                    <p>Options</p>
+                    <div class="row">
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" value="20">
+                        </div> <div class="col-xs-6">
+                        <input type="text" class="form-control" value="20">
+                        </div> <div class="col-xs-6"><br>
+                        <input type="text" class="form-control" value="20">
+                        </div> <div class="col-xs-6"><br>
+                        <input type="text" class="form-control" value="20">
+                        </div>
+                    </div><br>
+                     <p>Description</p>
+                    <textarea class="question form-control" rows="4" cols="30">
+blah blah blah blah blah blah blah
+                 </textarea><br>
+                   <center><button class="btn btn-success">Update</button></center> 
+				</div>
+
+			</div><!-- modal-content -->
+		</div><!-- modal-dialog -->
+	</div><!-- modal -->
+	
     </section>
 <style>table{
     width:100%;
@@ -168,7 +208,16 @@ label {
     margin-bottom: .5rem;
     margin-top: .5rem;
    
-}</style>
+}
+     .noborder textarea
+    {
+        border:1px solid #f4f4f4;
+    }
+ .noborder input
+    {
+        border:1px solid #f4f4f4;
+    }
+    </style>
     <script>$(document).ready(function() {
     $('#example').DataTable(
         
