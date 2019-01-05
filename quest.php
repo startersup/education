@@ -47,6 +47,7 @@ include 'config.php';
                                      $sub=preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['sub']);
                                     while($row = mysqli_fetch_assoc($query)) {
                                         $qns=str_replace(' ','-',$row['question']);
+                                        $qns=str_replace('?','_',$qns);
                                      echo "<div class='question'><p>".$i.") ".$row['question']."</p>
                                     <ul>
                                         <li>A) ".$row['op1']."</li>
