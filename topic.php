@@ -143,7 +143,7 @@ include 'config.php';
                                 <div class="question">
                                 <?php 
                                 $qns=str_replace('-',' ',$_GET['qns']);
-                                $qns=$qns."?";
+                                //$qns=$qns."?";
                                 $cat=str_replace('-',' ',preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['cat']));
                                 $sub=str_replace('-',' ',preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['sub']));
                                 $sql="select question,op1,op2,op3,op4,appeared,answer,explanation from questions where category='".$cat."'AND sub='".$sub."' AND question='".$qns."'";
