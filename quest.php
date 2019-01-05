@@ -43,7 +43,10 @@ include 'config.php';
                                      $sql="select question,op1,op2,op3,op4,appeared from questions where category='".$cat."'AND sub='".$sub."' LIMIT ".$lim.",5";
                                      $query=mysqli_query($conn,$sql);
                                      $i=1;
+                                     $cat=preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['cat']);
+                                     $sub=preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['sub']);
                                     while($row = mysqli_fetch_assoc($query)) {
+                                        $qns=str_replace(' ','-',$row['question']);
                                      echo "<div class='question'><p>".$i.") ".$row['question']."</p>
                                     <ul>
                                         <li>A) ".$row['op1']."</li>
@@ -51,10 +54,12 @@ include 'config.php';
                                         <li>C) ".$row['op3']."</li>
                                         <li>D) ".$row['op4']."</li>
                                     </ul>
-                                    <button class='btn btn-success'>View Answer</button>
+                                    <a href='topic.php?cat=".$cat."&sub=".$sub."&qns=".$qns."'><button class='btn btn-success'>View Answer</button></a>
                                     <div class='display'><span>Asked in ".$row['appeared']."</span> 
                                 </div></div>
                                 <hr>"; $i++;}
+                               $cat=str_replace('-',' ',preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['cat']));
+                               $sub=str_replace('-',' ',preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['sub']));
                                 $sql="select question,op1,op2,op3,op4,appeared from questions where category='".$cat."'AND sub='".$sub."'";
                                 $query=mysqli_query($conn,$sql);
                                 $numrows=mysqli_num_rows($query);

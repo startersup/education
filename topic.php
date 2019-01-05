@@ -1,6 +1,11 @@
+<?php
+session_start();
+include 'config.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<base href="/">
   <meta charset="utf-8">
 <title>Engineering Kit</title>
         <link rel="icon" href="./assets/images/speed.png" type="image/gif" sizes="16x16">
@@ -136,19 +141,27 @@
                             </div>
                             <div id="load">
                                 <div class="question">
-                                    <p>1) A number when divided by a divisor leaves a remainder of 24.When twice the original number is divided by the same divisor, the remainder is 11. What is the value of the divisor?</p>
+                                <?php 
+                                $qns=str_replace('-',' ',$_GET['qns']);
+                                $qns=$qns."?";
+                                $cat=str_replace('-',' ',preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['cat']));
+                                $sub=str_replace('-',' ',preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['sub']));
+                                $sql="select question,op1,op2,op3,op4,appeared,answer,explanation from questions where category='".$cat."'AND sub='".$sub."' AND question='".$qns."'";
+                                $query=mysqli_query($conn,$sql);
+                                $row = mysqli_fetch_assoc($query);
+                                    echo "<p>1) ".$row['question']."</p>
                                     <ul>
-                                        <li>A) 13</li>
-                                        <li>B) 59</li>
-                                        <li>C) 35</li>
-                                        <li>D) 37</li>
+                                        <li>A) ".$row['op1']."</li>
+                                        <li>B) ".$row['op2']."</li>
+                                        <li>C) ".$row['op3']."</li>
+                                        <li>D) ".$row['op4']."</li>
                                     </ul>
-                                    <div class="answer">  <div class="display"><span>Asked in TCS, Infosys</span>
+                                    <div class='answer'>  <div class='display'><span>Asked in ".$row['appeared']."</span>
                                     </div>
-                                        <p>Answer:13</p>
-                                         <p>Explanation: 13</p>
-                                    </div>
-                                
+                                        <p>Answer: ".$row['answer']."</p>
+                                         <p>Explanation: ".$row['explanation']."</p>
+                                    </div>";
+                                    ?>
                                   <div class="commentbox">
                                       <center><h4>Add your Comments</h4></center>
                                         <div class="comments">
