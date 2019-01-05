@@ -43,7 +43,7 @@ if ($conn->query($sql) === TRUE) {
     <div class="navbar  navbar-fixed-top navbar-expand-lg navbar-light">
         <div class="admin">
             <center>
-                <h4> Admin <i class="fa fa-dashboard"></i> Dashboard</h4>
+                <h4> Admin Dashboard</h4>
             </center>
         </div>
     </div>
