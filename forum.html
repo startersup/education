@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-<title>Engineering Kit |Wforum page</title>
+<title>Engineering Kit | Forum </title>
         <link rel="icon" href="./assets/images/speed.png" type="image/gif" sizes="16x16">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -124,7 +124,7 @@
    <div class="forumpad">
      <div class="col-md-3">
        <div class="card divfix">
-         <h4>@ Saicharan   <button class="btn btn-success">Add Post</button></h4>
+         <h4>@ Saicharan   <button data-toggle="collapse" data-target="#demo" class="btn btn-success">Add Post</button></h4>
            <div class="hidden-xs">
            <hr>
            <p><span class="bold">Location:</span> chennai, Tamilnadu.</p>
@@ -135,6 +135,9 @@
      </div>
        <div class="col-md-6">
        <div class="card">
+             <div id="demo" class="collapse">  
+        <textarea class="form-control" rows="4" placeholder="Enter your Message Here" id="comment"></textarea><br>	<input type="image" src="./assets/images/attachment.png" style="width:20px;"> <input type="file" id="my_file" style="display: none;" /> <button class="btn btn-info">Post your Comments </button> <br><br>
+  </div><hr>
            <div class="border">
         <div class="head"><p style="display:inline;">Vinodhan</p><p style="float:right;">posted 2 hrs ago</p></div>
                <img src="assets/images/wall.jpg" style="max-width:800px;width:100%;padding:10px;">
@@ -182,7 +185,10 @@
        
        
      </div> 
-</section>      
+</section>   
+    <script>$("input[type='image']").click(function() {
+    $("input[id='my_file']").click();
+});</script>
 </body></html>
 
 
