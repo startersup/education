@@ -195,11 +195,11 @@ mysqli_close($conn);
                 <div class="card"><h4>Engineering</h4><p>All the Engineering Notes and e-books can be viewed here</p>
           <br>
                     <ul>
-                    <li class="parent"><img src="assets/images/ebook.png">E-books</li>
-                    <li class="child"><img src="assets/images/questions.png">Question Banks</li>
-                    <li class="parent"><img src="assets/images/pros-and-cons.png">AnswerKeys</li> 
-                        <li class="child"><img src="assets/images/questions-about-abecedary.png">Question Paper</li>
-                     <li class="parent"><img src="assets/images/refresh.png">University Updates</li>
+                    <li class="parent"><img src="assets/images/ebook.png"><br><span>E-books</span></li>
+                    <li class="child"><img src="assets/images/questions.png"><br><span>Question Banks</span></li>
+                    <li class="parent"><img src="assets/images/pros-and-cons.png"><br><span>Answer Keys</span></li> 
+                  <li class="child"><img src="assets/images/questions-about-abecedary.png"><br><span>Question Paper</span></li>
+                     <li class="parent"><img src="assets/images/refresh.png"><br>University Updates</li>
                     </ul>
                 </div>
             </div>
@@ -207,11 +207,11 @@ mysqli_close($conn);
                   <div class="card"><h4>Knowledge</h4><p>All the latest stuff apart from Textbook will be notified frequently</p>
                   <br>
                       <ul>
-                    <li class="parent"><img src="assets/images/conference.png"> Conference</li>
-                    <li class="child"><img src="assets/images/3d-printing-software.png"> Hackathon</li>
-                    <li class="parent"><img src="assets/images/tent.png"> Symposium</li> 
-                        <li class="child"><img src="assets/images/world-cup.png">Contest</li>
-                     <li class="parent"><img src="assets/images/running-man.png"> Sports </li>
+                    <li class="parent"><img src="assets/images/conference.png"><br><span> Conference</span></li>
+                    <li class="child"><img src="assets/images/3d-printing-software.png"><br><span> Hackathon</span></li>
+                    <li class="parent"><img src="assets/images/tent.png"><br><span> Symposium</span></li> 
+                        <li class="child"><img src="assets/images/world-cup.png"><br><span>Cultural Fest</span></li>
+                     <li class="parent"><img src="assets/images/running-man.png"><br><span> Sports</span> </li>
                     </ul>  
                   </div>
             </div>
@@ -219,11 +219,11 @@ mysqli_close($conn);
              <div class="card"><h4>Placements</h4><p>All the placements related queries and information can be viewed here</p>
                   <br>
                       <ul>
-                    <li class="parent"><img src="assets/images/briefcase.png">Job Alerts</li>
-                    <li class="child"><img src="assets/images/review.png"> Company Review</li>
-                    <li class="parent"><img src="assets/images/interview.png">Aptitude</li> 
-                        <li class="child"><img src="assets/images/learning.png"> Online Test</li>
-                     <li class="parent"><img src="assets/images/presentation.png"> Internships </li>
+                    <li class="parent"><img src="assets/images/briefcase.png"><br><span>Job Alerts</span></li>
+                    <li class="child"><img src="assets/images/review.png"><br><span>Company Review</span></li>
+                    <li class="parent"><img src="assets/images/interview.png"><br><span>Aptitude</span></li> 
+                        <li class="child"><img src="assets/images/learning.png"><br><span> Online Test</span></li>
+                     <li class="parent"><img src="assets/images/presentation.png"><br> <span>Internships</span> </li>
                     </ul> </div>
             </div>
             </div>
