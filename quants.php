@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<base href="/education/">
+<base href="/">
   <title>Engineering Kit</title>
     <link rel="icon" href="./assets/images/speed.png" type="image/gif" sizes="16x16">
   <meta charset="utf-8">
@@ -33,7 +33,7 @@
             <br>
         <div class="col-md-4">
             <div class="card hover topics"><h4>Number System</h4>
-               <center><a href="quest.php?cat=Quantitative-Ability&sub=Number-System"> <button class="button black">Start Practice</button></a></center>
+               <center><a href="quest.php?cat=Quantitative-Ability&sub=Number-Systems&page=0"> <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">

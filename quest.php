@@ -1,10 +1,11 @@
-
-
+<?php
+session_start();
+include 'config.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<base href="/education/">
+<base href="/">
     <title>Engineering Kit</title>
     <link rel="icon" href="./assets/images/speed.png" type="image/gif" sizes="16x16">
     <meta charset="utf-8">
@@ -17,6 +18,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/comment.css">
     <script src="./assets/js/sidenav.js"></script>
+   
 </head>
 
 <body>
@@ -27,48 +29,56 @@
                     <div class="Education">
                         <br>
                         <div class="card topping">
-                            <h3><i class="fa fa-star" aria-hidden="true"></i> Number Systems</h3>
+                            <h3><i class="fa fa-star" aria-hidden="true"></i> <?php echo $_GET["sub"]; ?> </h3>
                             <hr>
                             <div id="preloader">
                                 <div id="status">&nbsp;</div>
                             </div>
                             <div id="load">
-                                <div class="question">
-                                    <p>1) A number when divided by a divisor leaves a remainder of 24.When twice the original number is divided by the same divisor, the remainder is 11. What is the value of the divisor?</p>
+                                 <?php
+                                     $count =preg_replace('#[^0-9]#', '', $_GET['page']);
+                                     $lim=5*$count;
+                                     $cat=str_replace('-',' ',preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['cat']));
+                                     $sub=str_replace('-',' ',preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['sub']));
+                                     $sql="select question,op1,op2,op3,op4,appeared from questions where category='".$cat."'AND sub='".$sub."' LIMIT ".$lim.",5";
+                                     $query=mysqli_query($conn,$sql);
+                                     $i=1;
+                                     $cat=preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['cat']);
+                                     $sub=preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['sub']);
+                                    while($row = mysqli_fetch_assoc($query)) {
+                                        $qns=str_replace(' ','-',$row['question']);
+                                        $qns=str_replace('?','_',$qns);
+                                     echo "<div class='question'><p>".$i.") ".$row['question']."</p>
                                     <ul>
-                                        <li>A) 13</li>
-                                        <li>B) 59</li>
-                                        <li>C) 35</li>
-                                        <li>D) 37</li>
+                                        <li>A) ".$row['op1']."</li>
+                                        <li>B) ".$row['op2']."</li>
+                                        <li>C) ".$row['op3']."</li>
+                                        <li>D) ".$row['op4']."</li>
                                     </ul>
-                                    <button class="btn btn-success">View Answer</button>
-                                </div>
-                                <hr>
-
-                                           <div class="question">
-                                    <p>2) A number when divided by a divisor leaves a remainder of 24.When twice the original number is divided by the same divisor, the remainder is 11. What is the value of the divisor?</p>
-                                    <ul>
-                                        <li>A) 13</li>
-                                        <li>B) 59</li>
-                                        <li>C) 35</li>
-                                        <li>D) 37</li>
-                                    </ul>
-                                    <button class="btn btn-success">View Answer</button>
-                                </div>
-                                <hr>
-                                           <div class="question">
-                                    <p>3) A number when divided by a divisor leaves a remainder of 24.When twice the original number is divided by the same divisor, the remainder is 11. What is the value of the divisor?</p>
-                                    <ul>
-                                        <li>A) 13</li>
-                                        <li>B) 59</li>
-                                        <li>C) 35</li>
-                                        <li>D) 37</li>
-                                    </ul>
-                                    <button class="btn btn-success">View Answer</button>
-                                </div>
-                                <hr>
-                                
-                            </div>
+                                    <a href='topic.php?cat=".$cat."&sub=".$sub."&qns=".$qns."'><button class='btn btn-success'>View Answer</button></a>
+                                    <div class='display'><span>Asked in ".$row['appeared']."</span> 
+                                </div></div>
+                                <hr>"; $i++;}
+                               $cat=str_replace('-',' ',preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['cat']));
+                               $sub=str_replace('-',' ',preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['sub']));
+                                $sql="select question,op1,op2,op3,op4,appeared from questions where category='".$cat."'AND sub='".$sub."'";
+                                $query=mysqli_query($conn,$sql);
+                                $numrows=mysqli_num_rows($query);
+                                if($numrows<=(($count+1)*5)&&$count!=0)
+                                {
+                                    $c=$count-1;
+                                    echo "<center><a href='quest.php?cat=Quantitative-Ability&sub=Number-Systems&page=".$c."'><button class='btn btn-success'>Prev</button></a>";
+                                }
+                                else{
+                                if($count>0){
+                                    $c=$count-1;
+                                echo "<center><a href=quest.php?cat=Quantitative-Ability&sub=Number-Systems&page=".$c."><button class='btn btn-success'>Prev</button></a>" ;
+                                $c=$count+1;
+                                echo"<a href=quest.php?cat=Quantitative-Ability&sub=Number-Systems&page=".$c."><button class='btn btn-success'>Next</button></a></center>";}
+                                else if(!($numrows<=(($count+1)*5)))
+                                { $c=$count+1;
+                                    echo "<center><a href='quest.php?cat=Quantitative-Ability&sub=Number-Systems&page=".$c."'><button class='btn btn-success'>Next</button></a>";} }?>
+                          </div>
                         </div>
                     </div>
                 </div>
