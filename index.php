@@ -195,7 +195,7 @@ mysqli_close($conn);
                 <div class="card"><h4>Engineering</h4><p>All the Engineering Notes and e-books can be viewed here</p>
           <br>
                     <ul>
-                    <li class="parent"><img src="assets/images/ebook.png"><br><span>E-books</span></li>
+                    <li class="parent"><img src="assets/images/ebook.png"><br><span>E-Books</span></li>
                     <li class="child"><img src="assets/images/questions.png"><br><span>Question Banks</span></li>
                     <li class="parent"><img src="assets/images/pros-and-cons.png"><br><span>Answer Keys</span></li> 
                   <li class="child"><img src="assets/images/questions-about-abecedary.png"><br><span>Question Paper</span></li>
