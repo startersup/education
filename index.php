@@ -211,7 +211,7 @@ mysqli_close($conn);
                     <li class="child"><img src="assets/images/3d-printing-software.png"><br><span> Hackathon</span></li>
                     <li class="parent"><img src="assets/images/tent.png"><br><span> Symposium</span></li> 
                         <li class="child"><img src="assets/images/world-cup.png"><br><span>Cultural Fest</span></li>
-                     <li class="parent"><img src="assets/images/running-man.png"><br><span> Sports</span> </li>
+                     <li class="parent"><img src="assets/images/running-man.png"><br><span> Sports Event</span> </li>
                     </ul>  
                   </div>
             </div>
