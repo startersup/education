@@ -176,11 +176,7 @@ mysqli_close($conn);
   <a href="#about" >Login / signup</a>  
 </div>
 </nav>
-       
-                                                                                  
-    <div class="preload"><img style="width:350px;" src="./assets/images/book-gif.gif">
-</div>
-    <div class="content">
+
         <section class="background">
         <div class="mainspeech">
           <h1>A Complete Guide for Engineering Students</h1>  
@@ -197,9 +193,9 @@ mysqli_close($conn);
                     <ul>
                     <li class="parent"><img src="assets/images/ebook.png"><br><span>E-Books</span></li>
                     <li class="child"><img src="assets/images/questions.png"><br><span>Question Banks</span></li>
-                    <li class="parent"><img src="assets/images/pros-and-cons.png"><br><span>Answer Keys</span></li> 
+                    <li class="parent"><img src="assets/images/pros-and-cons.png"><br><span>Ans Keys</span></li> 
                   <li class="child"><img src="assets/images/questions-about-abecedary.png"><br><span>Question Paper</span></li>
-                     <li class="parent"><img src="assets/images/refresh.png"><br>University Updates</li>
+                     <li class="child" style="width:60%;"><img src="assets/images/refresh.png"><br>University Updates</li>
                     </ul>
                 </div>
             </div>
@@ -211,7 +207,7 @@ mysqli_close($conn);
                     <li class="child"><img src="assets/images/3d-printing-software.png"><br><span> Hackathon</span></li>
                     <li class="parent"><img src="assets/images/tent.png"><br><span> Symposium</span></li> 
                         <li class="child"><img src="assets/images/world-cup.png"><br><span>Cultural Fest</span></li>
-                     <li class="parent"><img src="assets/images/running-man.png"><br><span> Sports Event</span> </li>
+                     <li class="child"><img src="assets/images/running-man.png"><br><span> Sports Event</span> </li>
                     </ul>  
                   </div>
             </div>
@@ -220,24 +216,56 @@ mysqli_close($conn);
                   <br>
                       <ul>
                     <li class="parent"><img src="assets/images/briefcase.png"><br><span>Job Alerts</span></li>
-                    <li class="child"><img src="assets/images/review.png"><br><span>Company Review</span></li>
+                    <li class="child"><img src="assets/images/review.png"><br><span>Companies</span></li>
                     <li class="parent"><img src="assets/images/interview.png"><br><span>Aptitude</span></li> 
                         <li class="child"><img src="assets/images/learning.png"><br><span> Online Test</span></li>
-                     <li class="parent"><img src="assets/images/presentation.png"><br> <span>Internships</span> </li>
+                     <li class="child"><img src="assets/images/presentation.png"><br> <span>Internships</span> </li>
                     </ul> </div>
             </div>
             </div>
          
         </div>   
-    </section>
-       
-    </div>
+    </section><br><br>
      <div class="icon-bar hidden-xs">
   <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
   <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
   <a href="#" class="google"><i class="fa fa-google"></i></a> 
   <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
 </div>
+    
+    <footer>
+        <div class="container">
+    <div class="row">
+        <div class="col-md-3 col-xs-6">
+        <h4>Popular Links</h4>
+            <p>Public Forum</p>
+            <p>Latest News</p>
+            <p>Blogs</p>
+        </div>
+          <div class="col-md-3 col-xs-6">
+        <h4>Popular Tags</h4>
+            <p>University Papers</p>
+            <p>Exam Results</p>
+            <p>Events Happening</p>
+        </div>
+         <div class="col-md-3 col-xs-6">
+        <h4>Placements</h4>
+            <p>Job Interviews</p>
+             <p>Mock Test</p>
+            <p>Internship Oppurtunity</p>
+        </div>
+             <div class="col-md-3 col-xs-6">
+        <h4>Contact Us</h4>
+            <p>Information</p>
+            <p>Complaints</p>
+            <p>Contribution</p>
+        </div>
+        </div>
+          <br><br>
+          <center>  <p>Copyrights &copy; 2019 Educate Kid. All Rights Reserved </p></center>
+        </div>
+    </footer>
+    
     <script>
 $(function() {
     $(".preload").fadeOut(3000, function() {

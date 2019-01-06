@@ -657,11 +657,11 @@ color:#007bff;
 {
    position: relative;
     display: inline-block;
-    border-bottom: 1px solid #f5f5f5;
-    border-left: 1px solid #f5f5f5;
-     padding: 30px 10px 10px;
+    padding: 10px 10px 10px;
     font-size: 14px;
+    width:50%;
     text-align: center;
+    border-bottom: 1px solid #f5f5f5;
     vertical-align: bottom;
     transition: 0.5s ease;
     cursor: pointer;
@@ -670,13 +670,15 @@ color:#007bff;
 {
    position: relative;
     display: inline-block;
-    border-bottom: 1px solid #f5f5f5;
-     padding: 30px 10px 10px;
+    padding: 10px 10px 10px;
     font-size: 14px;
+     width:40%;
     text-align: center;
+    border-bottom: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5;
     vertical-align: bottom;
     transition: 0.5s ease;
-     cursor: pointer;
+    cursor: pointer;    
 }
 
 .parent span
@@ -687,6 +689,32 @@ color:#007bff;
 {
     padding:5px;
 }
+
+footer
+{
+    padding:10px;
+    background-color:#333333;
+    min-height:200px;
+    z-index:-1000;
+    color:#CACACA;
+    font-family: 'ProximaNovaRgRegular';
+}
+footer p
+{
+    font-family: 'ProximaNovaRgRegular';
+    color:#CACACA;
+    
+}
+
+footer h4
+{
+    font-family: 'ProximaNovaSemibold';
+    padding:5px 0px;
+    width:50%;
+    border-bottom: 1px solid #9352f9;
+    border
+}
+
 /*rightmodal*/
 	.modal.right .modal-dialog {
 		position: fixed;
