@@ -101,11 +101,6 @@ if ($conn->query($sql) === TRUE) {
                                             <p>Option 4:</p>
                                             <input name="op4" type="text" class="form-control" placeholder="">
                                         </div>
-                                          <div class="col-md-12">
-                               <p>Question Name:</p>
-                                     <input name="qname" type="text" class="form-control" placeholder="Eg:xyzzz....">
-                                    </div>
-                                    
                                 </div></div>
                                 <div class="col-md-6">
 
