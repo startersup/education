@@ -1,5 +1,5 @@
 body{
-		font-family: Roboto,helvetica neue,sans-serif;
+		font-family: 'ProximaNovaSemibold';
     letter-spacing:0.3px;
     overflow-x: hidden;
 	}
@@ -52,6 +52,8 @@ body{
 	}
 	.navbar .nav li a {
 		color: #ffffff;
+        font-size:15px;
+        font-family: 'ProximaNovaSemibold';
 	}
 	.navbar .nav li a:hover {
 		color: yellow;

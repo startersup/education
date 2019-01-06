@@ -11,10 +11,9 @@ body {
 .nav-right
 {
     margin-left:100px;
+    
 }
-.topnav a:hover {
 
-}
 .navbar-brand span
 {
     font-size:17px;
@@ -27,7 +26,10 @@ body {
 {
     margin:0 10px;
 }
-
+.navbar
+{
+    border:none !important;
+}
 .navbar-default .navbar-toggle {
     border-color: transparent;
     border:none !important;
@@ -113,6 +115,7 @@ color:#007bff;
      .nav-tabs > li > a
     {
         font-size:13px;
+        font-family:'proximanovasemibold';
     }
      .preload { 
         width:500px;
@@ -599,9 +602,17 @@ color:#007bff;
     padding:20px;
 }
 
-
-
-
+.mainspeech
+{
+    padding-top:120px;
+    text-align: center;
+}
+.mainspeech h2
+{
+   font-family: 'ProximaNovaBold';
+    color:#000000;
+    font-weight:400;
+}
 
 /*rightmodal*/
 	.modal.right .modal-dialog {
