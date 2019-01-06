@@ -20,6 +20,7 @@ include 'config.php';
     <link rel="stylesheet" href="./assets/css/style.css">
   <script src="./assets/js/sidenav.js"></script>  
   <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
       <link rel="stylesheet" href="./assets/css/comment.css">
       <script src="./assets/js/sidenav.js"></script> 
 </head>
