@@ -73,7 +73,7 @@ mysqli_close($conn);
       <link rel="stylesheet" href="./assets/css/fonts.css">
       <script src="./assets/js/sidenav.js"></script> 
 </head>
-<body style="background-color:#fafafa;">
+<body style="background-color:#fdfdfd;">
 <nav class="navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-light">
 	<div class="navbar-header d-flex col">
 		<a class="navbar-brand" href="#">Educate<b> Kid</b></a>  		
@@ -178,7 +178,7 @@ mysqli_close($conn);
 </nav>
        
                                                                                   
-    <div class="preload"><p style="float:inherit;font-size:20px;margin-left:5%;">Preparing Kit for you.....</p><img style="width:350px;" src="./assets/images/book-gif.gif">
+    <div class="preload"><img style="width:350px;" src="./assets/images/book-gif.gif">
 </div>
     <div class="content">
         <section class="background">
