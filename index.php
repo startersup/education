@@ -73,7 +73,7 @@ mysqli_close($conn);
       <link rel="stylesheet" href="./assets/css/fonts.css">
       <script src="./assets/js/sidenav.js"></script> 
 </head>
-<body>
+<body style="background-color:#fafafa;">
 <nav class="navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-light">
 	<div class="navbar-header d-flex col">
 		<a class="navbar-brand" href="#">Educate<b> Kid</b></a>  		
@@ -88,7 +88,7 @@ mysqli_close($conn);
 				<ul class="dropdown-menu">					
 					<li><a href="#" class="dropdown-item">Engineering E-Books</a></li>
 					<li><a href="qbank.html" class="dropdown-item">Engineering Question Banks</a></li>
-                    <li><a href="aptitude.php" class="dropdown-item">Aptitude</a></li>
+                    <li><a href="aptitude.php" class="dropdown-item">Aptitude Practice</a></li>
 					<li><a href="#" class="dropdown-item">Placement Papers</a></li>
 					<li><a href="job.html" class="dropdown-item">Job Alerts</a></li>
 				</ul>
@@ -183,33 +183,49 @@ mysqli_close($conn);
     <div class="content">
         <section class="background">
         <div class="mainspeech">
-          <h2>A Complete Guide for Engineering Students</h2>  
+          <h1>A Complete Guide for Engineering Students</h1>  
+            <h3>A Forum that integrates all the betterments of Engineering students to attain Success.</h3>
         </div>
         </section>
     <section class="main" id="main">
-        <div class="container">
-<!--
-            <div class="metrics">
-            <div class="row">
-                <div class="col-md-3 col-xs-6">
-                 <div class="card curve color1"> <center><img src="assets/images/meeting.png"><p>Total Interviews : 50</p></center>
-                    </div>
+        <div class="container border">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card"><h4>Engineering</h4><p>All the Engineering Notes and e-books can be viewed here</p>
+          <br>
+                    <ul>
+                    <li class="parent"><img src="assets/images/ebook.png">E-books</li>
+                    <li class="child"><img src="assets/images/questions.png">Question Banks</li>
+                    <li class="parent"><img src="assets/images/pros-and-cons.png">AnswerKeys</li> 
+                        <li class="child"><img src="assets/images/questions-about-abecedary.png">Question Paper</li>
+                     <li class="parent"><img src="assets/images/refresh.png">University Updates</li>
+                    </ul>
                 </div>
-         <div class="col-md-3 col-xs-6">
-                 <div class="card curve color2"><center><img src="assets/images/presentation.png"> <p>Total Symposium : 50</p></center>
-                    </div>
-                </div>
-                  <div class="col-md-3 col-xs-6">
-                 <div class="card curve color3"><center><img src="assets/images/conference.png"><p>Total Conference : 50</p></center>
-                    </div>
-                </div>
-                  <div class="col-md-3 col-xs-6">
-                 <div class="card curve color4"><center><img src="assets/images/businessman.png"><p>Active Users : 2909</p></center> 
-                    </div>
-                </div>
-                </div>
-        </div>
--->
+            </div>
+              <div class="col-md-4">
+                  <div class="card"><h4>Knowledge</h4><p>All the latest stuff apart from Textbook will be notified frequently</p>
+                  <br>
+                      <ul>
+                    <li class="parent"><img src="assets/images/conference.png"> Conference</li>
+                    <li class="child"><img src="assets/images/3d-printing-software.png"> Hackathon</li>
+                    <li class="parent"><img src="assets/images/tent.png"> Symposium</li> 
+                        <li class="child"><img src="assets/images/world-cup.png">Contest</li>
+                     <li class="parent"><img src="assets/images/running-man.png"> Sports </li>
+                    </ul>  
+                  </div>
+            </div>
+              <div class="col-md-4">
+             <div class="card"><h4>Placements</h4><p>All the placements related queries and information can be viewed here</p>
+                  <br>
+                      <ul>
+                    <li class="parent"><img src="assets/images/briefcase.png">Job Alerts</li>
+                    <li class="child"><img src="assets/images/review.png"> Company Review</li>
+                    <li class="parent"><img src="assets/images/interview.png">Aptitude</li> 
+                        <li class="child"><img src="assets/images/learning.png"> Online Test</li>
+                     <li class="parent"><img src="assets/images/presentation.png"> Internships </li>
+                    </ul> </div>
+            </div>
+            </div>
          
         </div>   
     </section>

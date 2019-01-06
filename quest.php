@@ -17,6 +17,7 @@ include 'config.php';
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Roboto:500" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/comment.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
     <script src="./assets/js/sidenav.js"></script>
    
 </head>
