@@ -233,7 +233,10 @@ p
     font-size:15px; 
     line-height: 26px;
 }
-
+.center
+{
+    position: absolute;
+}
 .container1
 {
    margin-left:5%; 
@@ -578,6 +581,7 @@ color:#007bff;
     background-color:#f4f4f4;
     min-height:30px;
     padding:10px;
+   
 }
 .card-footer a
 {
