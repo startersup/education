@@ -163,7 +163,7 @@
 					<h4 class="modal-title" id="myModalLabel2">Edit Question #134</h4>
 				</div>
 
-				<div class="modal-body noborder" style="background-color:#FAFAFA;">
+				<div class="modal-body noborder">
 				  <p>Question</p>
                     <textarea class="question form-control" rows="6" cols="30">
 A number when divided by a divisor leaves a remainder of 24.When twice the original number is divided by the same divisor, the remainder is 11. What is the value of the divisor?
@@ -173,13 +173,13 @@ A number when divided by a divisor leaves a remainder of 24.When twice the origi
                     <p>Options</p>
                     <div class="row">
                     <div class="col-xs-6">
-                        <input type="text" class="form-control" value="20">
+                        <input type="text" class="form-control" value="1) 20">
                         </div> <div class="col-xs-6">
-                        <input type="text" class="form-control" value="20">
+                        <input type="text" class="form-control" value="2) 30">
                         </div> <div class="col-xs-6"><br>
-                        <input type="text" class="form-control" value="20">
+                        <input type="text" class="form-control" value="3) 40">
                         </div> <div class="col-xs-6"><br>
-                        <input type="text" class="form-control" value="20">
+                        <input type="text" class="form-control" value="4) 50">
                         </div>
                     </div><br>
                      <p>Description</p>
@@ -211,11 +211,12 @@ label {
 }
      .noborder textarea
     {
-        border:1px solid #f4f4f4;
+        border:none !important;
+      
     }
  .noborder input
     {
-        border:1px solid #f4f4f4;
+         border:none !important;  
     }
     </style>
     <script>$(document).ready(function() {
