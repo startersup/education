@@ -2,7 +2,7 @@
  session_start(); 
  if(isset($_SESSION["userid"]))
  {
-    echo '<script language="javascript">window.onload = function() {document.getElementById("log").text="Welcome '.$_SESSION["uname"].'!";
+    echo '<script language="javascript">window.onload = function() {document.getElementById("log").text="'.$_SESSION["uname"].'!";
          document.getElementById("log").setAttribute("data-toggle","false"); document.getElementById("sign").text="Logout"; document.getElementById("sign").setAttribute("data-toggle","false");
             document.getElementById("sign").setAttribute("href","logout.php");}</script>';
 }
