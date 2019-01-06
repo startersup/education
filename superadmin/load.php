@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-include 'configtemp.php';
+include 'config.php';
 $id=uniqid("QNS");
 $qn = $_POST["qn"];
 $op1 = $_POST["op1"];
