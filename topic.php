@@ -145,6 +145,7 @@ include 'config.php';
                                 <?php 
                                 $qns=str_replace('-',' ',preg_replace('#[ ]#i', '', $_GET['qns']));
                                 //$qns=$qns."?";
+                                echo $_GET['qns'];
                                 $qns=str_replace('_','?',$qns);
                                 $cat=str_replace('-',' ',preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['cat']));
                                 $sub=str_replace('-',' ',preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['sub']));
