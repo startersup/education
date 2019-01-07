@@ -3,15 +3,15 @@
  if(isset($_SESSION["userid"]))
  {
    
-     	<li class="nav-item dropdown">
-				<a data-toggle="dropdown" href="#" class="nav-link dropdown-toggle"> saicharan !</a>
-				<ul class="dropdown-menu">					
-					<li><a href="#" class="dropdown-item">Profile</a></li>
-					<li><a href="qbank.html" class="dropdown-item">your post</a></li>
-                    <li><a href="aptitude.php" class="dropdown-item">Settings</a></li>
-					
-				</ul>
-			</li>
+//     	<li class="nav-item dropdown">
+//				<a data-toggle="dropdown" href="#" class="nav-link dropdown-toggle"> saicharan !</a>
+//				<ul class="dropdown-menu">					
+//					<li><a href="#" class="dropdown-item">Profile</a></li>
+//					<li><a href="qbank.html" class="dropdown-item">your post</a></li>
+//                    <li><a href="aptitude.php" class="dropdown-item">Settings</a></li>
+//					
+//				</ul>
+//			</li>
 }
   
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
