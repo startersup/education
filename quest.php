@@ -205,42 +205,7 @@ include 'config.php';
             </div>
         </div>
     </section>
-    <style>
-        li {
-            list-style-type: none;
-            font-size: 15px;
-            padding:10px 0px;
-            font-family: Roboto, sans-serif;
-        }
-        .fa-comment {
-            margin-top: 10px;
-            font-size: 14px;
-        }
-        .comment {
-            font-family: Roboto, sans-serif;
-            margin-top: 10px;
-            font-size: 14px;
-        }
-        @media screen and (max-width: 600px) {
-            .card {
-                transition: 0.3s;
-                width: 100%;
-                z-index: -1000;
-                background-color: #ffffff;
-                padding: 5px;
-                margin-top: 10px;
-            }
-            li {
-                list-style-type: none;
-                font-size: 15px;
-                padding:10px 0px;
-                font-family: Roboto, sans-serif;
-            }
-            .container1 {
-                margin: 0px !important;
-            }
-        }
-    </style>
+   
 </body>
 
 </html>
