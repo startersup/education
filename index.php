@@ -3,17 +3,9 @@
  if(isset($_SESSION["userid"]))
  {
    
-//     	<li class="nav-item dropdown">
-//				<a data-toggle="dropdown" href="#" class="nav-link dropdown-toggle"> saicharan !</a>
-//				<ul class="dropdown-menu">					
-//					<li><a href="#" class="dropdown-item">Profile</a></li>
-//					<li><a href="qbank.html" class="dropdown-item">your post</a></li>
-//                    <li><a href="aptitude.php" class="dropdown-item">Settings</a></li>
-//					
-//				</ul>
-//			</li>
+     	
 }
-  
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 include 'config.php';
   if (isset($_POST["login"])) {
@@ -60,6 +52,22 @@ if ($conn->query($sql) === TRUE) {
 mysqli_close($conn);
 }
 ?>
+
+
+
+<!--
+  <li class="nav-item dropdown">
+				<a data-toggle="dropdown" href="#" class="nav-link dropdown-toggle"> saicharan !</a>
+				<ul class="dropdown-menu">					
+					<li><a href="#" class="dropdown-item">Profile</a></li>
+					<li><a href="qbank.html" class="dropdown-item">your post</a></li>
+                    <li><a href="aptitude.php" class="dropdown-item">Settings</a></li>
+					
+				</ul>
+			</li>
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
