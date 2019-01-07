@@ -2,9 +2,7 @@
  session_start(); 
  if(isset($_SESSION["userid"]))
  {
-    echo '<script language="javascript">window.onload = function() {document.getElementById("log").text="'.$_SESSION["uname"].'!";
-         document.getElementById("log").setAttribute("data-toggle","false"); document.getElementById("sign").text="out"; document.getElementById("sign").setAttribute("data-toggle","false");
-            document.getElementById("sign").setAttribute("href","logout.php");}</script>';
+    echo '.$_SESSION["uname"].';
 }
   
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
