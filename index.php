@@ -62,7 +62,7 @@ mysqli_close($conn);
 					<li><a href="#" class="dropdown-item">Profile</a></li>
 					<li><a href="qbank.html" class="dropdown-item">your post</a></li>
                     <li><a href="aptitude.php" class="dropdown-item">Settings</a></li>
-					
+					<li><a href="aptitude.php" class="dropdown-item">Logout</a></li>
 				</ul>
 			</li>
 -->
