@@ -88,15 +88,15 @@ for(i=0;i<list.length;i++)
     </div>
 
 
-    <div id="mySidebar" class="sidepanel" >
-  <a href="admin.html">Dashboard</a>
-   <a href="pages.html">Pages List</a>
-    <a href="uer.html">Web Userlist</a> 
-    <a href="jobs.html">Jobs List</a> 
-     <a href="eventlist.html">Events List</a> 
-    <a href="load.php">Upload Data</a>   
-         <a href="qlist.php">Questions</a>  
-        <a href="settings.html">Settings</a>  
+<div id="mySidebar" class="sidepanel" >
+  <a href="./admin.html">Dashboard</a>
+   <a href="./pages.html">Pages List</a>
+    <a href="./uer.html">Web Userlist</a> 
+    <a href="./jobs.html">Jobs List</a> 
+     <a href="./eventlist.html">Events List</a> 
+    <a href="./load.php">Upload Data</a>   
+         <a href="./qlist.php">Questions</a>  
+        <a href="./settings.html">Settings</a>  
 </div>
 
     <section class="main" id="main">
