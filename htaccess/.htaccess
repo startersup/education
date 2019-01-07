@@ -10,3 +10,9 @@ RewriteRule ^quants/([0-9a-zA-Z_-]+)$ quants.php?cat=$1 [NC,L]
 
 
 RewriteRule ^topic/([0-9a-zA-Z_-]+)/([0-9a-zA-Z_-]+)/(.+)$ topic.php?cat=$1&sub=$2&qns=$3 [NC,L]
+
+RewriteRule ^logic/([0-9a-zA-Z_-]+)$ quants.php?cat=$1 [NC,L]
+
+
+RewriteRule ^verbal/([0-9a-zA-Z_-]+)$ quants.php?cat=$1 [NC,L]
+

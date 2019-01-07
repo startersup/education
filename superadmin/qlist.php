@@ -1,4 +1,12 @@
-
+<?php
+session_start();
+include 'config.php';
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (isset($_POST["up"])) {
+    $sql="update questions set question='".trim($_POST['qns'])."',answer='".trim($_POST['ans'])."',op1='".trim($_POST['op1'])."',op2='".trim($_POST['op2'])."',op3='".trim($_POST['op3'])."',op4='".trim($_POST['op4'])."',explanation='".trim($_POST['exp'])."' where qid='".trim($_POST['id'])."' ";
+    $query = mysqli_query($conn,$sql);
+  }}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,6 +26,19 @@
     <link rel="stylesheet" href="./css/admin.css">
   <script src="./js/side.js"></script>  
 </head>
+<script type="text/javascript">
+    function update(txt){
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("update").innerHTML = this.responseText;
+      }
+    };
+    xmlhttp.open("GET", "./update.php?q=" + txt, true);
+    xmlhttp.send();
+  }
+</script>
+
 <body>
 <div class="navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-light">
     <div class="admin">
@@ -51,94 +72,21 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>134</td>
-                <td> A number when divided by a divisor leaves a remainder of 24.When twice the original number is divided by the same divisor, the remainder is 11. What is the value of the divisor?</td>
-                 <td>20</td>
-                <td>13 15 20 25</td>
-                 <td>bla bla bla bla bla bla bla</td>
-                <td><button class="btn btn-success"  data-toggle="modal" data-target="#myModal2">Update</button></td>
-            </tr>
-                 <tr>
-                <td>134</td>
-                <td> A number when divided by a divisor leaves a remainder of 24.When twice the original number is divided by the same divisor, the remainder is 11. What is the value of the divisor?</td>
-                 <td>20</td>
-                <td>13 15 20 25</td>
-                 <td>bla bla bla bla bla bla bla</td>
-                <td><button class="btn btn-success" data-toggle="modal" data-target="#myModal2">Update</button></td>
-            </tr>
-             <tr>
-                <td>134</td>
-                <td> A number when divided by a divisor leaves a remainder of 24.When twice the original number is divided by the same divisor, the remainder is 11. What is the value of the divisor?</td>
-                 <td>20</td>
-                <td>13 15 20 25</td>
-                 <td>bla bla bla bla bla bla bla</td>
-                <td><button class="btn btn-success">Update</button></td>
-            </tr>
-             <tr>
-                <td>134</td>
-                <td> A number when divided by a divisor leaves a remainder of 24.When twice the original number is divided by the same divisor, the remainder is 11. What is the value of the divisor?</td>
-                 <td>20</td>
-                <td>13 15 20 25</td>
-                 <td>bla bla bla bla bla bla bla</td>
-                <td><button class="btn btn-success">Update</button></td>
-            </tr>
-             <tr>
-                <td>134</td>
-                <td> A number when divided by a divisor leaves a remainder of 24.When twice the original number is divided by the same divisor, the remainder is 11. What is the value of the divisor?</td>
-                 <td>20</td>
-                <td>13 15 20 25</td>
-                 <td>bla bla bla bla bla bla bla</td>
-                <td><button class="btn btn-success">Update</button></td>
-            </tr>
-             <tr>
-                <td>134</td>
-                <td> A number when divided by a divisor leaves a remainder of 24.When twice the original number is divided by the same divisor, the remainder is 11. What is the value of the divisor?</td>
-                 <td>20</td>
-                <td>13 15 20 25</td>
-                 <td>bla bla bla bla bla bla bla</td>
-                <td><button class="btn btn-success">Update</button></td>
-            </tr>
-             <tr>
-                <td>134</td>
-                <td> A number when divided by a divisor leaves a remainder of 24.When twice the original number is divided by the same divisor, the remainder is 11. What is the value of the divisor?</td>
-                 <td>20</td>
-                <td>13 15 20 25</td>
-                 <td>bla bla bla bla bla bla bla</td>
-                <td><button class="btn btn-success">Update</button></td>
-            </tr>
-             <tr>
-                <td>134</td>
-                <td> A number when divided by a divisor leaves a remainder of 24.When twice the original number is divided by the same divisor, the remainder is 11. What is the value of the divisor?</td>
-                 <td>20</td>
-                <td>13 15 20 25</td>
-                 <td>bla bla bla bla bla bla bla</td>
-                <td><button class="btn btn-success">Update</button></td>
-            </tr>
-             <tr>
-                <td>134</td>
-                <td> A number when divided by a divisor leaves a remainder of 24.When twice the original number is divided by the same divisor, the remainder is 11. What is the value of the divisor?</td>
-                 <td>20</td>
-                <td>13 15 20 25</td>
-                 <td>bla bla bla bla bla bla bla</td>
-                <td><button class="btn btn-success">Update</button></td>
-            </tr> <tr>
-                <td>134</td>
-                <td> A number when divided by a divisor leaves a remainder of 24.When twice the original number is divided by the same divisor, the remainder is 11. What is the value of the divisor?</td>
-                 <td>20</td>
-                <td>13 15 20 25</td>
-                 <td>bla bla bla bla bla bla bla</td>
-                <td><button class="btn btn-success">Update</button></td>
-            </tr>
-            <tr>
-                <td>134</td>
-                <td> A number when divided by a divisor leaves a remainder of 24.When twice the original number is divided by the same divisor, the remainder is 11. What is the value of the divisor?</td>
-                 <td>20</td>
-                <td>13 15 20 25</td>
-                 <td>bla bla bla bla bla bla bla</td>
-                <td><button class="btn btn-success">Update</button></td>
-            </tr>
-            
+        <?php
+           $sql= "select qid,question,answer,op1,op2,op3,op4,explanation from questions";
+           $query= mysqli_query($conn,$sql);
+           while($row = mysqli_fetch_assoc($query)) { 
+            $id=$row['qid'];
+            echo '<tr>
+                <td>'.$row['qid'].'</td>
+                <td>'.$row['question'].' </td>
+                 <td>'.$row['answer'].'</td>
+                <td>'.$row['op1']." ".$row['op2']." ".$row['op3']." ".$row['op4'].'</td>
+                 <td>'.$row['explanation'].'</td>
+                <td><button class="btn btn-success" onclick="update(\''.$id. '\')" data-toggle="modal" data-target="#myModal2">Update</button></td>
+            </tr>';
+             }
+            ?>
         </tbody>
         <tfoot>
             <tr>
@@ -157,37 +105,8 @@
         <!-- Modal -->
 	<div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
 		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title" id="myModalLabel2">Edit Question #134</h4>
-				</div>
-
-				<div class="modal-body noborder">
-				  <p>Question</p>
-                    <textarea class="question form-control" rows="6" cols="30">
-A number when divided by a divisor leaves a remainder of 24.When twice the original number is divided by the same divisor, the remainder is 11. What is the value of the divisor?
-                 </textarea><br>
-                     <p>Answer</p>
-                    <input type="text" class="form-control" value="20"><br>
-                    <p>Options</p>
-                    <div class="row">
-                    <div class="col-xs-6">
-                        <input type="text" class="form-control" value="1) 20">
-                        </div> <div class="col-xs-6">
-                        <input type="text" class="form-control" value="2) 30">
-                        </div> <div class="col-xs-6"><br>
-                        <input type="text" class="form-control" value="3) 40">
-                        </div> <div class="col-xs-6"><br>
-                        <input type="text" class="form-control" value="4) 50">
-                        </div>
-                    </div><br>
-                     <p>Description</p>
-                    <textarea class="question form-control" rows="4" cols="30">
-blah blah blah blah blah blah blah
-                 </textarea><br>
-                   <center><button class="btn btn-success">Update</button></center> 
-				</div>
+			<div id="update" class="modal-content">
+				
 
 			</div><!-- modal-content -->
 		</div><!-- modal-dialog -->
@@ -229,14 +148,13 @@ label {
        } 
         );
 } );
-
-
 function checkAll(bx) {
   var cbs = document.getElementsByTagName('input');
   for(var i=0; i < cbs.length; i++) {
     if(cbs[i].type == 'checkbox') {
       cbs[i].checked = bx.checked;
     }
-  }
+  } 
 }</script>
-    </body></html>
+    </body>
+    </html>

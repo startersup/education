@@ -37,6 +37,44 @@ if ($conn->query($sql) === TRUE) {
     <link rel="stylesheet" href="../assets/css/nav.css">
     <link rel="stylesheet" href="./css/admin.css">
     <script src="./js/side.js"></script>
+    <script>
+    	function myFunction() {
+  var s = document.getElementById("sel1").value;
+  switch(s)
+  {
+  	case "Quantitative Ability":
+      var list=["Number Systems","Average","Percentage","Profit Loss","Time Speed Distance","Data Interpretation","Probability","Mixture Solution","Ratio Proportion"];
+        pop(list);  
+      break;
+      case "Logical Reasoning":
+              var list=["Arrangements","Ordering and ranking","Blood Relations","Team Formations","Blood Relations","Syllogisms","Analytical Puzzles","Number Series","Clock and Calendar Problems "]; 
+              pop(list);
+              break;         
+      case "Verbal Ability":
+      	var list=["Reading Comprehension","Jumbled Sentences","Synonyms Antonyms","Error Spotting","Sentence Corrections","Summary Writing","Para completion","Critical Reasoning","Listen Answer"];
+      	pop(list);
+      	break;
+  }
+}
+function pop(list)
+{
+	var i;
+	var x = document.getElementById("sel2");
+	while (x.hasChildNodes()) {
+    x.removeChild(x.lastChild);
+}
+for(i=0;i<list.length;i++)
+      {
+      var op = document.createElement("option");
+       var att= document.createAttribute("value");
+       att.value=list[i];
+       var txt=document.createTextNode(list[i]);
+       op.setAttributeNode(att);
+       op.appendChild(txt);
+       x.appendChild(op);
+      }	
+}
+</script>
 </head>
 
 <body>
@@ -110,7 +148,8 @@ if ($conn->query($sql) === TRUE) {
                                             <input name="ans" type="text" class="form-control" placeholder="">
                                             <br>
                                             <p>Question Type:</p>
-                                            <select name="cat" class="form-control" id="sel1">
+                                            <select name="cat" class="form-control" onchange="myFunction()" id="sel1">
+                                                <option value="" disabled selected style="display:none;">Select</option>
                                                 <option>Quantitative Ability</option>
                                                 <option>Logical Reasoning</option>
                                                 <option>Verbal Ability</option>
@@ -118,7 +157,9 @@ if ($conn->query($sql) === TRUE) {
                                             <br>
 <!-- HEAD:superadmin/load.html-->
                                               <p>Subcategory:</p>
-                                     <input name="subcat" type="text" class="form-control" placeholder="Eg:Number systems, time & speed...">
+                                     <select name="subcat" class="form-control" id="sel2">
+                                                 <option value="" disabled selected style="display:none;">Select</option>
+                                            </select>
 <!-- c0f4e1839a5f7eb27a33df6a036df1406818546a:superadmin/load.php-->
                                         </div>
  <!--HEAD:superadmin/load.html-->

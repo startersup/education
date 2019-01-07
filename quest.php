@@ -1,10 +1,11 @@
 <?php
 session_start();
-include 'config.php';
+include 'configtemp.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<base href="/">
   <meta charset="utf-8">
 <title>Engineering Kit</title>
         <link rel="icon" href="./assets/images/speed.png" type="image/gif" sizes="16x16">
@@ -132,7 +133,7 @@ include 'config.php';
                     <div class="Education">
                         <br>
                         <div class="card topping">
-                            <h3><i class="fa fa-star" aria-hidden="true"></i> <?php echo $_GET["sub"]; ?> </h3>
+                            <h3><i class="fa fa-star" aria-hidden="true"></i> <?php $sub= str_replace("_", " & ",$_GET["sub"] ); $sub= str_replace("-", " ",$sub ); echo $sub; ?> </h3>
                             <hr>
                             <div id="preloader">
                                 <div id="status">&nbsp;</div>
@@ -143,7 +144,9 @@ include 'config.php';
                                      $lim=5*$count;
                                      $cat=str_replace('-',' ',preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['cat']));
                                      $sub=str_replace('-',' ',preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['sub']));
+                                     $sub=str_replace('_',' ',$sub);
                                      $sql="select question,op1,op2,op3,op4,appeared from questions where category='".$cat."'AND sub='".$sub."' LIMIT ".$lim.",5";
+                                     //echo $sql;
                                      $query=mysqli_query($conn,$sql);
                                      $i=1;
                                      $cat=preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['cat']);

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'config.php';
+include 'configtemp.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -135,7 +135,7 @@ include 'config.php';
                     <div class="Education">
                         <br>
                         <div class="card topping">
-                            <h3><i class="fa fa-star" aria-hidden="true"></i> Number Systems</h3>
+                            <h3><i class="fa fa-star" aria-hidden="true"></i><?php $sub= str_replace("_", " & ",$_GET["sub"] ); $sub= str_replace("-", " ",$sub ); echo $sub; ?></h3>
                             <hr>
                             <div id="preloader">
                                 <div id="status">&nbsp;</div>
@@ -148,6 +148,7 @@ include 'config.php';
                                 $qns=str_replace('_','?',$qns);
                                 $cat=str_replace('-',' ',preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['cat']));
                                 $sub=str_replace('-',' ',preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['sub']));
+                                $sub=str_replace('_',' ',$sub);
                                 $sql="select question,op1,op2,op3,op4,appeared,answer,explanation from questions where category='".$cat."' AND sub='".$sub."' AND question='".$qns."'";
                                 $query=mysqli_query($conn,$sql);
                                 //echo $sql;

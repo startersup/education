@@ -139,51 +139,51 @@
             <br>
         <div class="col-md-4">
             <div class="card hover topics"><h4>Reading Comprehension</h4>
-               <center><a href="quest.php?cat=Quantitative-Ability&sub=Number-Systems&page=0"> <button class="button black">Start Practice</button></a></center>
+               <center><a href="quest.php?cat=Quantitative-Ability&sub=Reading-Comprehension&page=0"> <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
-                 <div class="card hover topics"><h4>Jumbled sentences</h4>
-               <center> <button class="button black">Start Practice</button></center>
+                 <div class="card hover topics"><h4>Jumbled Sentences</h4>
+               <center><a href="quest.php?cat=Quantitative-Ability&sub=Jumbled-Sentences&page=0">  <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
                      <div class="card hover topics"><h4>Synonyms & Antonyms</h4>
-               <center> <button class="button black">Start Practice</button></center>
+               <center> <a href="quest.php?cat=Quantitative-Ability&sub=Synonyms_Antonyms&page=0"> <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
         </div>
                     <div class="row" >
         <div class="col-md-4">
             <div class="card hover topics"><h4>Error Spotting</h4>
-               <center> <button class="button black">Start Practice</button></center>
+               <center> <a href="quest.php?cat=Quantitative-Ability&sub=Error-Spotting&page=0"> <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
                  <div class="card hover topics"><h4>Sentence Corrections</h4>
-               <center> <button class="button black">Start Practice</button></center>
+               <center> <a href="quest.php?cat=Quantitative-Ability&sub=Sentence-Corrections&page=0"> <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
                      <div class="card hover topics"><h4>Summary Writing</h4>
-               <center> <button class="button black">Start Practice</button></center>
+               <center><a href="quest.php?cat=Quantitative-Ability&sub=Summary-Writing&page=0">  <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
         </div>     
            <div class="row" >
         <div class="col-md-4">
             <div class="card hover topics"><h4>Para-completion</h4>
-               <center> <button class="button black">Start Practice</button></center>
+               <center><a href="quest.php?cat=Quantitative-Ability&sub=Para-completion&page=0">  <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
                  <div class="card hover topics"><h4>Critical Reasoning</h4>
-               <center> <button class="button black">Start Practice</button></center>
+               <center><a href="quest.php?cat=Quantitative-Ability&sub=Critical-Reasoning&page=0">  <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
                      <div class="card hover topics"><h4>Listen & Answer</h4>
-               <center> <button class="button black">Start Practice</button></center>
+               <center> <a href="quest.php?cat=Quantitative-Ability&sub=Lister_Answer&page=0"> <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
         </div>     

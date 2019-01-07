@@ -172,7 +172,7 @@
                 <li>Clock and Calendar Problems</li>
                     
                 </ul>        
-               <center> <button class="button black">Start Practice</button></center>
+               <center><a href="./logic.php?cat=Logical-Reasoning"> <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
@@ -190,7 +190,7 @@
                     <li>Listen & Answer</li>
                 </ul>
                 
-               <center> <button class="button black">Start Practice</button></center>
+               <center><a href="./verbal.php?cat=Verbal-Ability"> <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
         </div>

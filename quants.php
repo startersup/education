@@ -39,46 +39,46 @@
             </div>
                <div class="col-md-4">
                  <div class="card hover topics"><h4>Average</h4>
-               <center> <button class="button black">Start Practice</button></center>
+               <center> <a href="quest.php?cat=Quantitative-Ability&sub=Average&page=0"><button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
                      <div class="card hover topics"><h4>Percentage</h4>
-               <center> <button class="button black">Start Practice</button></center>
+               <center><a href="quest.php?cat=Quantitative-Ability&sub=Percentage&page=0"> <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
         </div>
                     <div class="row" >
         <div class="col-md-4">
             <div class="card hover topics"><h4>Profit & Loss</h4>
-               <center> <button class="button black">Start Practice</button></center>
+               <center><a href="quest.php?cat=Quantitative-Ability&sub=Profit_Loss&page=0"> <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
                  <div class="card hover topics"><h4>Time, Speed & Distance</h4>
-               <center> <button class="button black">Start Practice</button></center>
+               <center> <a href="quest.php?cat=Quantitative-Ability&sub=Time-Speed_Distance&page=0"><button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
                      <div class="card hover topics"><h4>Data Interpretation</h4>
-               <center> <button class="button black">Start Practice</button></center>
+               <center> <a href="quest.php?cat=Quantitative-Ability&sub=Data-Interpretation&page=0"><button class="button black">Start Practice</button></a></center>
             </div>
             </div>
         </div>     
            <div class="row" >
         <div class="col-md-4">
             <div class="card hover topics"><h4>Probability</h4>
-               <center> <button class="button black">Start Practice</button></center>
+               <center><a href="quest.php?cat=Quantitative-Ability&sub=Probability&page=0"> <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
                  <div class="card hover topics"><h4>Mixture & Solution</h4>
-               <center> <button class="button black">Start Practice</button></center>
+               <center><a href="quest.php?cat=Quantitative-Ability&sub=Mixture_Solution&page=0"> <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
                      <div class="card hover topics"><h4>Ratio & Proportion</h4>
-               <center> <button class="button black">Start Practice</button></center>
+               <center><a href="quest.php?cat=Quantitative-Ability&sub=Ratio_Proportion&page=0"> <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
         </div>     
