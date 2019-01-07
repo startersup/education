@@ -2,7 +2,7 @@
  session_start(); 
  if(isset($_SESSION["userid"]))
  {
-
+    echo .$_SESSION["uname"].'!"';
 }
   
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
