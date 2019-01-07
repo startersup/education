@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-<title>Engineering Kit</title>
+<title>Engineering Kit | Forum </title>
         <link rel="icon" href="./assets/images/speed.png" type="image/gif" sizes="16x16">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,15 +13,24 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Roboto:500" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Charm|Open+Sans|Roboto:500" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/nav.css">
-     <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+      <link rel="stylesheet" href="./assets/css/forum.css">
       <script src="./assets/js/sidenav.js"></script> 
 </head>
-<body>
+<body style="background-color:#f4f4f4;">
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=446635862374489&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <nav class="navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-light">
 	<div class="navbar-header d-flex col">
-		<a class="navbar-brand" href="#">Educate<b> Kid</b></a>  		
+		<a class="navbar-brand" href="#">Educate<b>Kid</b><span> Forum</span></a>  		
 			<i data-target="#navbarCollapse" onclick="openNav()" data-toggle="collapse" class="navbar-toggle navbar-toggler visible-xs visible-sm ml-auto fa fa-bars" ></i>
 	</div>
 	<div class="hidden-xs hidden-sm">
@@ -40,7 +49,6 @@
 			</li>
 			<li class="nav-item "><a href="#" class="nav-link">Online Exams</a></li>
 			<li class="nav-item"><a href="#" class="nav-link">Company Reviews</a></li>
-			<li class="nav-item"><a href="forum.html" class="nav-link">Forum</a></li>
 		</ul>
             
 		<form class="navbar-form form-inline">
@@ -112,7 +120,7 @@
   <a href="#about">Engineering</a> 
   <a href="#about">Internships</a>
   <a href="#about">Public Forum</a>  
-  <a class="visible-xs" href="#about">Aptitude</a>
+  <a href="#about">Aptitude</a>
   <a  href="#about">Online Exams</a>        
   <a href="#about">Online Training</a>     
   <a href="#about">Question Banks</a> 
@@ -121,85 +129,76 @@
   <a href="#about" >Login / signup</a>  
 </div>
 </nav>
-       
-
- <section class="main" id="main">
-        <div class="container1">
-    <div class="row">
-        <div class="col-md-10">
-     <h3><i class="fa fa-star checked" aria-hidden="true"></i> Popular Events</h3><br>
-    <div class="weller">
-        <div class="row">
-            <div class="col-md-6">
-   <div class="well well-sm"><div class="inline"><p style="float:left;">Event @ Saveetha</p><p style="float:right;">Posted 2 Hrs ago</p>
-       </div>
-        <div class="card event">
-              <h4>Technical symposium at Saveetha Engineering College</h4><br>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-       </div>
-           <div class="card-footer">
+ <section>
+   <div class="forumpad">
+     <div class="col-md-3">
+       <div class="card divfix">
+         <h4>@ Saicharan   <button data-toggle="collapse" data-target="#demo" class="btn btn-success">Add Post</button></h4>
+           <div class="hidden-xs">
+           <hr>
+           <p><span class="bold">Location:</span> chennai, Tamilnadu.</p>
+           <p><span class="bold">Interest:</span> Cloud Computing, Digital Marketing, Core Java.</p>
+              
+         </div>
+         </div>
+     </div>
+       <div class="col-md-6">
+       <div class="card">
+             <div id="demo" class="collapse">  
+        <textarea class="form-control" rows="4" placeholder="Enter your Message Here" id="comment"></textarea><br>	<input type="image" src="./assets/images/attachment.png" style="width:20px;"> <input type="file" id="my_file" style="display: none;" /> <button class="btn btn-info">Post your Comments </button> <br><br>
+  </div>
+           <div class="borders">
+        <div class="head"><p style="display:inline;">Rana Dagupathi Rao</p><p style="float:right;">posted 2 hrs ago</p></div>
+               <img src="assets/images/wall.jpg" style="max-width:800px;width:100%;padding:10px;">
+           <p class="ptag">Lorem Ipsum is simply dummy text of the printing and typesetting industry.It has survived not only five centuries, but also the leap into electronic typesetting </p>
+                 <div class="card-footer">
                         <a href="#" class="card-link"><i class="fa fa-thumbs-up"></i> Like</a>
                         <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
-                        <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
+                      <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
                     </div>
-        </div>
-        </div>
-          <div class="col-md-6">
-         <div class="well well-sm"><div class="inline"><p style="float:left;">Event @ Saveetha</p><p style="float:right;">Posted 2 Hrs ago</p>
-       </div>
-        <div class="card event">
-              <h4>Technical symposium at Saveetha Engineering College</h4><br>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-       </div>
-           <div class="card-footer">
+         </div>
+           <hr>
+                      <div class="borders">
+        <div class="head"><p style="display:inline;">Vinodhan Thunderbolt</p><p style="float:right;">posted 2 hrs ago</p></div>
+           <br>
+           <p class="ptag">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                 <div class="card-footer">
                         <a href="#" class="card-link"><i class="fa fa-thumbs-up"></i> Like</a>
                         <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
-                        <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
+                       <div id="fb-root"></div>
                     </div>
-        </div></div>
-                 <div class="col-md-6">
-         <div class="well well-sm"><div class="inline"><p style="float:left;">Event @ Saveetha</p><p style="float:right;">Posted 2 Hrs ago</p>
-       </div>
-        <div class="card event">
-              <h4>Technical symposium at Saveetha Engineering College</h4><br>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-       </div>
-           <div class="card-footer">
-                        <a href="#" class="card-link"><i class="fa fa-thumbs-up"></i> Like</a>
-                        <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
-                        <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
-                    </div>
-        </div></div>
-                      <div class="col-md-6">
-         <div class="well well-sm"><div class="inline"><p style="float:left;">Event @ Saveetha</p><p style="float:right;">Posted 2 Hrs ago</p>
-       </div>
-        <div class="card event">
-              <h4>Technical symposium at Saveetha Engineering College</h4><br>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-       </div>
-           <div class="card-footer">
-                        <a href="#" class="card-link"><i class="fa fa-thumbs-up"></i> Like</a>
-                        <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
-                        <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
-                    </div>
-        </div></div>
-            
-
-        </div> </div></div>
-          <div class="col-md-2">
-         <div class="card fixed">
-             <h4>Popular Tags</h4>
-             <br>
-             <p>#Placements</p><hr><p>#symposium</p><hr><p>#conference</p><hr><p>#presentation</p><hr><p>#Culturals</p><hr><p>#intercollege </p>
-            </div>
-        </div>
+         </div>
            
-             </div></div>
-    </section>
-    <div class="icon-bar hidden-xs">
-  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
-  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
-  <a href="#" class="google"><i class="fa fa-google"></i></a> 
-  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-</div>
-    </body></html>
+            <hr>
+                      <div class="borders">
+        <div class="head"><p style="display:inline;">Vinodhan</p><p style="float:right;">posted 2 hrs ago</p></div>
+           <br>
+           <p class="ptag">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                 <div class="card-footer">
+                        <a href="#" class="card-link"><i class="fa fa-thumbs-up"></i> Like</a>
+                        <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+                        <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
+                    </div>
+         </div>
+           
+         </div>
+       </div>
+       
+        <div class="col-md-3">
+       <div class="card divfix">
+         <h4><img src="assets/images/trend.png"> Trending Today</h4><hr>
+           <p></p>
+         
+         </div>
+     </div>
+       
+       
+     </div> 
+</section>   
+    <script>$("input[type='image']").click(function() {
+    $("input[id='my_file']").click();
+});</script>
+</body></html>
+
+
+    
