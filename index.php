@@ -84,7 +84,7 @@ mysqli_close($conn);
 			<li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
 			<li class="nav-item"><a href="event.html" class="nav-link">Events</a></li>			
 			<li class="nav-item dropdown">
-				<a data-toggle="dropdown" class="nav-link dropdown-toggle">Services<b class="caret"></b></a>
+				<a data-toggle="dropdown" href="#" class="nav-link dropdown-toggle">Services<b class="caret"></b></a>
 				<ul class="dropdown-menu">					
 					<li><a href="#" class="dropdown-item">Engineering E-Books</a></li>
 					<li><a href="qbank.html" class="dropdown-item">Engineering Question Banks</a></li>
