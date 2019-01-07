@@ -186,7 +186,7 @@ include 'config.php';
                     </div>
                 </div>
                 <div class="col-md-2 hidden-xs">
-                    <div class="card fixed container">
+                    <div class="card fixed">
                         <h4>Interested</h4>
                         <br>
                         <p>#Placements</p>
