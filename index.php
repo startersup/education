@@ -2,8 +2,7 @@
  session_start(); 
  if(isset($_SESSION["userid"]))
  {
-    echo '<script language="javascript">window.onload = function() {document.getElementById("log").text="'.$_SESSION["uname"].'!";
-         ';
+
 }
   
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
