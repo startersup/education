@@ -23,6 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
 <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/nav.css">
+     <link rel="stylesheet" href="../assets/css/fonts.css">
     <link rel="stylesheet" href="./css/admin.css">
   <script src="./js/side.js"></script>  
 </head>
