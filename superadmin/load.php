@@ -35,6 +35,7 @@ if ($conn->query($sql) === TRUE) {
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Roboto:500" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/nav.css">
+      <link rel="stylesheet" href="../assets/css/fonts.css">
     <link rel="stylesheet" href="./css/admin.css">
     <script src="./js/side.js"></script>
     <script>
@@ -294,9 +295,12 @@ for(i=0;i<list.length;i++)
                                              <p>Entry Fee:</p>
                                              <input type="text" class="form-control" placeholder="Eg: Rs 100">
                                         </div>
-                             <div class="col-md-12">  <div class="form-group"> <br>
+                             <div class="col-md-6">  <div class="form-group"> <br>
                           <p>Url to Register:</p>
                          <input type="text" class="form-control" placeholder="Eg: www.accenture.com.."></div></div>
+                                            <div class="col-md-6">  <div class="form-group"> <br>
+                          <p>Upload Banners :</p>
+                       <input type="file" id="myFile"></div></div>
                                     </div></div>
 
                                         <div class="col-md-6">
@@ -380,6 +384,12 @@ for(i=0;i<list.length;i++)
                 </div>
 
                 </div>
+        </div><script>
+function myFunction() {
+  var x = document.getElementById("myFile");
+  x.disabled = true;
+}
+</script>
     </section>
       
 
