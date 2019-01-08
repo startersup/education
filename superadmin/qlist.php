@@ -46,18 +46,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <center><h4> Admin Dashboard</h4></center>
   </div></div>
 
-
-    <div id="mySidebar" class="sidepanel" >
-  <a href="./admin.html">Dashboard</a>
-   <a href="./pages.html">Pages List</a>
-    <a href="./uer.html">Web Userlist</a> 
-    <a href="./jobs.html">Jobs List</a> 
-     <a href="./eventlist.html">Events List</a> 
-    <a href="./load.php">Upload Data</a>   
-         <a href="qlist.php">Questions</a>  
-        <a href="./settings.html">Settings</a>  
-</div>
-
     <section class="main" id="main">
 
 <div class="container">
