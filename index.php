@@ -1,7 +1,5 @@
 <?php
  session_start(); 
-
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 include 'config.php';
   if (isset($_POST["login"])) {
@@ -152,38 +150,34 @@ mysqli_close($conn);
                 <a href='#'>Forgot Your password?</a>
               </div>
             </form>
-          </li></ul>";
+          </li></ul><li class='nav-item'>
+        <a id='sign'  href='#' data-toggle='dropdown' class='btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1'>Sign up</a>
+        <ul class='dropdown-menu form-wrapper'>         
+          <li>
+            <form action='' method='post'>
+              <p class='hint-text'>Fill in this form to create your account!</p>
+              <div class='form-group'>
+                <input name='user' type='text' class='form-control' placeholder='Username' required='required'>
+              </div>
+                            <div class='form-group'>
+                <input name='email' type='text' class='form-control' placeholder='Email Address' required='required'>
+              </div>
+              <div class='form-group'>
+                <input name='pass' type='password' class='form-control' placeholder='Password' required='required'>
+              </div>
+              <div class='form-group'>
+                <input name='repass' onkeyup='check();' type='password' class='form-control' placeholder='Confirm Password' required='required'>
+              </div>
+              <div class='form-group'>
+                                <label class='checkbox-inline'><input type='checkbox' required='required'>Remember me</label>   
+              </div>
+              <input name='signup' type='submit' class='btn btn-primary btn-block' value='Sign up' disabled='true'>
+            </form>
+          </li>
+        </ul>
+      </li>";
           }
-
-
             	?>
-			</li>
-			<li class="nav-item">
-				<a id="sign"  href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1">Sign up</a>
-				<ul class="dropdown-menu form-wrapper">					
-					<li>
-						<form action="" method="post">
-							<p class="hint-text">Fill in this form to create your account!</p>
-							<div class="form-group">
-								<input name="user" type="text" class="form-control" placeholder="Username" required="required">
-							</div>
-                            <div class="form-group">
-								<input name="email" type="text" class="form-control" placeholder="Email Address" required="required">
-							</div>
-							<div class="form-group">
-								<input name="pass" type="password" class="form-control" placeholder="Password" required="required">
-							</div>
-							<div class="form-group">
-								<input name="repass" onkeyup="check();" type="password" class="form-control" placeholder="Confirm Password" required="required">
-							</div>
-							<div class="form-group">
-                                <label class="checkbox-inline"><input type="checkbox" required="required">Remember me</label>   
-							</div>
-							<input name="signup" type="submit" class="btn btn-primary btn-block" value="Sign up" disabled="true">
-						</form>
-					</li>
-				</ul>
-			</li>
 		</ul>
 	</div>
     <div id="mySidebar" class="sidepanel" >
