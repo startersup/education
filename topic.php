@@ -159,7 +159,7 @@ include 'config.php';
                                     <div class='answer'>  <div class='display'><span>Asked in ".$row['appeared']."</span>
                                     </div>
                                         <p><b>Answer:</b> ".$row['answer']."</p>
-                                         <p><b>Explanation:</b></p><textarea>".$row['explanation']."</textarea> 
+                                         <p><b>Explanation:</b></p><textarea style='font-size:15px;' readonly>".$row['explanation']."</textarea> 
                                     </div>";
                                     ?>
                                   <div class="commentbox">
