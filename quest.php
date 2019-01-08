@@ -210,7 +210,7 @@ include 'config.php';
     </section>
    <style>
     
-    .question ul li
+    .question ul>li
        {
            list-style-type: none;
        }
