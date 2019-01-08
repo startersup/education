@@ -1,13 +1,9 @@
 <?php
  session_start(); 
- if(isset($_SESSION["userid"]))
- {
-   
-     	
-}
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-include 'config.php';
+include 'configtemp.php';
   if (isset($_POST["login"])) {
      $logname=$_POST['logname'];
      $logpass=$_POST['logpass'];
@@ -119,30 +115,48 @@ mysqli_close($conn);
 				<span class="input-group-addon"><i class="fa fa-search"></i></span>
 			</div>
 		</form>
-		<ul class="nav navbar-nav navbar-right ml-auto">			
-			<li class="nav-item">
-				<a id="log" data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Login</a>
-				<ul class="dropdown-menu form-wrapper">					
-					<li>
-						<form action="" method="post">
-							<p class="hint-text">Sign in with your social media account</p>
-							<div class="form-group social-btn clearfix">
-								<a href="#" class="btn btn-primary pull-left"><i class="fa fa-facebook"></i> Facebook</a>
-								<a href="#" class="btn btn-info pull-right"><i class="fa fa-twitter"></i> Twitter</a>
-							</div>
-							<div class="or-seperator"><b>or</b></div>
-							<div class="form-group">
-								<input type="text" name="logname" class="form-control" placeholder="Username or Email " required="required">
-							</div>
-							<div class="form-group">
-								<input type="password" name="logpass" class="form-control" placeholder="Password" required="required">
-							</div>
-							<input name="login" type="submit" class="btn btn-primary btn-block" value="Login">
-							<div class="form-footer">
-								<a href="#">Forgot Your password?</a>
-							</div>
-						</form>
-					</li>
+		<ul class="nav navbar-nav navbar-right ml-auto">							
+         <?php
+         if(isset($_SESSION["userid"]))
+          {
+              echo "<li class=nav-item dropdown'>
+        <a data-toggle='dropdown' href='#'' class='nav-link dropdown-toggle'> saicharan !</a>
+        <ul class='dropdown-menu'>          
+          <li><a href='#' class='dropdown-item'>Profile</a></li>
+          <li><a href='qbank.html' class='dropdown-item'>your post</a></li>
+                    <li><a href='aptitude.php' class='dropdown-item'>Settings</a></li>
+          <li><a href='logout.php' class='dropdown-item'>Logout</a></li>
+        </ul>
+      </li>";
+                   
+            }
+            else{
+            echo "<li class='nav-item'><a id='log' data-toggle='dropdown' class='nav-link dropdown-toggle' href='#''>Login</a>
+        <ul class='dropdown-menu form-wrapper'>   
+            <li>
+            <form action='' method='post'>
+              <p class='hint-text'>Sign in with your social media account</p>
+              <div class='form-group social-btn clearfix'>
+                <a href='#' class='btn btn-primary pull-left'><i class='fa fa-facebook'></i> Facebook</a>
+                <a href='#' class='btn btn-info pull-right'><i class='fa fa-twitter'></i> Twitter</a>
+              </div>
+              <div class='or-seperator'><b>or</b></div>
+              <div class='form-group'>
+                <input type='text' name='logname' class='form-control' placeholder='Username or Email ' required='required'>
+              </div>
+              <div class='form-group'>
+                <input type='password' name='logpass' class='form-control' placeholder='Password' required='required'>
+              </div>
+              <input name='login' type='submit' class='btn btn-primary btn-block' value='Login'>
+              <div class='form-footer'>
+                <a href='#'>Forgot Your password?</a>
+              </div>
+            </form>
+          </li></ul>";
+          }
+
+
+            	?>	
 				</ul>
 			</li>
 			<li class="nav-item">
