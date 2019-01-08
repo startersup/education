@@ -53,12 +53,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	<table id="example" class="table table-striped table-bordered" style="width:100%">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>Question</th>
-                <th>Answer</th>
-                <th>options</th>
-                <th>Explanation</th>
-                  <th>Action</th>
+                <th style="width:10%;">Id</th>
+                <th style="width:40%;">Question</th>
+                <th style="width:5%;">Answer</th>
+                <th style="width:10%;">options</th>
+                <th style="width:25%;">Explanation</th>
+                  <th style="width:10%;">Action</th>
             </tr>
         </thead>
         <tbody>
