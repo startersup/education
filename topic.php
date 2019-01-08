@@ -164,7 +164,7 @@ include 'config.php';
                                         <p><b>Answer:</b> ".$row['answer']."</p>
                                          <p><b>Explanation:</b></p><textarea style='max-width:1000px;
         width:100%;
-        height:400px;
+        min-height:300px;
         font-size:15px;
          font-family:'proximanovasemibold';' readonly>".$row['explanation']."</textarea> 
                                     </div>";
