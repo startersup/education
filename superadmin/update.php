@@ -11,7 +11,7 @@ echo "<div class='modal-header'>
 				<div class='modal-body noborder'>
 				<form class='form' action='qlist.php' method='post'>
 				  <p>Question</p>
-                    <textarea name='qns' class='question form-group form-control' style='min-width:300px;min-height:250px;font-size:14px;'>
+                    <textarea name='qns' class='question form-group form-control' style='min-width:300px;min-height:100px;font-size:14px;'>
                     ".$row['question']."
                  </textarea><br>
                      <p>Answer</p>
