@@ -125,6 +125,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 #example_paginate{
     float:right;
 }
+    td
+    {
+         font-family: 'ProximaNovaLtLight';
+    }
 label {
     display: inline-flex;
     margin-bottom: .5rem;
