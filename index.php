@@ -3,7 +3,7 @@
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-include 'configtemp.php';
+include 'config.php';
   if (isset($_POST["login"])) {
      $logname=$_POST['logname'];
      $logpass=$_POST['logpass'];
@@ -120,7 +120,7 @@ mysqli_close($conn);
          if(isset($_SESSION["userid"]))
           {
               echo "<li class=nav-item dropdown'>
-        <a data-toggle='dropdown' href='#'' class='nav-link dropdown-toggle'> saicharan !</a>
+        <a data-toggle='dropdown' href='#'' class='nav-link dropdown-toggle'> ".$_SESSION['uname']." !</a>
         <ul class='dropdown-menu'>          
           <li><a href='#' class='dropdown-item'>Profile</a></li>
           <li><a href='qbank.html' class='dropdown-item'>your post</a></li>
@@ -156,8 +156,7 @@ mysqli_close($conn);
           }
 
 
-            	?>	
-				</ul>
+            	?>
 			</li>
 			<li class="nav-item">
 				<a id="sign"  href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1">Sign up</a>
