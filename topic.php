@@ -143,13 +143,10 @@ include 'config.php';
                             <div id="load">
                                 <div class="question">
                                 <?php 
-                                $qns=str_replace('-',' ',preg_replace('#[ ]#i', '', $_GET['qns']));
-                                //$qns=$qns."?";
-                                $qns=str_replace('_','?',$qns);
                                 $cat=str_replace('-',' ',preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['cat']));
                                 $sub=str_replace('-',' ',preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['sub']));
                                 $sub=str_replace('_',' ',$sub);
-                                $sql="select question,op1,op2,op3,op4,appeared,answer,explanation from questions where category='".$cat."' AND sub='".$sub."' AND question='".$qns."'";
+                                $sql="select question,op1,op2,op3,op4,appeared,answer,explanation from questions where category='".$cat."' AND sub='".$sub."' AND qid='".$_GET['qid']."'";
                                 $query=mysqli_query($conn,$sql);
                                 $row = mysqli_fetch_assoc($query);
                                     echo "<p>1) ".$row['question']."</p>

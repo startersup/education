@@ -145,7 +145,7 @@ include 'config.php';
                                      $cat=str_replace('-',' ',preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['cat']));
                                      $sub=str_replace('-',' ',preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['sub']));
                                      $sub=str_replace('_',' ',$sub);
-                                     $sql="select question,op1,op2,op3,op4,appeared from questions where category='".$cat."'AND sub='".$sub."' LIMIT ".$lim.",5";
+                                     $sql="select qid,question,op1,op2,op3,op4,appeared from questions where category='".$cat."'AND sub='".$sub."' LIMIT ".$lim.",5";
                                      //echo $sql;
                                      $query=mysqli_query($conn,$sql);
                                      $i=1;
@@ -161,7 +161,7 @@ include 'config.php';
                                         <li>C) ".$row['op3']."</li>
                                         <li>D) ".$row['op4']."</li>
                                     </ul>
-                                    <a href='topic.php?cat=".$cat."&sub=".$sub."&qns=".$qns."'><button class='btn btn-success'>View Answer</button></a>
+                                    <a href='topic.php?cat=".$cat."&sub=".$sub."&qid=".$row['qid']."&qns=".$qns."'><button class='btn btn-success'>View Answer</button></a>
                                     <div class='display'><span>Asked in ".$row['appeared']."</span> 
                                 </div></div>
                                 <hr>"; $i++;}

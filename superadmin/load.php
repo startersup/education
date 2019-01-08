@@ -37,8 +37,13 @@ if ($conn->query($sql) === TRUE) {
     <link rel="stylesheet" href="../assets/css/nav.css">
       <link rel="stylesheet" href="../assets/css/fonts.css">
     <link rel="stylesheet" href="./css/admin.css">
-    <script src="./js/side.js"></script>
-    <script>
+   
+<script type="text/javascript">
+function test()
+{
+        console.log("hello");
+
+}
     	function myFunction() {
   var s = document.getElementById("sel1").value;
   switch(s)
@@ -386,12 +391,7 @@ for(i=0;i<list.length;i++)
                 </div>
 
                 </div>
-        </div><script>
-function myFunction() {
-  var x = document.getElementById("myFile");
-  x.disabled = true;
-}
-</script>
+        </div>
     </section>
       
 
