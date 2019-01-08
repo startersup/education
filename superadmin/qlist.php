@@ -117,6 +117,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </section>
 <style>table{
     width:100%;
+     font-family: 'ProximaNovaLtLight';
 }
 #example_filter{
     float:right;
