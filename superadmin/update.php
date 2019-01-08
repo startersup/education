@@ -30,7 +30,7 @@ echo "<div class='modal-header'>
                         </div>
                     </div><br>
                      <p>Explanation</p>
-                    <textarea name='exp' class='question form-group form-control' rows='4' cols='30'>
+                    <textarea name='exp' class='question form-group form-control'  style='min-width:300px;min-height:400px;'>
                     ".$row['explanation']."
                  </textarea><br>
                    <center><button name='up' type='submit' class='form-group btn btn-success'>Update</button></center> </form>
