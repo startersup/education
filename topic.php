@@ -158,8 +158,8 @@ include 'config.php';
                                     </ul>
                                     <div class='answer'>  <div class='display'><span>Asked in ".$row['appeared']."</span>
                                     </div>
-                                        <p>Answer: ".$row['answer']."</p>
-                                         <p>Explanation: ".$row['explanation']."</p>
+                                        <p><b>Answer:</b> ".$row['answer']."</p>
+                                         <p><b>Explanation:</b></p><textarea>".$row['explanation']."</textarea> 
                                     </div>";
                                     ?>
                                   <div class="commentbox">
