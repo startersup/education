@@ -5,12 +5,15 @@ include 'config.php';
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<base href="/">
   <meta charset="utf-8">
-<title>Educatekid | <?php echo($cat);  ?></title>
-        <link rel="icon" href="./assets/images/speed.png" type="image/gif" sizes="16x16">
+<title>Educatekid | </title>
+ <link rel="icon" href="./assets/images/speed.png" type="image/gif" sizes="16x16">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--seo--->
+<meta name="description" content="">
+<meta name="keyword" content="">
+     <!--seo--->
 <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Roboto:500" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
