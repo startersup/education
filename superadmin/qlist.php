@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <a href="./uer.html">Web Userlist</a> 
     <a href="./jobs.html">Jobs List</a> 
      <a href="./eventlist.html">Events List</a> 
-    <a href="load.php">Upload Data</a>   
+    <a href="./load.php">Upload Data</a>   
          <a href="qlist.php">Questions</a>  
         <a href="./settings.html">Settings</a>  
 </div>

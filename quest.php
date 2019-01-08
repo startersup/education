@@ -133,7 +133,7 @@ include 'config.php';
                     <div class="Education">
                         <br>
                         <div class="card topping">
-                            <h3><i class="fa fa-star" aria-hidden="true"></i> <?php $sub= str_replace("_", " & ",$_GET["sub"] ); $sub= str_replace("-", " ",$sub ); echo $sub; ?> </h3>
+                            <h3><i class="fa fa-star" aria-hidden="true"></i>  <?php $sub= str_replace("_", " & ",$_GET["sub"] ); $sub= str_replace("-", " ",$sub ); echo $sub; ?> </h3>
                             <hr>
                             <div id="preloader">
                                 <div id="status">&nbsp;</div>
@@ -208,7 +208,14 @@ include 'config.php';
             </div>
         </div>
     </section>
-   
+   <style>
+    
+    .question ul>li
+       {
+           list-style-type: none;
+       }
+    
+    </style>
 </body>
 
 </html>
