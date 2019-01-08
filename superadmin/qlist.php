@@ -71,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <td>'.$row['qid'].'</td>
                 <td>'.$row['question'].' </td>
                  <td>'.$row['answer'].'</td>
-                <td>'.$row['op1']."<br> ".$row['op2']." <br> ".$row['op3']." <br> ".$row['op4'].'</td>
+                <td>'.$row['op1']."<hr> ".$row['op2']." <hr> ".$row['op3']." <hr> ".$row['op4'].'</td>
                  <td>'.$row['explanation'].'</td>
                 <td><button class="btn btn-success" onclick="update(\''.$id. '\')" data-toggle="modal" data-target="#myModal2">Update</button></td>
             </tr>';
