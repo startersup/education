@@ -127,7 +127,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
     td
     {
-         font-family: 'ProximaNovaLtLight';
+         font-family: 'ProximaNovaLtLight' !important;
     }
 label {
     display: inline-flex;
