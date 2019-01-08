@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <center><h4> Admin Dashboard</h4></center>
   </div></div>
 
-    <section class="main" id="main">
+    <section class="" id="main">
 
 <div class="container">
 	<div class="row">
