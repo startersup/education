@@ -116,7 +116,7 @@ color:#007bff;
         margin:0px !important;
     }
     
-    .answer textarea
+    .answer>textarea
     {
         max-width:1000px;
         width:100%;
