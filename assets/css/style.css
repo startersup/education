@@ -114,7 +114,9 @@ color:#007bff;
     .container1
     {
         margin:0px !important;
-    }answer textarea
+    }
+    
+    .answer textarea
     {
         max-width:1000px;
         width:100%;
