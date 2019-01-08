@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <section class="top" id="main">
 
-<div class="container3">
+<div class="container1">
 	<div class="row">
 	<table id="example" class="table table-striped table-bordered" style="width:100%">
         <thead>
