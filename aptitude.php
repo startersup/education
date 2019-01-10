@@ -165,7 +165,7 @@
                 <li>Ordering and Ranking</li>  
                 <li>Blood Relations</li> 
                 <li>Team Formations</li>
-                <li>Blood Relations</li> 
+                <li>Direction Problems</li> 
                 <li>Syllogisms</li> 
                 <li>Analytical Puzzles</li>
                 <li>Number Series</li>

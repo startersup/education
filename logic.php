@@ -160,8 +160,8 @@
             </div>
             </div>
                <div class="col-md-4">
-                 <div class="card hover topics"><h4>Blood Relations</h4>
-               <center> <a href="quest.php?cat=Logical-Reasoning&sub=Blood-Relations&page=0"><button class="button black">Start Practice</button></a></center>
+                 <div class="card hover topics"><h4>Direction Problems</h4>
+               <center> <a href="quest.php?cat=Logical-Reasoning&sub=Direction-Problems&page=0"><button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
