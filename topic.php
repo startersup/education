@@ -165,7 +165,7 @@ include 'config.php';
                                          <p><b>Explanation:</b></p><textarea style='max-width:1000px;
         width:100%;
         min-height:300px;
-        font-size:15px;
+        font-size:14px;
          font-family:'proximanovasemibold';readonly>".$row['explanation']."</textarea> 
                                     </div>";
                                     ?>
