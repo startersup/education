@@ -166,7 +166,7 @@ include 'config.php';
         width:100%;
         min-height:300px;
         font-size:15px;
-         font-family:'proximanovasemibold';' readonly>".$row['explanation']."</textarea> 
+         font-family:'proximanovasemibold';readonly>".$row['explanation']."</textarea> 
                                     </div>";
                                     ?>
                                   <div class="commentbox">
