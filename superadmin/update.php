@@ -19,13 +19,13 @@ echo "<div class='modal-header'>
                     <p>Options</p>
                     <div class='row'>
                     <div class='col-xs-6'>
-                        <input name='op1' type='text' class='form-group form-control' value='".$row['op1']."'>
+                        <input name='op1' type='text' class='form-group form-control' value='1) ".$row['op1']."'>
                         </div> <div class='col-xs-6'>
-                        <input name='op2' type='text' class='form-group form-control' value='".$row['op2']."'>
+                        <input name='op2' type='text' class='form-group form-control' value='2) ".$row['op2']."'>
                         </div> <div class='col-xs-6'><br>
-                        <input name='op3' type='text' class='form-group form-control' value='".$row['op3']."'>
+                        <input name='op3' type='text' class='form-group form-control' value='3) ".$row['op3']."'>
                         </div> <div class='col-xs-6'><br>
-                        <input name='op4' type='text' class='form-group form-control' value='".$row['op4']."'>
+                        <input name='op4' type='text' class='form-group form-control' value='4) ".$row['op4']."'>
                         <input name='id' type='hidden' class='form-group form-control' value='".$row['qid']."'>
                         </div>
                     </div><br>
