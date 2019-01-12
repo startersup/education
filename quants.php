@@ -205,7 +205,7 @@
             </div>
         </div>
           <div class="col-md-2">
-         <div class="card fixed container">
+         <div class="card fixed">
              <h4>Interested</h4>
              <br>
              <p>#Placements</p><br><p>#symposium</p><br><p>#conference</p><br><p>#presentation</p><br><p>#Culturals</p><br><p>#intercollege </p>
