@@ -181,12 +181,12 @@ include 'config.php';
                                 else{
                                 if($count>0){
                                     $c=$count-1;
-                                echo "<center><a href=quest.php?cat=".$cat."&sub=".$sub."&page=".$c."><button class='btn btn-success'>Prev</button></a>" ;
+                                echo "<center><a href=quest.php?cat=".$cat."&sub=".$sub."&page=".$c."><button class='btn btn-success' style='float:left;'>Prev</button></a>" ;
                                 $c=$count+1;
                                 echo"<a href=quest.php?cat=".$cat."&sub=".$sub."&page=".$c."><button class='btn btn-success'>Next</button></a></center>";}
                                 else if(!($numrows<=(($count+1)*5)))
                                 { $c=$count+1;
-                                    echo "<center><a href='quest.php?cat=".$cat."&sub=".$sub."&page=".$c."'><button class='btn btn-success'>Next</button></a>";} }?>
+                                    echo "<center><a href='quest.php?cat=".$cat."&sub=".$sub."&page=".$c."'><button class='btn btn-success' style='float:right;'>Next</button></a>";} }?>
                           </div>
                         </div>
                     </div>
