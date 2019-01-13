@@ -170,6 +170,9 @@ include 'config.php';
                                 $sql="select question,op1,op2,op3,op4,appeared from questions where category='".$cat."'AND sub='".$sub."'";
                                 $query=mysqli_query($conn,$sql);
                                 $numrows=mysqli_num_rows($query);
+                                $cat=preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['cat']);
+                                     $sub=preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['sub']);
+                                     echo $numrows;
                                 if($numrows<=(($count+1)*5)&&$count!=0)
                                 {
                                     $c=$count-1;
