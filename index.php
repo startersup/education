@@ -186,7 +186,7 @@ mysqli_close($conn);
         <section class="background">
         <div class="mainspeech">
           <h1>A Complete Guide for Engineering Students</h1>  
-            <h3>A Forum that integrates all the betterments of Engineering students to attain Success.</h3>
+            <h3>A Forum that integrates all the Betterments of Engineering students to attain Success.</h3>
             
         </div>
         </section>
