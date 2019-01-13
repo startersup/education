@@ -170,7 +170,7 @@ include 'config.php';
                                 $sql="select question,op1,op2,op3,op4,appeared from questions where category='".$cat."'AND sub='".$sub."'";
                                 $query=mysqli_query($conn,$sql);
                                 $numrows=mysqli_num_rows($query);
-                                if($numrows<=(($count+1)*5)&&$count!=0)
+                                if($numrows<=(($count+1)*10)&&$count!=0)
                                 {
                                     $c=$count-1;
                                     echo "<center><a href='quest.php?cat=Quantitative-Ability&sub=Number-Systems&page=".$c."'><button class='btn btn-success'>Prev</button></a>";
@@ -181,7 +181,8 @@ include 'config.php';
                                 echo "<center><a href=quest.php?cat=Quantitative-Ability&sub=Number-Systems&page=".$c."><button class='btn btn-success'>Prev</button></a>" ;
                                 $c=$count+1;
                                 echo"<a href=quest.php?cat=Quantitative-Ability&sub=Number-Systems&page=".$c."><button class='btn btn-success'>Next</button></a></center>";}
-                                else if(!($numrows<=(($count+1)*5)))
+                                else if(!($numrows<=(($count+1)*10)))
+                                else if(!($numrows<=(($count+1)*10)))
                                 { $c=$count+1;
                                     echo "<center><a href='quest.php?cat=Quantitative-Ability&sub=Number-Systems&page=".$c."'><button class='btn btn-success'>Next</button></a>";} }?>
                           </div>
