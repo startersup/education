@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-<title>Engineering Kit</title>
+<title><?php echo str_replace('-',' ',$_GET['cat']) ?></title>
         <link rel="icon" href="./assets/images/speed.png" type="image/gif" sizes="16x16">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
