@@ -49,6 +49,7 @@ if ($conn->query($sql) === TRUE) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<base href="/">
   <meta charset="utf-8">
 <title><?php echo str_replace('-',' ',$_GET['cat']) ?></title>
         <link rel="icon" href="./assets/images/speed.png" type="image/gif" sizes="16x16">
