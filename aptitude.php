@@ -154,7 +154,7 @@
                     <li>Ratio & Proportion</li>  
                 </ul>
                 
-               <center><a href="./quants.php?cat=Quantitative-Ability"><button class="button black">Start Practice</button></a></center>
+               <center><a href="./quants/Quantitative-Ability"><button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
@@ -172,7 +172,7 @@
                 <li>Clock and Calendar Problems</li>
                     
                 </ul>        
-               <center><a href="./logic.php?cat=Logical-Reasoning"> <button class="button black">Start Practice</button></a></center>
+               <center><a href="./logic/Logical-Reasoning"> <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
@@ -190,7 +190,7 @@
                     <li>Listen & Answer</li>
                 </ul>
                 
-               <center><a href="./verbal.php?cat=Verbal-Ability"> <button class="button black">Start Practice</button></a></center>
+               <center><a href="./verbal/Verbal-Ability"> <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
         </div>
