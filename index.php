@@ -1,8 +1,6 @@
 <?php
  session_start();
  include 'config.php';
-  $sql= "SET time_zone='+05:30'";
-$query=mysqli_query($conn,$sql);
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (isset($_POST["login"])) {
      $logname=$_POST['logname'];
