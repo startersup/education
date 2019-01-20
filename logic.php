@@ -201,51 +201,51 @@ if ($conn->query($sql) === TRUE) {
             <br>
         <div class="col-md-4">
             <div class="card hover topics"><h4>Arrangements</h4>
-               <center><a href="quest.php?cat=Logical-Reasoning&sub=Arrangements&page=0"> <button class="button black">Start Practice</button></a></center>
+               <center><a href="quest/Logical-Reasoning/Arrangements/0"> <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
                  <div class="card hover topics"><h4>Ordering and Ranking</h4>
-               <center><a href="quest.php?cat=Logical-Reasoning&sub=Ordering-and-Ranking&page=0"> <button class="button black">Start Practice</button></a></center>
+               <center><a href="quest/Logical-Reasoning/Ordering-and-Ranking/0"> <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
                      <div class="card hover topics"><h4>Blood Relations</h4>
-               <center><a href="quest.php?cat=Logical-Reasoning&sub=Blood-Relations&page=0"> <button class="button black">Start Practice</button></a></center>
+               <center><a href="quest/Logical-Reasoning/Blood-Relations/0"> <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
         </div>
                     <div class="row" >
         <div class="col-md-4">
             <div class="card hover topics"><h4>Team Formations</h4>
-               <center> <a href="quest.php?cat=Logical-Reasoning&sub=Team-Formations&page=0"><button class="button black">Start Practice</button></a></center>
+               <center> <a href="quest/Logical-Reasoning/Team-Formations/0"><button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
                  <div class="card hover topics"><h4>Direction Problems</h4>
-               <center> <a href="quest.php?cat=Logical-Reasoning&sub=Direction-Problems&page=0"><button class="button black">Start Practice</button></a></center>
+               <center> <a href="quest/Logical-Reasoning/Direction-Problems/0"><button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
                      <div class="card hover topics"><h4>Syllogisms</h4>
-               <center> <a href="quest.php?cat=Logical-Reasoning&sub=Syllogisms&page=0"><button class="button black">Start Practice</button></a></center>
+               <center> <a href="quest/Logical-Reasoning/Syllogisms/0"><button class="button black">Start Practice</button></a></center>
             </div>
             </div>
         </div>     
            <div class="row" >
         <div class="col-md-4">
             <div class="card hover topics"><h4>Analytical Puzzles</h4>
-               <center><a href="quest.php?cat=Logical-Reasoning&sub=Analytical-Puzzles&page=0"> <button class="button black">Start Practice</button></a></center>
+               <center><a href="quest/Logical-Reasoning/Analytical-Puzzles/0"> <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
                  <div class="card hover topics"><h4>Number Series</h4>
-               <center><a href="quest.php?cat=Logical-Reasoning&sub=Number-Series&page=0"> <button class="button black">Start Practice</button></a></center>
+               <center><a href="quest/Logical-Reasoning/Number-Series/0"> <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
                      <div class="card hover topics"><h4>Clock and Calendar Problems</h4>
-               <center><a href="quest.php?cat=Logical-Reasoning&sub=Clock-and-Calendar-Problems&page=0"> <button class="button black">Start Practice</button></a></center>
+               <center><a href="quest/Logical-Reasoning/Clock-and-Calendar-Problems/0"> <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
         </div>     

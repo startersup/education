@@ -214,7 +214,6 @@ if ($conn->query($sql) === TRUE) {
                                 $sub=str_replace('_',' ',$sub);
                                 $qid=preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['qid']);
                                 $sql="select question,op1,op2,op3,op4,appeared,answer,explanation from questions where category='".$cat."' AND sub='".$sub."' AND qid='".$qid."'";
-                                echo $sql;
                                 $query=mysqli_query($conn,$sql);
                                 $row = mysqli_fetch_assoc($query);
                                     echo "<p>1) ".$row['question']."</p>

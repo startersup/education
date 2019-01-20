@@ -201,51 +201,51 @@ if ($conn->query($sql) === TRUE) {
             <br>
         <div class="col-md-4">
             <div class="card hover topics"><h4>Reading Comprehension</h4>
-               <center><a href="quest.php?cat=Quantitative-Ability&sub=Reading-Comprehension&page=0"> <button class="button black">Start Practice</button></a></center>
+               <center><a href="quest/Quantitative-Ability/Reading-Comprehension/0"> <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
                  <div class="card hover topics"><h4>Jumbled Sentences</h4>
-               <center><a href="quest.php?cat=Quantitative-Ability&sub=Jumbled-Sentences&page=0">  <button class="button black">Start Practice</button></a></center>
+               <center><a href="quest/Quantitative-Ability/Jumbled-Sentences/0">  <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
                      <div class="card hover topics"><h4>Synonyms & Antonyms</h4>
-               <center> <a href="quest.php?cat=Quantitative-Ability&sub=Synonyms_Antonyms&page=0"> <button class="button black">Start Practice</button></a></center>
+               <center> <a href="quest/Quantitative-Ability/Synonyms_Antonyms/0"> <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
         </div>
                     <div class="row" >
         <div class="col-md-4">
             <div class="card hover topics"><h4>Error Spotting</h4>
-               <center> <a href="quest.php?cat=Quantitative-Ability&sub=Error-Spotting&page=0"> <button class="button black">Start Practice</button></a></center>
+               <center> <a href="quest/Quantitative-Ability/Error-Spotting/0"> <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
                  <div class="card hover topics"><h4>Sentence Corrections</h4>
-               <center> <a href="quest.php?cat=Quantitative-Ability&sub=Sentence-Corrections&page=0"> <button class="button black">Start Practice</button></a></center>
+               <center> <a href="quest/Quantitative-Ability/Sentence-Corrections/0"> <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
                      <div class="card hover topics"><h4>Summary Writing</h4>
-               <center><a href="quest.php?cat=Quantitative-Ability&sub=Summary-Writing&page=0">  <button class="button black">Start Practice</button></a></center>
+               <center><a href="quest/Quantitative-Ability/Summary-Writing/0">  <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
         </div>     
            <div class="row" >
         <div class="col-md-4">
             <div class="card hover topics"><h4>Para-completion</h4>
-               <center><a href="quest.php?cat=Quantitative-Ability&sub=Para-completion&page=0">  <button class="button black">Start Practice</button></a></center>
+               <center><a href="quest/Quantitative-Ability/Para-completion/0">  <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
                  <div class="card hover topics"><h4>Critical Reasoning</h4>
-               <center><a href="quest.php?cat=Quantitative-Ability&sub=Critical-Reasoning&page=0">  <button class="button black">Start Practice</button></a></center>
+               <center><a href="quest/Quantitative-Ability/Critical-Reasoning/0">  <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
                <div class="col-md-4">
                      <div class="card hover topics"><h4>Listen & Answer</h4>
-               <center> <a href="quest.php?cat=Quantitative-Ability&sub=Lister_Answer&page=0"> <button class="button black">Start Practice</button></a></center>
+               <center> <a href="quest/Quantitative-Ability/Lister_Answer/0"> <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
         </div>     

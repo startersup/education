@@ -219,7 +219,7 @@ if ($conn->query($sql) === TRUE) {
                                         <li>C) ".$row['op3']."</li>
                                         <li>D) ".$row['op4']."</li>
                                     </ul>
-                                    <a href='topic.php?cat=".$cat."&sub=".$sub."&qid=".$row['qid']."&qns=".$qns."'><button class='btn btn-success'>View Answer</button></a>
+                                    <a href='topic/".$cat."/".$sub."/".$row['qid']."/".$qns."'><button class='btn btn-success'>View Answer</button></a>
                                     <div class='display'><span>Asked in ".$row['appeared']."</span> 
                                 </div></div>
                                 <hr>"; $i++;}
@@ -231,20 +231,10 @@ if ($conn->query($sql) === TRUE) {
                                 $numrows=mysqli_num_rows($query);
                                 $cat=preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['cat']);
                                      $sub=preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['sub']);
-                                if($numrows<=(($count+1)*5)&&$count!=0)
-                                {
-                                    $c=$count-1;
-                                    echo "<center><a href='quest.php?cat=".$cat."&sub=".$sub."&page=".$c."'><button class='btn btn-success'>Prev</button></a>";
-                                }
-                                else{
-                                if($count>0){
-                                    $c=$count-1;
-                                echo "<center><a href=quest.php?cat=".$cat."&sub=".$sub."&page=".$c."><button class='btn btn-success' style='margin:0px 10px;'style='margin:0px 10px;'>Prev</button></a>" ;
+                                if($numrows>=(($count+1)*5)){
                                 $c=$count+1;
-                                echo"<a href=quest.php?cat=".$cat."&sub=".$sub."&page=".$c."><button class='btn btn-success'>Next</button></a></center>";}
-                                else if(!($numrows<=(($count+1)*5)))
-                                { $c=$count+1;
-                                    echo "<center><a href='quest.php?cat=".$cat."&sub=".$sub."&page=".$c."'><button class='btn btn-success' >Next</button></a>";} }?>
+                                echo"<a href=quest/".$cat."/".$sub."/".$c."><button class='btn btn-successs'>Next</button></a></center>";}
+                                ?>
                           </div>
                         </div>
                     </div>
