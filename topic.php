@@ -243,7 +243,8 @@ if ($conn->query($sql) === TRUE) {
                                                 </div>
                                             </div>
                                             <?php 
-                                              date_default_timezone_set("Asia/Kolkata");
+                                              $sql= "SET time_zone = 'Asia/Kolkata';";
+                                              $query=mysqli_query($conn,$sql);
                                                $sub=str_replace('-',' ',preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['sub']));
                                               $sub=str_replace('_',' ',$sub);
                                             if ($_SERVER["REQUEST_METHOD"] == "POST"){ if(isset($_POST["com"])){ if(isset($_SESSION['userid'])){ 
