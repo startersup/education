@@ -6,6 +6,10 @@ include 'config.php';
 <html lang="en">
 <head>
   <meta charset="utf-8">
+    <title>Educate Kid | <?php echo str_replace('-',' ',$_GET['sub']) ?> </title>
+     <link rel="icon" href="./assets/images/speed.png" type="image/gif" sizes="16x16">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta name="description" content=" <?php $cat=str_replace('-',' ',preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['cat']));
                                 $sub=str_replace('-',' ',preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['sub']));
                                 $sub=str_replace('_',' ',$sub);
@@ -13,10 +17,7 @@ include 'config.php';
                                 $query=mysqli_query($conn,$sql);
                                 $row = mysqli_fetch_assoc($query);
                                 echo $row['question'] ?> ">
-<title><?php echo str_replace('-',' ',$_GET['sub']) ?> </title>
- <link rel="icon" href="./assets/images/speed.png" type="image/gif" sizes="16x16">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keyword" content="aptitude questions, placement questions, tcs aptitiude questions, cts placement questions, ibm placement papers, aptitude practice">
 <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Roboto:500" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
