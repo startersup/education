@@ -243,7 +243,7 @@ if ($conn->query($sql) === TRUE) {
                                                 </div>
                                             </div>
                                             <?php 
-                                              $sql="SET timezone='+5:30';";
+                                              $sql="SET time_zone='+5:30';";
                                               echo $sql;
                                               $query=mysqli_query($conn,$sql);
                                                $sub=str_replace('-',' ',preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['sub']));
