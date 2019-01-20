@@ -1,7 +1,52 @@
 <?php
 session_start();
 include 'config.php';
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (isset($_POST["login"])) {
+     $logname=$_POST['logname'];
+     $logpass=$_POST['logpass'];
+     $sql="select userid ,uname from users where (uname='".$logname."' OR email ='".$logname."') AND password='".$logpass."'";    
+     $query=mysqli_query($conn,$sql);
+     $numrows=mysqli_num_rows($query);
+     if($numrows>0)
+     {
+      $row = mysqli_fetch_assoc($query);
+      $_SESSION["userid"]= $row["userid"]; 
+      $_SESSION["uname"]= $row["uname"];
+      session_write_close();
+      header('location:'.$_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING']);
+      exit();
+     }
+     else
+     {
+      echo '<script language="javascript">';
+        echo 'alert("Invalid Credentials")';
+         echo '</script>';
+     }
+}else if(isset($_POST["signup"])){  
+  $id=uniqid('USR');
+  $uname = $_POST["user"];
+  $email = $_POST["email"];
+  $pass =  $_POST["pass"];
+  $sql = "INSERT INTO users (userid, uname, email, password)
+   VALUES ('".$id."', '".$uname."', '".$email."','".$pass."')";
+
+if ($conn->query($sql) === TRUE) {
+    $_SESSION["userid"]= $id; 
+    $_SESSION["uname"]= $uname;
+    session_write_close();
+    header('location:'.$_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING']);
+     exit();
+} else {
+  echo '<script language="javascript">';
+    echo 'alert("Try Again")';
+    echo '</script>';
+}
+}
+//mysqli_close($conn);
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -105,7 +150,70 @@ include 'config.php';
 						</form>
 					</li>
 				</ul>
-			</li>
+			</li><?php
+         if(isset($_SESSION["userid"]))
+          {
+              echo "<li class=nav-item dropdown'>
+        <a data-toggle='dropdown' href='#'' class='nav-link dropdown-toggle'> ".$_SESSION['uname']." !</a>
+        <ul class='dropdown-menu'>          
+          <li><a href='#' class='dropdown-item'>Profile</a></li>
+          <li><a href='qbank.html' class='dropdown-item'>your post</a></li>
+                    <li><a href='aptitude.php' class='dropdown-item'>Settings</a></li>
+          <li><a href='logout.php' class='dropdown-item'>Logout</a></li>
+        </ul>
+      </li>";
+                   
+            }
+            else{
+            echo "<li class='nav-item'><a id='log' data-toggle='dropdown' class='nav-link dropdown-toggle' href='#''>Login</a>
+        <ul class='dropdown-menu form-wrapper'>   
+            <li>
+            <form action='' method='post'>
+              <p class='hint-text'>Sign in with your social media account</p>
+              <div class='form-group social-btn clearfix'>
+                <a href='#' class='btn btn-primary pull-left'><i class='fa fa-facebook'></i> Facebook</a>
+                <a href='#' class='btn btn-info pull-right'><i class='fa fa-twitter'></i> Twitter</a>
+              </div>
+              <div class='or-seperator'><b>or</b></div>
+              <div class='form-group'>
+                <input type='text' name='logname' class='form-control' placeholder='Username or Email ' required='required'>
+              </div>
+              <div class='form-group'>
+                <input type='password' name='logpass' class='form-control' placeholder='Password' required='required'>
+              </div>
+              <input name='login' type='submit' class='btn btn-primary btn-block' value='Login'>
+              <div class='form-footer'>
+                <a href='#'>Forgot Your password?</a>
+              </div>
+            </form>
+          </li></ul><li class='nav-item'>
+        <a id='sign'  href='#' data-toggle='dropdown' class='btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1'>Sign up</a>
+        <ul class='dropdown-menu form-wrapper'>         
+          <li>
+            <form action='' method='post'>
+              <p class='hint-text'>Fill in this form to create your account!</p>
+              <div class='form-group'>
+                <input name='user' type='text' class='form-control' placeholder='Username' required='required'>
+              </div>
+                            <div class='form-group'>
+                <input name='email' type='text' class='form-control' placeholder='Email Address' required='required'>
+              </div>
+              <div class='form-group'>
+                <input name='pass' type='password' class='form-control' placeholder='Password' required='required'>
+              </div>
+              <div class='form-group'>
+                <input name='repass' onkeyup='check();' type='password' class='form-control' placeholder='Confirm Password' required='required'>
+              </div>
+              <div class='form-group'>
+                                <label class='checkbox-inline'><input type='checkbox' required='required'>Remember me</label>   
+              </div>
+              <input name='signup' type='submit' class='btn btn-primary btn-block' value='Sign up' disabled='true'>
+            </form>
+          </li>
+        </ul>
+      </li>";
+          }
+              ?>
 		</ul>
 	</div>
     <div id="mySidebar" class="sidepanel" >

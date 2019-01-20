@@ -1,7 +1,52 @@
 <?php
 session_start();
 include 'config.php';
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (isset($_POST["login"])) {
+     $logname=$_POST['logname'];
+     $logpass=$_POST['logpass'];
+     $sql="select userid ,uname from users where (uname='".$logname."' OR email ='".$logname."') AND password='".$logpass."'";    
+     $query=mysqli_query($conn,$sql);
+     $numrows=mysqli_num_rows($query);
+     if($numrows>0)
+     {
+      $row = mysqli_fetch_assoc($query);
+      $_SESSION["userid"]= $row["userid"]; 
+      $_SESSION["uname"]= $row["uname"];
+      session_write_close();
+      header('location:'.$_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING']);
+      exit();
+     }
+     else
+     {
+      echo '<script language="javascript">';
+        echo 'alert("Invalid Credentials")';
+         echo '</script>';
+     }
+}else if(isset($_POST["signup"])){  
+  $id=uniqid('USR');
+  $uname = $_POST["user"];
+  $email = $_POST["email"];
+  $pass =  $_POST["pass"];
+  $sql = "INSERT INTO users (userid, uname, email, password)
+   VALUES ('".$id."', '".$uname."', '".$email."','".$pass."')";
+
+if ($conn->query($sql) === TRUE) {
+    $_SESSION["userid"]= $id; 
+    $_SESSION["uname"]= $uname;
+    session_write_close();
+    header('location:'.$_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING']);
+     exit();
+} else {
+  echo '<script language="javascript">';
+    echo 'alert("Try Again")';
+    echo '</script>';
+}
+}
+//mysqli_close($conn);
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,57 +108,70 @@ include 'config.php';
 			</div>
 		</form>
 		<ul class="nav navbar-nav navbar-right ml-auto">			
-			<li class="nav-item">
-				<a id="log" data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Login</a>
-				<ul class="dropdown-menu form-wrapper">					
-					<li>
-						<form action="" method="post">
-							<p class="hint-text">Sign in with your social media account</p>
-							<div class="form-group social-btn clearfix">
-								<a href="#" class="btn btn-primary pull-left"><i class="fa fa-facebook"></i> Facebook</a>
-								<a href="#" class="btn btn-info pull-right"><i class="fa fa-twitter"></i> Twitter</a>
-							</div>
-							<div class="or-seperator"><b>or</b></div>
-							<div class="form-group">
-								<input type="text" name="logname" class="form-control" placeholder="Username or Email " required="required">
-							</div>
-							<div class="form-group">
-								<input type="password" name="logpass" class="form-control" placeholder="Password" required="required">
-							</div>
-							<input name="login" type="submit" class="btn btn-primary btn-block" value="Login">
-							<div class="form-footer">
-								<a href="#">Forgot Your password?</a>
-							</div>
-						</form>
-					</li>
-				</ul>
-			</li>
-			<li class="nav-item">
-				<a id="sign"  href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1">Sign up</a>
-				<ul class="dropdown-menu form-wrapper">					
-					<li>
-						<form action="" method="post">
-							<p class="hint-text">Fill in this form to create your account!</p>
-							<div class="form-group">
-								<input name="user" type="text" class="form-control" placeholder="Username" required="required">
-							</div>
-                            <div class="form-group">
-								<input name="email" type="text" class="form-control" placeholder="Email Address" required="required">
-							</div>
-							<div class="form-group">
-								<input name="pass" type="password" class="form-control" placeholder="Password" required="required">
-							</div>
-							<div class="form-group">
-								<input name="repass" onkeyup="check();" type="password" class="form-control" placeholder="Confirm Password" required="required">
-							</div>
-							<div class="form-group">
-                                <label class="checkbox-inline"><input type="checkbox" required="required">Remember me</label>   
-							</div>
-							<input name="signup" type="submit" class="btn btn-primary btn-block" value="Sign up" disabled="true">
-						</form>
-					</li>
-				</ul>
-			</li>
+			<?php
+         if(isset($_SESSION["userid"]))
+          {
+              echo "<li class=nav-item dropdown'>
+        <a data-toggle='dropdown' href='#'' class='nav-link dropdown-toggle'> ".$_SESSION['uname']." !</a>
+        <ul class='dropdown-menu'>          
+          <li><a href='#' class='dropdown-item'>Profile</a></li>
+          <li><a href='qbank.html' class='dropdown-item'>your post</a></li>
+                    <li><a href='aptitude.php' class='dropdown-item'>Settings</a></li>
+          <li><a href='logout.php' class='dropdown-item'>Logout</a></li>
+        </ul>
+      </li>";
+                   
+            }
+            else{
+            echo "<li class='nav-item'><a id='log' data-toggle='dropdown' class='nav-link dropdown-toggle' href='#''>Login</a>
+        <ul class='dropdown-menu form-wrapper'>   
+            <li>
+            <form action='' method='post'>
+              <p class='hint-text'>Sign in with your social media account</p>
+              <div class='form-group social-btn clearfix'>
+                <a href='#' class='btn btn-primary pull-left'><i class='fa fa-facebook'></i> Facebook</a>
+                <a href='#' class='btn btn-info pull-right'><i class='fa fa-twitter'></i> Twitter</a>
+              </div>
+              <div class='or-seperator'><b>or</b></div>
+              <div class='form-group'>
+                <input type='text' name='logname' class='form-control' placeholder='Username or Email ' required='required'>
+              </div>
+              <div class='form-group'>
+                <input type='password' name='logpass' class='form-control' placeholder='Password' required='required'>
+              </div>
+              <input name='login' type='submit' class='btn btn-primary btn-block' value='Login'>
+              <div class='form-footer'>
+                <a href='#'>Forgot Your password?</a>
+              </div>
+            </form>
+          </li></ul><li class='nav-item'>
+        <a id='sign'  href='#' data-toggle='dropdown' class='btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1'>Sign up</a>
+        <ul class='dropdown-menu form-wrapper'>         
+          <li>
+            <form action='' method='post'>
+              <p class='hint-text'>Fill in this form to create your account!</p>
+              <div class='form-group'>
+                <input name='user' type='text' class='form-control' placeholder='Username' required='required'>
+              </div>
+                            <div class='form-group'>
+                <input name='email' type='text' class='form-control' placeholder='Email Address' required='required'>
+              </div>
+              <div class='form-group'>
+                <input name='pass' type='password' class='form-control' placeholder='Password' required='required'>
+              </div>
+              <div class='form-group'>
+                <input name='repass' onkeyup='check();' type='password' class='form-control' placeholder='Confirm Password' required='required'>
+              </div>
+              <div class='form-group'>
+                                <label class='checkbox-inline'><input type='checkbox' required='required'>Remember me</label>   
+              </div>
+              <input name='signup' type='submit' class='btn btn-primary btn-block' value='Sign up' disabled='true'>
+            </form>
+          </li>
+        </ul>
+      </li>";
+          }
+      ?>
 		</ul>
 	</div>
     <div id="mySidebar" class="sidepanel" >
@@ -167,10 +225,10 @@ include 'config.php';
                                     </div>
                                         <p><b>Answer:</b> ".$row['answer']."</p>
                                          <p><b>Explanation:</b></p><textarea style='max-width:1000px;
-        width:100%;
-        min-height:300px;
-        font-size:14px;
-         font-family:'proximanovasemibold';readonly>".$row['explanation']."</textarea> 
+                                          width:100%;
+                                          min-height:300px;
+                                          font-size:14px;
+                                           font-family:'proximanovasemibold';readonly>".$row['explanation']."</textarea> 
                                     </div>";
                                     ?>
                                   <div class="commentbox">
@@ -178,25 +236,33 @@ include 'config.php';
                                         <div class="comments">
                                             <div class="comment-wrap">
                                                 <div class="comment-block">
-                                                    <form action="">
-                                                        <textarea name="" id="" cols="0" rows="3" placeholder="Add comment..."></textarea>
-                                                        <input class="btn btn-primary" type="submit" value="Comment">
+                                                    <form action="" method="post">
+                                                        <textarea name="comment"  cols="0" rows="3" placeholder="Add comment..."></textarea>
+                                                        <input name="com" class="btn btn-primary" type="submit" value="Comment">
                                                     </form>
                                                 </div>
                                             </div>
-
-                                            <div class="comment-wrap">
-                                                <div class="comment-block">
-                                                    <p class="comment-text">Hii he is right</p>
-                                                    <div class="bottom-comment">
-                                                        <div class="comment-date"><span>Posted by Sai</span> | Aug 24, 2014 @ 2:35 PM</div>
-                                                        <ul class="comment-actions">
-                                                            
-                                                            <li class="reply">Reply</li>
-                                                        </ul>
+                                            <?php 
+                                               $sub=str_replace('-',' ',preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['sub']));
+                                              $sub=str_replace('_',' ',$sub);
+                                            if ($_SERVER["REQUEST_METHOD"] == "POST"){ if(isset($_POST["com"])){ if(isset($_SESSION['userid'])){ 
+                                             $sql="INSERT into comments (comment,user,dt,qid) values('".$_POST['comment']."','".$_SESSION['uname']."',CURRENT_TIMESTAMP,'".$_GET['qid']."')";
+                                             $query=mysqli_query($conn,$sql);
+                                             } else { echo '<script language="javascript">';
+                                                    echo 'alert("Login First")';
+                                                      echo '</script>';} } } 
+                                               $sql="select * from comments where qid='".$_GET['qid']."'";
+                                               $query=mysqli_query($conn,$sql);
+                                                while($row = mysqli_fetch_assoc($query)) {       
+                                               echo  "<div class='comment-wrap'>
+                                                <div class='comment-block'>
+                                                    <p class='comment-text'>".$row['comment']."</p>
+                                                    <div class='bottom-comment'>
+                                                        <div class='comment-date'><span>Posted by ".$row['user']."</span> | ".$row['dt']."</div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                               </div>";
+                                                      }?>
                                       </div>
                                     </div>
                                 </div>
