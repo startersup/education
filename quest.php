@@ -100,57 +100,7 @@ if ($conn->query($sql) === TRUE) {
 			</div>
 		</form>
 		<ul class="nav navbar-nav navbar-right ml-auto">			
-			<li class="nav-item">
-				<a id="log" data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Login</a>
-				<ul class="dropdown-menu form-wrapper">					
-					<li>
-						<form action="" method="post">
-							<p class="hint-text">Sign in with your social media account</p>
-							<div class="form-group social-btn clearfix">
-								<a href="#" class="btn btn-primary pull-left"><i class="fa fa-facebook"></i> Facebook</a>
-								<a href="#" class="btn btn-info pull-right"><i class="fa fa-twitter"></i> Twitter</a>
-							</div>
-							<div class="or-seperator"><b>or</b></div>
-							<div class="form-group">
-								<input type="text" name="logname" class="form-control" placeholder="Username or Email " required="required">
-							</div>
-							<div class="form-group">
-								<input type="password" name="logpass" class="form-control" placeholder="Password" required="required">
-							</div>
-							<input name="login" type="submit" class="btn btn-primary btn-block" value="Login">
-							<div class="form-footer">
-								<a href="#">Forgot Your password?</a>
-							</div>
-						</form>
-					</li>
-				</ul>
-			</li>
-			<li class="nav-item">
-				<a id="sign"  href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1">Sign up</a>
-				<ul class="dropdown-menu form-wrapper">					
-					<li>
-						<form action="" method="post">
-							<p class="hint-text">Fill in this form to create your account!</p>
-							<div class="form-group">
-								<input name="user" type="text" class="form-control" placeholder="Username" required="required">
-							</div>
-                            <div class="form-group">
-								<input name="email" type="text" class="form-control" placeholder="Email Address" required="required">
-							</div>
-							<div class="form-group">
-								<input name="pass" type="password" class="form-control" placeholder="Password" required="required">
-							</div>
-							<div class="form-group">
-								<input name="repass" onkeyup="check();" type="password" class="form-control" placeholder="Confirm Password" required="required">
-							</div>
-							<div class="form-group">
-                                <label class="checkbox-inline"><input type="checkbox" required="required">Remember me</label>   
-							</div>
-							<input name="signup" type="submit" class="btn btn-primary btn-block" value="Sign up" disabled="true">
-						</form>
-					</li>
-				</ul>
-			</li><?php
+		<?php
          if(isset($_SESSION["userid"]))
           {
               echo "<li class=nav-item dropdown'>
