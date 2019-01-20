@@ -8,13 +8,19 @@ body {
 .bold
 {
     font-size:18px;
+    color:#0b8d21;
+     font-family: 'ProximaNovaBold';
 }
 .nav-right
 {
     margin-left:100px;
     
 }
-
+.ptag span
+{
+    color:#25a3c6;
+     font-family: 'ProximaNovaBold';
+}
 .navbar-brand span
 {
     font-size:17px;
