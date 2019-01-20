@@ -231,9 +231,11 @@ if ($conn->query($sql) === TRUE) {
                                 $numrows=mysqli_num_rows($query);
                                 $cat=preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['cat']);
                                      $sub=preg_replace('#[^0-9a-zA-Z_-]#i', '', $_GET['sub']);
-                                if($numrows>=(($count+1)*5)){
+                                if($numrows>=(($count+1)*5))
+                                {
                                 $c=$count+1;
-                                echo"<a href=quest/".$cat."/".$sub."/".$c."><button class='btn btn-successs'>Next</button></a></center>";}
+                                echo"<center><a href=quest/".$cat."/".$sub."/".$c."><button class='btn btn-successs'>Next</button></a></center>";
+                                }
                                 ?>
                           </div>
                         </div>
