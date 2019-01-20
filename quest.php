@@ -234,7 +234,7 @@ if ($conn->query($sql) === TRUE) {
                                 if($numrows>(($count+1)*5))
                                 {
                                 $c=$count+1;
-                                echo"<center><a href='quest/".$cat."/".$sub."/".$c."'><button class='btn btn-successs'>Next</button></a></center>";
+                                echo"<center><a href='quest/".$cat."/".$sub."/".$c."'><button class='btn btn-success'>Next</button></a></center>";
                                 }
                                 ?>
                           </div>
