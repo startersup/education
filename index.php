@@ -166,8 +166,8 @@ mysqli_close($conn);
 	</div>
     <div id="mySidebar" class="sidepanel" >
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="margin-top:50px;">×</a>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
+  <a href="../index.php">Home</a>
+  <a href="./about">About</a>
   <a href="#about">Workshops</a>        
   <a href="#about">Placements</a>  
   <a href="#about">Engineering</a> 
