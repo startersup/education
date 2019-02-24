@@ -74,7 +74,7 @@ mysqli_close($conn);
 	</div>
 	<div class="hidden-xs hidden-sm">
 		<ul class="nav navbar-nav">
-			<li class="nav-item"><a href="./index.php" class="nav-link">Home</a></li>
+			<li class="nav-item"><a href="../index.php" class="nav-link">Home</a></li>
 			<li class="nav-item"><a href="./events/" class="nav-link">Events</a></li>			
 			<li class="nav-item dropdown">
 				<a data-toggle="dropdown" href="#" class="nav-link dropdown-toggle">Services<b class="caret"></b></a>
@@ -86,8 +86,8 @@ mysqli_close($conn);
 					<li><a href="./jobs" class="dropdown-item">Job Alerts</a></li>
 				</ul>
 			</li>
-			<li class="nav-item "><a href="#" class="nav-link">Online Exams</a></li>
-			<li class="nav-item"><a href="#" class="nav-link">Company Reviews</a></li>
+			<li class="nav-item "><a href="./onexams" class="nav-link">Online Exams</a></li>
+			<li class="nav-item"><a href="./reviews" class="nav-link">Company Reviews</a></li>
 			<li class="nav-item"><a href="./forum/" class="nav-link">Forum</a></li>
 		</ul>
             

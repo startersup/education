@@ -27,20 +27,20 @@
 	</div>
 	<div class="hidden-xs hidden-sm">
 		<ul class="nav navbar-nav">
-			<li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
+			<li class="nav-item"><a href="../index.php" class="nav-link">Home</a></li>
 			<li class="nav-item"><a href="./events/" class="nav-link">Events</a></li>			
 			<li class="nav-item dropdown">
 				<a data-toggle="dropdown" href="#" class="nav-link dropdown-toggle">Services<b class="caret"></b></a>
 				<ul class="dropdown-menu">					
-					<li><a href="#" class="dropdown-item">Engineering E-Books</a></li>
-					<li><a href="qbank.html" class="dropdown-item">Engineering Question Banks</a></li>
-                    <li><a href="aptitude.php" class="dropdown-item">Aptitude Practice</a></li>
-					<li><a href="#" class="dropdown-item">Placement Papers</a></li>
-					<li><a href="job.html" class="dropdown-item">Job Alerts</a></li>
+					<li><a href="./ebooks" class="dropdown-item">Engineering E-Books</a></li>
+					<li><a href="./qbank.html" class="dropdown-item">Engineering Question Banks</a></li>
+                    <li><a href="./aptitude.php" class="dropdown-item">Aptitude Practice</a></li>
+					<li><a href="./placepapers" class="dropdown-item">Placement Papers</a></li>
+					<li><a href="./jobs" class="dropdown-item">Job Alerts</a></li>
 				</ul>
 			</li>
-			<li class="nav-item "><a href="#" class="nav-link">Online Exams</a></li>
-			<li class="nav-item"><a href="#" class="nav-link">Company Reviews</a></li>
+			<li class="nav-item "><a href="./onexams" class="nav-link">Online Exams</a></li>
+			<li class="nav-item"><a href="./reviews" class="nav-link">Company Reviews</a></li>
 			<li class="nav-item"><a href="./forum/" class="nav-link">Forum</a></li>
 		</ul>
             
