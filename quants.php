@@ -193,7 +193,7 @@ if ($conn->query($sql) === TRUE) {
              <br>
     <div class="card topping">
      <h3><i class="fa fa-star" aria-hidden="true"></i> Quantative Ability</h3>
-       
+       <hr>
         <div id="preloader">
   <div id="status">&nbsp;</div>
 </div>
