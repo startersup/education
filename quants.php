@@ -193,7 +193,6 @@ if ($conn->query($sql) === TRUE) {
              <br>
     <div class="card topping">
      <h3><i class="fa fa-star" aria-hidden="true"></i> Quantative Ability</h3>
-       <hr>
         <div id="preloader">
   <div id="status">&nbsp;</div>
 </div>
@@ -201,7 +200,7 @@ if ($conn->query($sql) === TRUE) {
         <div class="row" >
             <br>
         <div class="col-md-4">
-            <div class="card topics"><h4>Number System</h4>
+            <div class="card hover topics"><h4>Number System</h4>
                <center><a href="quest/Quantitative-Ability/Number-Systems/0"> <button class="button black">Start Practice</button></a></center>
             </div>
             </div>
