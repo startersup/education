@@ -88,7 +88,6 @@ mysqli_close($conn);
 					<li><a href="./jobs" class="dropdown-item">Job Alerts</a></li>
 				</ul>
 			</li>
-			<li class="nav-item"><a href="./reviews" class="nav-link">Company Reviews</a></li>
 			<li class="nav-item"><a href="./forum/" class="nav-link">Forum</a></li>
 		</ul>
             
