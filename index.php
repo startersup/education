@@ -90,7 +90,12 @@ mysqli_close($conn);
 			</li>
 			<li class="nav-item"><a href="./forum/" class="nav-link">Forum</a></li>
 		</ul>
-            
+            <form class="navbar-form form-inline">
+			<div class="input-group search-box">								
+				<input type="text" id="search" class="form-control" placeholder="Search here...">
+				<span class="input-group-addon"><i class="fa fa-search"></i></span>
+			</div>
+</form>
 		<ul class="nav navbar-nav navbar-right ml-auto">							
          <?php
          if(isset($_SESSION["userid"]))
