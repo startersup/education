@@ -68,7 +68,9 @@ mysqli_close($conn);
 </head>
 <body style=" background-color: #f6f5f2;">
 <nav class="navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-light">
+	
 	<div class="navbar-header d-flex col">
+		<div class="container">
 		<a class="navbar-brand" href="#">Educate<b> Kid</b></a>  		
 			<i data-target="#navbarCollapse" onclick="openNav()" data-toggle="collapse" class="navbar-toggle navbar-toggler visible-xs visible-sm ml-auto fa fa-bars" ></i>
 	</div>
@@ -180,7 +182,7 @@ mysqli_close($conn);
   <a href="#about">Company Reviews</a>  
   <a href="#about">Ebooks & Manuals</a>  
   <a href="#about" >Login / signup</a>  
-</div>
+		</div></div>
 </nav>
 
         <section class="background">
