@@ -199,7 +199,7 @@ mysqli_close($conn);
           <h1>A Complete Guide for Engineering Students</h1>  
             <h3>A Forum that integrates all the betterments of students that to attain success.</h3>
                     
-                <ul>
+                <ul class="mainul">
                 <li>Better Clarity</li>
                  <li>Better Knowledge</li>
                 </ul>
