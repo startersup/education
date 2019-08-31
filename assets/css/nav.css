@@ -199,6 +199,10 @@ body{
 	.navbar .form-wrapper .checkbox-inline input {
 		margin-top: 3px;
 	}
+     .navbar-form
+{
+    margin-top:10px;
+}
 	.or-seperator {
         margin-top: 32px;
 		text-align: center;
