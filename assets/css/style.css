@@ -239,6 +239,12 @@ color:#007bff;
    margin-top:60px;
     overflow-x:hidden;  
 }
+.topcard
+{
+    padding:10px;
+    background-color: #6b55a1;
+    color:#ffffff;
+}
 h3
 {
   font-family: Roboto, sans-serif;
