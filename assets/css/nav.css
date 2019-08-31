@@ -62,8 +62,9 @@ body{
 	}
 	.navbar .nav li a {
 		color: #37474F;
-        font-size:18px;
+        font-size:16px;
         margin:10px 5px !important;
+        font-weight:400;
         font-family: 'ProximaNovaSemibold';
 	}
 	.navbar .nav li a:hover {
