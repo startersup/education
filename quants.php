@@ -191,7 +191,7 @@ if ($conn->query($sql) === TRUE) {
 </nav>
 
 
-    <section class="main" id="main">
+    <section class="quants" id="main">
         <div class="container1">
     <div class="row">
         <div class="col-md-10">
