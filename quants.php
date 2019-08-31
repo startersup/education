@@ -67,7 +67,7 @@ if ($conn->query($sql) === TRUE) {
       <link rel="stylesheet" href="./assets/css/fonts.css">
       <script src="./assets/js/sidenav.js"></script> 
 </head>
-<body style="background-color:#fdfdfd;">
+<body>
 <nav class="navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-light">
 	<div class="navbar-header d-flex col">
 		<a class="navbar-brand" href="#">Educate<b> Kid</b></a>  		
