@@ -79,6 +79,7 @@ if ($conn->query($sql) === TRUE) {
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-light">
+    	<div class="container">
 	<div class="navbar-header d-flex col">
 		<a class="navbar-brand" href="#">Educate<b> Kid</b></a>  		
 			<i data-target="#navbarCollapse" onclick="openNav()" data-toggle="collapse" class="navbar-toggle navbar-toggler visible-xs visible-sm ml-auto fa fa-bars" ></i>
@@ -198,6 +199,7 @@ if ($conn->query($sql) === TRUE) {
   <a href="#about" >Login / signup</a>  
   </div>
 </div>
+    </div>
 </nav>
    
     <section class="main" id="main">
