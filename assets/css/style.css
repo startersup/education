@@ -36,7 +36,6 @@ body {
 .navbar
 {
     border:none !important;
-     min-height:60px !important;
 }
 .navbar-default .navbar-toggle {
     border-color: transparent;
