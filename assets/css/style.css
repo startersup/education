@@ -645,8 +645,9 @@ color:#007bff;
 {
    font-family: 'ProximaNovaBold';
     padding: 10px;
-    line-height: 50px;
-    text-align: right;
+    line-height: 60px;
+    text-align:center;
+    font-size:60px;
     color: #000000;
 }
 
