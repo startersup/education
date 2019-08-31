@@ -66,7 +66,7 @@ mysqli_close($conn);
       <link rel="stylesheet" href="./assets/css/fonts.css">
       <script src="./assets/js/sidenav.js"></script> 
 </head>
-<body style=" background-color: #f6f5f2;">
+<body>
 <nav class="navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-light">
 	<div class="container">
 	<div class="navbar-header d-flex col">
