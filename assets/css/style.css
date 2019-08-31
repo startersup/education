@@ -228,7 +228,7 @@ color:#007bff;
 .main
 {
     margin:60px 0px;
-    padding:100px 20px;
+    padding:100px 20px !important;
     overflow-x:hidden;
     background: #ffffff;
     background: -moz-linear-gradient(top, #ffffff 41%, #f7f9fa 100%);
