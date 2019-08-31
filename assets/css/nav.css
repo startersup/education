@@ -43,7 +43,7 @@ body{
 		padding-left: 0;
 		font-size: 23px;
         color:#37474F;
-        font-weight:900;
+        font-weight:900 !important;
          margin: 10px 5px;
 		padding-right: 50px;
 	}
