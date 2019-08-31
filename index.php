@@ -200,6 +200,7 @@ mysqli_close($conn);
             <h3>A Forum that integrates all the betterments of students that to attain success.</h3>
                     
                 <p>Better clarity <span>|</span> Better Knowledge <span>|</span> Better Career</p>
+                    <center><button class="readmore">Read More</button></center>
             </div>
                 <div class="col-md-5">
             <center><img class="mainimg" src="./assets/images/educate.png"></center>
