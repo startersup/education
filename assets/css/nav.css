@@ -148,7 +148,7 @@ body{
     width:100%;
     min-width:max-content;
     padding:10px;
-    border-radius:5px;
+    border-radius:5px !important;
     box-shadow: 0 0 50px rgba(0,0,0,.18) !important;
     box-shadow: 0 0 50px rgba(0,0,0,.10) !important;
 }
@@ -168,7 +168,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;    
  z-index: 300;
     left: 0%;
-    top: 50px;
+    top: 60px;
     margin-left:60px;
     border:none;
     opacity: 1;
