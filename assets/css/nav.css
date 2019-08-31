@@ -41,6 +41,9 @@ body{
          margin: 10px 5px;
 		padding-right: 50px;
 	}
+.navbar-brand:hover{
+    color:#ffffff;
+}
 	.navbar .navbar-brand b {
 		font-weight: bold;
 		color: #33cabb;		
