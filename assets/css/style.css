@@ -636,6 +636,11 @@ color:#007bff;
     margin-left:0.5%;
     margin-right:0.5%;
 }
+.mainimg
+{
+    max-width:500px;
+    width:100%;
+}
 .mainspeech
 {
     padding-top:120px;
