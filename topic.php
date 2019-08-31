@@ -210,7 +210,7 @@ if ($conn->query($sql) === TRUE) {
                         <br>
                         <div class="card topping">
                             <div class="topcard">
-                            <h3><i class="fa fa-star" aria-hidden="true"></i><?php $sub= str_replace("_", " & ",$_GET["sub"] ); $sub= str_replace("-", " ",$sub ); echo $sub; ?></h3>
+                            <h3><i class="fa fa-star" aria-hidden="true"></i> <?php $sub= str_replace("_", " & ",$_GET["sub"] ); $sub= str_replace("-", " ",$sub ); echo $sub; ?></h3>
                             </div><br><br>
                             <div id="preloader">
                                 <div id="status">&nbsp;</div>
