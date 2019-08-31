@@ -21,7 +21,9 @@
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-light">
+	<div class="container">
 	<div class="navbar-header d-flex col">
+	
 		<a class="navbar-brand" href="#">Educate<b> Kid</b></a>  		
 			<i data-target="#navbarCollapse" onclick="openNav()" data-toggle="collapse" class="navbar-toggle navbar-toggler visible-xs visible-sm ml-auto fa fa-bars" ></i>
 	</div>
@@ -39,17 +41,14 @@
 					<li><a href="./jobs" class="dropdown-item">Job Alerts</a></li>
 				</ul>
 			</li>
-			<li class="nav-item "><a href="./onexams" class="nav-link">Online Exams</a></li>
-			<li class="nav-item"><a href="./reviews" class="nav-link">Company Reviews</a></li>
 			<li class="nav-item"><a href="./forum/" class="nav-link">Forum</a></li>
 		</ul>
-            
-		<form class="navbar-form form-inline">
+            <form class="navbar-form form-inline" action="https://www.google.com/search" method="get">
 			<div class="input-group search-box">								
 				<input type="text" id="search" class="form-control" placeholder="Search here...">
 				<span class="input-group-addon"><i class="fa fa-search"></i></span>
 			</div>
-		</form>
+</form>
 		<ul class="nav navbar-nav navbar-right ml-auto">							
          <?php
          if(isset($_SESSION["userid"]))
@@ -119,8 +118,8 @@
 	</div>
     <div id="mySidebar" class="sidepanel" >
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="margin-top:50px;">×</a>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
+  <a href="../index.php">Home</a>
+  <a href="./about">About</a>
   <a href="#about">Workshops</a>        
   <a href="#about">Placements</a>  
   <a href="#about">Engineering</a> 
@@ -133,8 +132,10 @@
   <a href="#about">Company Reviews</a>  
   <a href="#about">Ebooks & Manuals</a>  
   <a href="#about" >Login / signup</a>  
-</div>
+		</div>
+        </div>
 </nav>
+
        
 
     <section class="main" id="main">
