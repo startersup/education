@@ -42,7 +42,7 @@ body{
 		padding-right: 50px;
 	}
 .navbar-brand:hover{
-    color:#ffffff;
+    color:#ffffff !important;
 }
 	.navbar .navbar-brand b {
 		font-weight: bold;
