@@ -164,9 +164,8 @@ mysqli_close($conn);
 		</ul>
 	</div>
   <div id="myNav" class="overlay">
-  <p>Menu</p><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
-      <br>
                    <form class="navbar-form form-inline" action="https://www.google.com/search" method="get">
 			<div class="input-group search-box">								
 				<input type="text" id="search" class="form-control" placeholder="Search here...">
