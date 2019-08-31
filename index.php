@@ -197,7 +197,7 @@ mysqli_close($conn);
             <div class="row">
                 <div class="col-md-6">
           <h1>A Complete Guide for Engineering Students</h1>  
-            <h3>A Forum that integrates all the Betterments of Engineering students to attain Success.</h3>
+            <h3>A Forum that integrates all the betterments of students to attain Success.</h3>
             </div>
                 <div class="col-md-6">
             <center><img class="mainimg" src="./assets/images/educate.png"></center>
