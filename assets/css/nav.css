@@ -34,7 +34,7 @@ body{
 		float: left;
 		margin-right: 10px;
 	}
-	.navbar-brand, .navbar{
+	.navbar .navbar-brand, .navbar{
 		padding-left: 0;
 		font-size: 23px;
         color:#ffffff;
