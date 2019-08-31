@@ -51,7 +51,7 @@ mysqli_close($conn);
 <html lang="en">
 <head>
   <meta charset="utf-8">
-<title>Engineering Kit | A Complete Guide for Engineering Students</title>
+<title>Educate Kit | A Complete Guide for Engineering Students</title>
         <link rel="icon" href="./assets/images/speed.png" type="image/gif" sizes="16x16">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
