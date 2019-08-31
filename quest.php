@@ -202,7 +202,7 @@ if ($conn->query($sql) === TRUE) {
                             <div class="topcard">
                             <h3>  <?php $sub= str_replace("_", " & ",$_GET["sub"] ); $sub= str_replace("-", " ",$sub ); echo $sub; ?> </h3>
                                 </div>
-                            <hr>
+                            
                             <div id="preloader">
                                 <div id="status">&nbsp;</div>
                             </div>
