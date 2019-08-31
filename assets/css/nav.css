@@ -94,7 +94,7 @@ body{
 		font-size: 19px;
     }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-    color:yellow;
+    color:#37474F;
     background-color: transparent !important;
 }
 	.navbar .nav .btn-primary, .navbar .nav .btn-primary:active {
