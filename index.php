@@ -163,23 +163,15 @@ mysqli_close($conn);
             	?>
 		</ul>
 	</div>
-    <div id="mySidebar" class="sidepanel" >
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="margin-top:50px;">×</a>
-  <a href="../index.php">Home</a>
-  <a href="./about">About</a>
-  <a href="#about">Workshops</a>        
-  <a href="#about">Placements</a>  
-  <a href="#about">Engineering</a> 
-  <a href="#about">Internships</a>
-  <a href="#about">Public Forum</a>  
-  <a class="visible-xs" href="#about">Aptitude</a>
-  <a  href="#about">Online Exams</a>        
-  <a href="#about">Online Training</a>     
-  <a href="#about">Question Banks</a> 
-  <a href="#about">Company Reviews</a>  
-  <a href="#about">Ebooks & Manuals</a>  
-  <a href="#about" >Login / signup</a>  
-		</div>
+  <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
         </div>
 </nav>
 
@@ -289,8 +281,14 @@ $(function() {
         document.getElementsByName("repass")[0].style.outline = "3px solid red";
     }
    }
-
-    
-    
     </script>
+    <script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
     </body></html>
