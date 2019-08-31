@@ -90,12 +90,11 @@ mysqli_close($conn);
 			</li>
 			<li class="nav-item"><a href="./forum/" class="nav-link">Forum</a></li>
 		</ul>
-            <form class="navbar-form form-inline">
-			<div class="input-group search-box">								
-				<input type="text" id="search" class="form-control" placeholder="Search here...">
-				<span class="input-group-addon"><i class="fa fa-search"></i></span>
-			</div>
-</form>
+           <form action="https://www.google.com/search" method="get" target="_blank" class="clearfix">
+                <input type="hidden" value="www.tutorialrepublic.com" name="sitesearch">
+                <input type="text" name="q" placeholder="Search topics, tutorials, questions and answers..." id="searchInput" class="search">
+                <button type="submit" class="search-btn"><span class="icon-search"></span></button>
+            </form>
 		<ul class="nav navbar-nav navbar-right ml-auto">							
          <?php
          if(isset($_SESSION["userid"]))
