@@ -643,12 +643,12 @@ color:#007bff;
 }
 .mainspeech h1
 {
-   font-family: 'ProximaNovaBold';
-    padding: 10px;
-    line-height: 60px;
-    text-align:center;
-    font-size:60px;
-    color: #000000;
+   font-family: ProximaNovaBold;
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: .6px;
+    color: #19182e;
+    position: relative;
 }
 
 .mainspeech h3
