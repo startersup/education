@@ -250,7 +250,7 @@ mysqli_close($conn);
             </div>
          
         </div>   
-    </section><br><br>
+    </section>
      <div class="icon-bar hidden-xs">
   <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
   <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
