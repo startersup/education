@@ -229,6 +229,10 @@ color:#007bff;
 {
     margin-top:60px;
     overflow-x:hidden;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 41%, #f7f9fa 100%);
+    background: -webkit-linear-gradient(top, #ffffff 41%, #f7f9fa 100%);
+    background: linear-gradient(to bottom, #ffffff 41%, #f7f9fa 100%);
 }
 h3
 {
