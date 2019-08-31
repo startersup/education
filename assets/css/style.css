@@ -675,15 +675,11 @@ color:#007bff;
 .mainspeech p span
 {
    font-family: 'ProximaNovaSemibold';
-    font-size:20px;
+    font-size:25px;
     color:#000000;
     text-align: center; 
 }
-.mainul li
-{
-    font-size:25px;
-    text-align: left;
-}
+
 
 .border
 {
