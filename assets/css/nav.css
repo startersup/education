@@ -168,7 +168,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;    
  z-index: 300;
     left: 0%;
-    top: 60px;
+    top: 65px;
     margin-left:60px;
     border:none;
     opacity: 1;
