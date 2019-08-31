@@ -644,7 +644,10 @@ color:#007bff;
 .mainspeech h1
 {
    font-family: 'ProximaNovaBold';
-    color:#000000;
+    padding: 10px;
+    line-height: 50px;
+    text-align: right;
+    color: #000000;
 }
 
 .mainspeech h3
