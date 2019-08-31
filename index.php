@@ -195,12 +195,13 @@ mysqli_close($conn);
         <div class="mainspeech">
             <div class="row">
                 <div class="col-md-6">
-            <center><img src="./assets/images/educate.png"></center>
-                    </div>
-                <div class="col-md-6">
           <h1>A Complete Guide for Engineering Students</h1>  
             <h3>A Forum that integrates all the Betterments of Engineering students to attain Success.</h3>
-            </div></div>
+            </div>
+                <div class="col-md-6">
+            <center><img src="./assets/images/educate.png"></center>
+                    </div>
+                </div>
         </div>
         </section>
     <section class="main" id="main">
