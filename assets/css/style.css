@@ -659,8 +659,11 @@ color:#007bff;
 
 .mainspeech h3
 {
-   font-family: 'ProximaNovaSemibold';
-    color:#000000;
+   font-family: 'ProximaNovaRgRegular';
+    font-size:20px;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    color:#333333;
 }
 
 .border
