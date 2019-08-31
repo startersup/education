@@ -267,6 +267,27 @@ body{
 		}
 	}
 
+
+@media (max-width: 450px){
+footer p
+{
+    font-family: 'ProximaNovaRgRegular';
+    font-size:13px;
+    color:#CACACA;
+    
+}
+
+footer h4
+{
+    font-family: 'ProximaNovaSemibold';
+    padding:5px 0px;
+    font-size:14px;
+    width:50%;
+    border-bottom: 1px solid #9352f9;
+    border
+}
+}
+
 .overlay {
   height: 0%;
   width: 100%;
