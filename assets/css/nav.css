@@ -17,7 +17,7 @@ body{
 	}	
 	.navbar {
 		    position: fixed;
-    height: 54px;
+    height: 60px;
     box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.08);
     -webkit-box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.08);
     -moz-box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.08);
