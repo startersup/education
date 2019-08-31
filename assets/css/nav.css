@@ -146,7 +146,7 @@ body{
 {
    transition: transform .3s,width .3s,height .3s,-webkit-transform .3s;
     width:100%;
-    min-width:300px !important;
+    min-width:max-content;
     padding:10px;
     box-shadow: 0 0 50px rgba(0,0,0,.10);
 }
