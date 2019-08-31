@@ -149,8 +149,8 @@ body{
     min-width:max-content;
     padding:10px;
     border-radius:5px;
-    box-shadow: 0 0 50px rgba(0,0,0,.18);
-    box-shadow: 0 0 50px rgba(0,0,0,.10);
+    box-shadow: 0 0 50px rgba(0,0,0,.18) !important;
+    box-shadow: 0 0 50px rgba(0,0,0,.10) !important;
 }
 .dropdown-menu>li>a {
     display: block;
