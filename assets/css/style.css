@@ -679,7 +679,24 @@ color:#007bff;
     color:#000000;
     text-align: center; 
 }
-
+.readmore {
+    border: none;
+    text-decoration: none;
+    background-color: #fa9021;
+    box-shadow: 0 10px 16px 0 #ffcfe2;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1.9px;
+    text-align: center;
+    color: #fff;
+    border-radius:5px;
+    font-family: 'ProximaNovaSemibold';
+    padding: 27px 79px;
+    margin-right: 40px;
+    cursor: pointer;
+    transition: background-color .2s ease-in;
+    margin-right: 0;
+}
 
 .border
 {
