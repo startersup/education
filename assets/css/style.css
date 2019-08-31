@@ -234,6 +234,11 @@ color:#007bff;
     background: -webkit-linear-gradient(top, #ffffff 41%, #f7f9fa 100%);
     background: linear-gradient(to bottom, #ffffff 41%, #f7f9fa 100%);
 }
+.quants
+{
+   margin-top:60px;
+    overflow-x:hidden;  
+}
 h3
 {
   font-family: Roboto, sans-serif;
