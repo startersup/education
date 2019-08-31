@@ -68,7 +68,7 @@ mysqli_close($conn);
 </head>
 <body style=" background-color: #f6f5f2;">
 <nav class="navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-light">
-	
+	<div class="container">
 	<div class="navbar-header d-flex col">
 	
 		<a class="navbar-brand" href="#">Educate<b> Kid</b></a>  		
@@ -180,6 +180,7 @@ mysqli_close($conn);
   <a href="#about">Ebooks & Manuals</a>  
   <a href="#about" >Login / signup</a>  
 		</div>
+        </div>
 </nav>
 
         <section class="background">
