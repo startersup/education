@@ -55,6 +55,8 @@ mysqli_close($conn);
         <link rel="icon" href="./assets/images/speed.png" type="image/gif" sizes="16x16">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Get educated more by Learn and practice Aptitude questions and     answers with explanation for interview, competitive examination and entrance test. ">
+      <meta name="keywords" content="aptitude, questions, answers, interview, placement, papers, engineering, electronics, civil, mechanical, networking, hr, c, 2015, 2016, reasoning, program, verbal, gk, knowledge, language, explanation, solution, problem, online, test, exam, quiz">
 <link rel="stylesheet" href="./assets/css/style.css">
   <script src="./assets/js/sidenav.js"></script>  
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
