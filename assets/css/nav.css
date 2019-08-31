@@ -52,7 +52,7 @@ body{
 }
 	.navbar .navbar-brand b {
 		font-weight: bold;
-		color: #68E87B;		
+		color: #2EC28B;		
 	}
 	.navbar .form-inline {
         display: inline-block;
@@ -131,7 +131,7 @@ body{
 	}
 	.navbar ul.nav li.open > a.get-started-btn {
 		color: #fff;
-		background: #31bfb1 !important;
+		background: #2EC28B !important;
 	}
 	.navbar .dropdown-menu {
 		border-radius: 1px;
