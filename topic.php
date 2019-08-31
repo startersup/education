@@ -209,8 +209,9 @@ if ($conn->query($sql) === TRUE) {
                     <div class="Education">
                         <br>
                         <div class="card topping">
+                            <div class="topcard">
                             <h3><i class="fa fa-star" aria-hidden="true"></i><?php $sub= str_replace("_", " & ",$_GET["sub"] ); $sub= str_replace("-", " ",$sub ); echo $sub; ?></h3>
-                            <hr>
+                            </div><br><br>
                             <div id="preloader">
                                 <div id="status">&nbsp;</div>
                             </div>
