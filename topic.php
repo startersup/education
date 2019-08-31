@@ -97,8 +97,6 @@ if ($conn->query($sql) === TRUE) {
 					<li><a href="./jobs" class="dropdown-item">Job Alerts</a></li>
 				</ul>
 			</li>
-			<li class="nav-item "><a href="./onexams" class="nav-link">Online Exams</a></li>
-			<li class="nav-item"><a href="./reviews" class="nav-link">Company Reviews</a></li>
 			<li class="nav-item"><a href="./forum/" class="nav-link">Forum</a></li>
 		</ul>
             
@@ -175,10 +173,17 @@ if ($conn->query($sql) === TRUE) {
             	?>
 		</ul>
 	</div>
-    <div id="mySidebar" class="sidepanel" >
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="margin-top:50px;">×</a>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
+     <div id="myNav" class="overlay">
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+                   <form class="navbar-form form-inline" action="https://www.google.com/search" method="get">
+			<div class="input-group search-box">								
+				<input type="text" id="search" class="form-control" placeholder="Search here...">
+				<span class="input-group-addon"><i class="fa fa-search"></i></span>
+			</div>
+</form>
+   <a href="/">Home</a>
+  <a href="./about">About</a>
   <a href="#about">Workshops</a>        
   <a href="#about">Placements</a>  
   <a href="#about">Engineering</a> 
@@ -191,6 +196,7 @@ if ($conn->query($sql) === TRUE) {
   <a href="#about">Company Reviews</a>  
   <a href="#about">Ebooks & Manuals</a>  
   <a href="#about" >Login / signup</a>  
+  </div>
 </div>
 </nav>
    
