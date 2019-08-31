@@ -116,9 +116,16 @@
             	?>
 		</ul>
 	</div>
-    <div id="mySidebar" class="sidepanel" >
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="margin-top:50px;">×</a>
-  <a href="../index.php">Home</a>
+<div id="myNav" class="overlay">
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+                   <form class="navbar-form form-inline" action="https://www.google.com/search" method="get">
+			<div class="input-group search-box">								
+				<input type="text" id="search" class="form-control" placeholder="Search here...">
+				<span class="input-group-addon"><i class="fa fa-search"></i></span>
+			</div>
+</form>
+   <a href="/">Home</a>
   <a href="./about">About</a>
   <a href="#about">Workshops</a>        
   <a href="#about">Placements</a>  
@@ -132,7 +139,8 @@
   <a href="#about">Company Reviews</a>  
   <a href="#about">Ebooks & Manuals</a>  
   <a href="#about" >Login / signup</a>  
-		</div>
+  </div>
+</div>
         </div>
 </nav>
 
