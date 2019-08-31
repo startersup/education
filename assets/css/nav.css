@@ -304,6 +304,8 @@ body{
 .fa-bars
 {
     float:right;
+    font-size:20px;
+    margin-top:10px;
 }
 
 
