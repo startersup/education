@@ -665,6 +665,12 @@ color:#007bff;
     text-align: left;
     color:#333333;
 }
+.mainspeech p
+{
+      font-family: 'ProximaNovaSemibold';
+    font-size:25px;
+    text-align: center;
+}
 .mainul li
 {
     font-size:20px;
@@ -747,7 +753,6 @@ footer h4
 {
     font-family: 'ProximaNovaSemibold';
     padding:5px 0px;
-    
     width:50%;
     border-bottom: 1px solid #9352f9;
     border
