@@ -668,8 +668,16 @@ color:#007bff;
 .mainspeech p
 {
       font-family: 'ProximaNovaSemibold';
-    font-size:25px;
+    font-size:20px;
+    color:#31BFB1;
     text-align: center;
+}
+.mainspeech p span
+{
+   font-family: 'ProximaNovaSemibold';
+    font-size:20px;
+    color:#000000;
+    text-align: center; 
 }
 .mainul li
 {
