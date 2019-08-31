@@ -60,13 +60,13 @@ body{
 		position: relative;
 	}
 	.navbar .nav li a {
-		color: #ffffff;
+		color: #37474F;
         font-size:18px;
         margin:10px 5px !important;
         font-family: 'ProximaNovaSemibold';
 	}
 	.navbar .nav li a:hover {
-		color: yellow;
+		color: #37474F;
 	}
 	.search-box {
         position: relative;
