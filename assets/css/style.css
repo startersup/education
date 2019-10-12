@@ -5,7 +5,10 @@ body {
 }
 .background
 {
-    background-color:#FFD9FC;
+    background-image: url(../images/banner-bg.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover!important;
 }
 
 .bold
