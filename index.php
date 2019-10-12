@@ -207,7 +207,7 @@ mysqli_close($conn);
         <div class="mainspeech">
             <div class="container">
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-8">
           <h1>A Complete Guide for Engineering Students</h1>  
             <h3>A Forum that integrates all the betterments of students that to attain success.</h3>
                     
