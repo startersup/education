@@ -215,7 +215,7 @@ mysqli_close($conn);
                     <center><button class="readmore">Read More</button></center>
             </div>
                 <div class="col-md-5">
-            <center><img class="mainimg" src="./assets/images/background-banner.png"></center>
+            <center><img class="mainimg" src="./assets/images/educate.png"></center>
                     </div>
                 </div>
         </div>
