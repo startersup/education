@@ -30,7 +30,7 @@ body {
 }
 .navbar
 {
-    background-color:#28387c;
+    background-color:#28387c !important;
 }
 .navbar-brand span
 {
