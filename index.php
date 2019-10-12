@@ -80,7 +80,7 @@ mysqli_close($conn);
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-light">
-	<div class="container">
+	<div class="container-fluid">
 	<div class="navbar-header d-flex col">
 	
 		<a class="navbar-brand" href="/">Educate<b> Kid</b></a>  		
