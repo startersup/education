@@ -28,6 +28,10 @@ body {
     color:#25a3c6;
      font-family: 'ProximaNovaBold';
 }
+.navbar
+{
+    background-color:#28387c;
+}
 .navbar-brand span
 {
     font-size:17px;
