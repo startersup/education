@@ -205,7 +205,7 @@ mysqli_close($conn);
 
         <section class="background">
         <div class="mainspeech">
-            <div class="container">
+            <div class="">
             <div class="row">
                 <div class="col-md-7">
           <h1>A Complete Guide for Engineering Students</h1>  
