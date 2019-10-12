@@ -3,7 +3,10 @@ body {
   font-family: 'ProximaNovaLtLight';
     background-color: #eff3f6;
 }
-
+.background
+{
+    background-color:#FFD9FC;
+}
 
 .bold
 {
