@@ -202,7 +202,6 @@ mysqli_close($conn);
 </div>
         </div>
 </nav>
-  <div class="container">
         <section class="background">
         <div class="mainspeech">
             <div class="container">
@@ -261,7 +260,6 @@ mysqli_close($conn);
          
         </div>   
     </section>
-    </div>
      <div class="icon-bar hidden-xs">
   <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
   <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
