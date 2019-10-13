@@ -191,7 +191,7 @@ mysqli_close($conn);
 </div>
         </div>
 </nav>
- <section>
+ <section class="forum-main">
    <div class="forumpad container">
      <div class="col-md-3" >
        <div class="card divfix">
