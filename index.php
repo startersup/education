@@ -83,7 +83,7 @@ mysqli_close($conn);
 	<div class="container">
 	<div class="navbar-header d-flex col">
 	
-		<a class="navbar-brand" href="/">Educate<b>Kid</b></a>  		
+		<a class="navbar-brand" href="/">Educate<b><span>kid</span></b></a>  		
 			<i data-target="#navbarCollapse" onclick="openNav()" data-toggle="collapse" class="navbar-toggle navbar-toggler visible-xs visible-sm ml-auto fa fa-bars" ></i>
 	</div>
 	<div class="hidden-xs hidden-sm">
@@ -98,8 +98,8 @@ mysqli_close($conn);
 					<li><a href="./jobs" class="dropdown-item"><img src="assets/images/interview.png"> Job Alerts</a></li>
 				</ul>
 			</li>
-            <li class="nav-item"><a href="./events/" class="nav-link">Events</a></li>
-			<li class="nav-item"><a href="./forum/" class="nav-link">Forum</a></li>
+            <li class="nav-item"><a href="./events/" class="nav-link">Latest Events</a></li>
+			<li class="nav-item"><a href="./forum/" class="nav-link">Public Forum</a></li>
 		</ul>
            
 		<ul class="nav navbar-nav navbar-right ml-auto">							
@@ -222,53 +222,38 @@ mysqli_close($conn);
                 <div class="featurecard bluish">
                     <img src="./assets/images/engineering.png" class="medimg">
                     <h4>Engineering</h4><p>All the Engineering Notes and e-books can be viewed here</p>
-          <br>
-<!--
-                    <ul>
-                    <li class="parent"><img src="assets/images/ebook.png"><br><span>E-Books</span></li>
-                    <li class="child"><img src="assets/images/questions.png"><br><span>Question Banks</span></li>
-                    <li class="parent"><img src="assets/images/pros-and-cons.png"><br><span>Ans Keys</span></li> 
-                  <li class="child"><img src="assets/images/questions-about-abecedary.png"><br><span>Question Paper</span></li>
-                     <li class="child" style="width:60%;"><img src="assets/images/refresh.png"><br>University Updates</li>
-                    </ul>
--->
+        
                 </div>
             </div>
               <div class="col-md-4">
                   <div class="featurecard greenish">
-                      <img src="./assets/images/knowledge.png" class="medimg">
+                      <img src="./assets/images/knowledge.png" class="smallimg">
                       <h4>Knowledge</h4><p>All the latest stuff apart from Textbook will be notified frequently</p>
-                  <br>
-<!--
-                      <ul>
-                    <li class="parent"><img src="assets/images/conference.png"><br><span> Conference</span></li>
-                    <li class="child"><img src="assets/images/3d-printing-software.png"><br><span> Hackathon</span></li>
-                    <li class="parent"><img src="assets/images/tent.png"><br><span> Symposium</span></li> 
-                        <li class="child"><img src="assets/images/world-cup.png"><br><span>Cultural Fest</span></li>
-                     <li class="child"><img src="assets/images/running-man.png"><br><span> Sports Event</span> </li>
-                    </ul>  
--->
+                  
                   </div>
             </div>
               <div class="col-md-4">
              <div class="featurecard yellowish">
                  <img src="./assets/images/placement.png" class="medimg">
                  <h4>Placements</h4><p>All the placements related queries and information can be viewed here</p>
-                  <br>
-<!--
-                      <ul>
-                    <li class="parent"><img src="assets/images/briefcase.png"><br><span>Job Alerts</span></li>
-                    <li class="child"><img src="assets/images/review.png"><br><span>Companies</span></li>
-                    <li class="parent"><img src="assets/images/interview.png"><br><span>Aptitude</span></li> 
-                        <li class="child"><img src="assets/images/learning.png"><br><span> Online Test</span></li>
-                     <li class="child"><img src="assets/images/presentation.png"><br> <span>Internships</span> </li>
-                    </ul> 
--->
                   </div>
             </div>
             </div>
          
         </div>   
+    </section>
+    <section class="whyus container">
+   <center><h2>Why Searching for EducateKid</h2></center>
+        <div class="row topper">
+        <div class="col-md-6">
+            <p >An Education platform that has all the required
+                goalsheet from an actual start to perfect end
+                through all the resources.We creates Online course programs, exams, and labs that help you to crack the certification examinations and also learning programs and focuses on school curriculum and test preparation for engineering exams.We helps to build a strong foundation for future academic success by providing a comprehensive and engaging online and web-based curriculum to greatly assist learners to succeed. </p>
+        </div>
+             <div class="col-md-6">
+            <img src="./assets/images/educate.png">
+        </div>
+        </div>
     </section>
      <div class="icon-bar hidden-xs">
   <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
