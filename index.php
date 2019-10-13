@@ -329,40 +329,7 @@ mysqli_close($conn);
   <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
 </div>
     
-<!--
-    <footer>
-        <div class="container">
-    <div class="row">
-        <div class="col-md-3 col-xs-6">
-        <h4>Popular Links</h4>
-            <p>Public Forum</p>
-            <p>Latest News</p>
-            <p>Blogs</p>
-        </div>
-          <div class="col-md-3 col-xs-6">
-        <h4>Popular Tags</h4>
-            <p>University Papers</p>
-            <p>Exam Results</p>
-            <p>Events Happening</p>
-        </div>
-         <div class="col-md-3 col-xs-6">
-        <h4>Placements</h4>
-            <p>Job Interviews</p>
-             <p>Mock Test</p>
-            <p>Internship Oppurtunity</p>
-        </div>
-             <div class="col-md-3 col-xs-6">
-        <h4>Contact Us</h4>
-            <p>Information</p>
-            <p>Complaints</p>
-            <p>Contribution</p>
-        </div>
-        </div>
-          <br><br>
-          <center>  <p>Copyrights &copy; 2019 Educate Kid. All Rights Reserved </p></center>
-        </div>
-    </footer>
--->
+
     
     <script>
 $(function() {

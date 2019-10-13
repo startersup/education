@@ -195,7 +195,7 @@ mysqli_close($conn);
  <section>
    <div class="forumpad container">
      <div class="col-md-3" >
-       <div class="card divfix">
+       <div class="card divfix" id="eventsidebar">
          <h4>@ Saicharan   <button data-toggle="collapse" data-target="#demo" class="btn btn-info">Add Event</button></h4>
            <div class="hidden-xs">
            <hr>
@@ -260,11 +260,73 @@ mysqli_close($conn);
          
          </div>
      </div>
-     </div> 
-</section>   
+     </div>
+     <br>
+</section>  
+        <section class="pinkletter">
+        <div class="container">
+    <div class="row pad">
+    <div class="col-md-7">
+        <h3 class="pad"> Get the Latest Updates from EducateKid</h3>
+       
+    </div>  
+         <div class="col-md-5">
+          <form class="search" action="">
+        <input  class="controls" type="text" placeholder="Enter your Email Adress " name="pick" required="" >
+        <button type="submit">Join Now</button>
+      </form>
+    </div>
+        </div>
+            </div>
+    </section>
+        <section class="footer-lite">
+        <div class="container">
+    <div class="row">
+         <div class="col-md-4">
+      <img src="../assets/images/logo.png">
+      <p> Email us : info@educatekid.in</p>
+      <p>Complaints : complaints@educatekid.in</p>
+      <p>Contribution : contribute@educatekid.in</p>
+      <p>Classes : classes@educatekid.in</p>
+    </div>    
+         <div class="col-md-2">
+        <h4>Company</h4>
+       <p>About Us</p> 
+        <p>Teacher Programs</p>
+        <p>Official Blog</p>
+        <p>Media</p>
+        <p>Sitemap</p>
+    </div>    
+    <div class="col-md-2">
+        <h4>Services</h4>
+       <p>E-books</p> 
+        <p>Question banks</p>
+        <p>Online Tutorials</p>
+        <p>Mock Test Series</p>
+        <p>Job Alerts</p>
+    </div>  
+        <div class="col-md-4">
+            <h4>Follow us on:</h4>
+         <a href="#" class="facebook-ico"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter-ico"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google-ico"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin-ico"><i class="fa fa-linkedin"></i></a>
+       </div>
+        <div class="col-md-12 topper border">
+        <p><b>&copy; 2019 Educatekid. All Rights Reserved</b></p>
+        </div>
+    </div>
+    
+    </div>
+    </section>
+    
     <script>$("input[type='image']").click(function() {
     $("input[id='my_file']").click();
 });</script>
+    
+   
+    
+    
 </body></html>
 
 
