@@ -110,20 +110,7 @@ body{
 	.navbar ul.nav li.active a, .navbar ul.nav li.open > a {
 		background: transparent !important;
 	}	
-	.navbar .nav .get-started-btn {
-		min-width: 100px;
-		margin-top: 15px !important;
-		margin-bottom:10px;
-        margin-right:20px;
-	}
-.get-started-btn
-{
-    background-color: #3CB371 !important;
-}
-	.navbar ul.nav li.open > a.get-started-btn {
-		color: #fff;
-		background: #2EC28B !important;
-	}
+
 	.navbar .dropdown-menu {
 		border-radius: 1px;
 		border-color: #e5e5e5;
@@ -144,6 +131,7 @@ body{
     z-index: 1000;
     display: none;
     float: left;
+    box-shadow: 0 0 50px rgba(0,0,0,.18)!important;
     min-width: max-content;
     padding: 5px 0;
     margin: 2px 0 0;
@@ -156,8 +144,7 @@ body{
     border: 1px solid #ccc;
     border: 1px solid rgba(0,0,0,.15);
     border-radius: 4px;
-    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
-    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+
 }
 .dropdown-menu>li>a {
     display: block;
@@ -325,6 +312,49 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 	.navbar .navbar-right .dropdown-toggle::after {
 		display: none;
 	}
+.login-btn
+{
+    border: none;
+    text-decoration: none;
+    background-color: #f5f6f7;
+    font-size: 0.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #000 !important;
+    font-family: ProximaNovaBold;
+    padding: 10px 20px !important;
+    cursor: pointer;
+    margin-top:10px !important;
+    border-radius:4px;
+    transition: background-color .2s ease-in;
+}
+.signup-btn
+{
+    border: none;
+    text-decoration: none;
+    background-color: #3CB371;
+    box-shadow: 0 10px 16px 0 #f8f8f8;
+    font-size: 0.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #fff !important;
+    font-family: ProximaNovaBold;
+    padding: 10px 20px !important;
+    cursor: pointer;
+    margin-top:5px !important;
+    border-radius:4px;
+    transition: background-color .2s ease-in;
+}
+
+.login-btn:hover{
+     background-color: #f5f6f7 !important;
+}
+.signup-btn:hover
+{
+    background-color: #3CB371 !important;
+}
 	@media (min-width: 1200px){
 		.form-inline .input-group {
 			width: 300px;

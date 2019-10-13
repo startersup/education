@@ -287,6 +287,11 @@ color:#007bff;
     padding:100px 20px ;
     overflow-x:hidden;
 }
+.pinkletter
+{
+    padding:30px 15px !important;
+    background-color:#F9D6E9 !important;
+}
 .quants
 {
    margin-top:60px;
@@ -419,7 +424,7 @@ h4,h5
 
 /* width */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px !important;
 }
 
 /* Track */
@@ -483,6 +488,40 @@ h4,h5
   background: #bb0000;
   color: white;
 }
+
+.facebook-ico i{
+  background: #3B5998;
+  color: white;
+    font-size:25px;
+    padding:10px 20px;
+}
+
+.twitter-ico i{
+  background: #55ACEE;
+  color: white;
+    font-size:25px;
+     padding:10px 20px;
+}
+
+.google-ico i{
+  background: #dd4b39;
+  color: white;
+    font-size:25px;
+     padding:10px 20px;
+}
+
+.linkedin-ico i{
+  background: #007bb5;
+  color: white;
+    font-size:25px;
+     padding:10px 20px;
+}
+
+.youtube-ico i{
+  background: #bb0000;
+  color: white;
+     padding:10px 20px;
+}
 .jobs p
 {
 font-size:12px;
@@ -536,6 +575,7 @@ font-size:12px;
     margin-left:12px;
   cursor: pointer;
 }
+
 .green
 {
      background-color: #322C61;
@@ -551,7 +591,7 @@ font-size:12px;
       }
   .topper
     {
-        margin-top:60px;
+        margin-top:80px;
     }
 
 #preloader {
@@ -741,6 +781,7 @@ font-family: 'ProximaNovaBold';
     text-align: center;
     color:#333333;
 }
+
 .mainspeech p
 {
         width: 100%;
@@ -764,6 +805,22 @@ font-family: 'ProximaNovaSemibold';
     text-align: center !important;
     position: relative;
 }
+.pinkletter h3
+{
+  font-family: 'ProximaNovaBold';
+    font-size: 32px !important; 
+     letter-spacing: .2px;
+     color: #19182e;
+      line-height: 1.5;
+}
+.whyus h3
+{
+  font-family: 'ProximaNovaBold';
+    font-size: 32px !important; 
+     letter-spacing: .2px;
+    color: #008CAD;
+      line-height: 1.5;
+}
  .whyus p
 {
  font-family: 'ProximaNovaRgRegular';
@@ -771,7 +828,7 @@ font-family: 'ProximaNovaSemibold';
     letter-spacing: 0.5px;
     line-height: 35px;
     text-align: left;
-    color:#333333;
+    color:#181b3b;
 }
 .mainspeech p span
 {
@@ -779,6 +836,11 @@ font-family: 'ProximaNovaSemibold';
     font-size:25px;
     color:#000000;
     text-align: center; 
+}
+.classyimg
+{
+    max-width:700px;
+    width:100%;
 }
 .readmore {
     border: none;
@@ -830,16 +892,16 @@ form.search input[type=text] {
     font-size: 18px;
     float: left;
     border:none;
-    width: 80%;
+    width: 75%;
     background: #ffffff;
   }
   
   form.search button {
     float: left;
-    width: 20%;
+    width: 25%;
     padding:10px;
     background: #ff3a48;
-        margin-top: -1px !important;
+        margin-top: -2px !important;
     color: #fff;
      height: 62px;
     letter-spacing: 0.8px;
@@ -849,9 +911,10 @@ form.search input[type=text] {
     border-left: none;
     cursor: pointer;
   }
+
 .pad
 {
-    padding:10px 15px;
+    padding:5px 15px;
 }
 .border
 {
@@ -913,31 +976,34 @@ form.search input[type=text] {
     padding:5px;
 }
 
-footer
+.footer-lite
 {
     padding:10px;
-    background-color:#333333;
+    background-color:#f4f4f4;
+    padding:50px 0px;
     min-height:200px;
     z-index:-1000;
-    color:#CACACA;
+    color:#000000;
     font-family: 'ProximaNovaRgRegular';
 }
-footer p
+.footer-lite p
 {
     font-family: 'ProximaNovaRgRegular';
-    color:#CACACA;
+    color:#000000 !important;
+    font-size:18px !important;
     
 }
 
-footer h4
+.footer-lite h4
 {
     font-family: 'ProximaNovaSemibold';
     padding:5px 0px;
     width:50%;
-    border-bottom: 1px solid #9352f9;
-    border
+    font-size:28px;
+    letter-spacing:0.5px;
+    color:#000000 !important;
+  
 }
-
 
 .demo-footer {
 	position: fixed;

@@ -118,7 +118,7 @@ mysqli_close($conn);
                    
             }
             else{
-            echo "<li class='nav-item'><a id='log' data-toggle='dropdown' class='nav-link dropdown-toggle' href='#''>Login</a>
+            echo "<li class='nav-item'><a id='log' data-toggle='dropdown' class='login-btn' href='#''>Login</a>
         <ul class='dropdown-menu form-wrapper'>   
             <li>
             <form action='' method='post'>
@@ -140,7 +140,7 @@ mysqli_close($conn);
               </div>
             </form>
           </li></ul><li class='nav-item'>
-        <a id='sign'  href='#' data-toggle='dropdown' class='btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1'>Sign up</a>
+        <a id='sign'  href='#' data-toggle='dropdown' class='signup-btn'>Sign up</a>
         <ul class='dropdown-menu form-wrapper'>         
           <li>
             <form action='' method='post'>
@@ -246,6 +246,7 @@ mysqli_close($conn);
    <center><h2>Why Searching for EducateKid</h2></center>
         <div class="row topper">
         <div class="col-md-6">
+            <h3>Our Motto</h3>
             <p >An Education platform that has all the required
                 goalsheet from an actual start to perfect end
                 through all the resources.We creates Online course programs, exams, and labs that help you to crack the certification examinations and also learning programs and focuses on school curriculum and test preparation for engineering exams.We helps to build a strong foundation for future academic success by providing a comprehensive and engaging online and web-based curriculum to greatly assist learners to succeed. </p>
@@ -254,6 +255,72 @@ mysqli_close($conn);
             <img src="./assets/images/educate.png">
         </div>
         </div>
+                <div class="row topper">
+                     <div class="col-md-6">
+            <img src="./assets/images/team.png" class="classyimg">
+        </div>
+        <div class="col-md-6">
+             <h3>Our Working Method</h3>
+            <p> Our Platform has various collections of resources and contents which was analyzed by different PHD teachers and based on Airtifical intelligence the placement papers has been published which is accurate on the possiblity of asking in exams. we provide real time examples on tough engineering concepts for just making it more simple and easier to learn.</p>
+        </div>
+            
+        </div>
+    </section>
+    <section class="pinkletter">
+        <div class="container">
+    <div class="row pad">
+    <div class="col-md-7">
+        <h3 class="pad"> Get the Latest Updates from EducateKid</h3>
+       
+    </div>  
+         <div class="col-md-5">
+          <form class="search" action="">
+        <input  class="controls" type="text" placeholder="Enter your Email Adress " name="pick" required="" >
+        <button type="submit">Join Now</button>
+      </form>
+    </div>
+        </div>
+            </div>
+    </section>
+    <section class="footer-lite">
+        <div class="container">
+    <div class="row">
+         <div class="col-md-4">
+      <img src="assets/images/logo.png">
+      <p> Email us : info@educatekid.in</p>
+      <p>Complaints : complaints@educatekid.in</p>
+      <p>Contribution : contribute@educatekid.in</p>
+      <p>Classes : classes@educatekid.in</p>
+    </div>    
+         <div class="col-md-2">
+        <h4>Company</h4>
+       <p>About Us</p> 
+        <p>Teacher Programs</p>
+        <p>Official Blog</p>
+        <p>Media</p>
+        <p>Sitemap</p>
+    </div>    
+    <div class="col-md-2">
+        <h4>Services</h4>
+       <p>E-books</p> 
+        <p>Question banks</p>
+        <p>Online Tutorials</p>
+        <p>Mock Test Series</p>
+        <p>Job Alerts</p>
+    </div>  
+        <div class="col-md-4">
+            <h4>Follow us on:</h4>
+         <a href="#" class="facebook-ico"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter-ico"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google-ico"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin-ico"><i class="fa fa-linkedin"></i></a>
+       </div>
+        <div class="col-md-12 topper border">
+        <p><b>&copy; 2019 Educatekid. All Rights Reserved</b></p>
+        </div>
+    </div>
+    
+    </div>
     </section>
      <div class="icon-bar hidden-xs">
   <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
