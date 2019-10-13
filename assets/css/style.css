@@ -8,7 +8,7 @@ body {
     background-image: url(../images/banner-bg.PNG);
     background-repeat: no-repeat;
     background-position: center;
-    min-height:500px;
+    min-height:580px;
     background-color:#FFD3FB;
     background-size: cover!important;
 }
@@ -758,7 +758,7 @@ color:#007bff;
     width:100%;
 }
 .mainspeech {
-    padding-top: 80px;
+    padding-top: 100px;
 }
 .mainspeech h1
 {
