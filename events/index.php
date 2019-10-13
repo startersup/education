@@ -58,6 +58,7 @@ mysqli_close($conn);
     <meta name="description" content="Get educated more by Learn and practice Aptitude questions and     answers with explanation for interview, competitive examination and entrance test. ">
       <meta name="keywords" content="aptitude, questions, answers, interview, placement, papers, engineering, electronics, civil, mechanical, networking, hr, c, 2015, 2016, reasoning, program, verbal, gk, knowledge, language, explanation, solution, problem, online, test, exam, quiz">
 <link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/forum.css">
   <script src="../assets/js/sidenav.js"></script>  
   <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
   <script src="../assets/js/jquery.min.js"></script>
@@ -191,7 +192,7 @@ mysqli_close($conn);
 </div>
         </div>
 </nav>
- <section class="forum-main">
+ <section>
    <div class="forumpad container">
      <div class="col-md-3" >
        <div class="card divfix">
