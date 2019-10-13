@@ -32,7 +32,7 @@
 	<div class="container">
 	<div class="navbar-header d-flex col">
 	
-		<a class="navbar-brand" href="..">Educate<b> Kid</b></a>  		
+		<a class="navbar-brand" href="..">Educate<b>Kid</b> <span>Events</span></a>  		
 			<i data-target="#navbarCollapse" onclick="openNav()" data-toggle="collapse" class="navbar-toggle navbar-toggler visible-xs visible-sm ml-auto fa fa-bars" ></i>
 	</div>
 	<div class="hidden-xs hidden-sm">
@@ -51,12 +51,7 @@
 			</li>
 			<li class="nav-item"><a href="./forum/" class="nav-link">Forum</a></li>
 		</ul>
-            <form class="navbar-form form-inline" action="https://www.google.com/search" method="get">
-			<div class="input-group search-box">								
-				<input type="text" id="search" class="form-control" placeholder="Search here...">
-				<span class="input-group-addon"><i class="fa fa-search"></i></span>
-			</div>
-</form>
+           
 		<ul class="nav navbar-nav navbar-right ml-auto">							
          <?php
          if(isset($_SESSION["userid"]))
@@ -152,7 +147,7 @@
         </div>
 </nav>
  <section>
-   <div class="forumpad">
+   <div class="forumpad container">
      <div class="col-md-3" >
        <div class="card divfix">
          <h4>@ Saicharan   <button data-toggle="collapse" data-target="#demo" class="btn btn-info">Add Event</button></h4>

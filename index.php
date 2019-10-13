@@ -83,31 +83,25 @@ mysqli_close($conn);
 	<div class="container">
 	<div class="navbar-header d-flex col">
 	
-		<a class="navbar-brand" href="/">Educate<b> Kid</b></a>  		
+		<a class="navbar-brand" href="/">Educate<b>Kid</b></a>  		
 			<i data-target="#navbarCollapse" onclick="openNav()" data-toggle="collapse" class="navbar-toggle navbar-toggler visible-xs visible-sm ml-auto fa fa-bars" ></i>
 	</div>
 	<div class="hidden-xs hidden-sm">
-		<ul class="nav navbar-nav">
-			<li class="nav-item"><a href="../index.php" class="nav-link">Home</a></li>
-			<li class="nav-item"><a href="./events/" class="nav-link">Events</a></li>			
-			<li class="nav-item dropdown">
-				<a data-toggle="dropdown" href="#" class="nav-link dropdown-toggle">Services<b class="caret"></b></a>
+		<ul class="nav navbar-nav">	
+			<li class="nav-item dropdown"> 
+				<a data-toggle="dropdown" href="#" class="nav-link dropdown-toggle">Services</a>
 				<ul class="dropdown-menu">					
-					<li><a href="./ebooks" class="dropdown-item">Engineering E-Books</a></li>
-					<li><a href="./qbank.html" class="dropdown-item">Engineering Question Banks</a></li>
-                    <li><a href="./aptitude.php" class="dropdown-item">Aptitude Practice</a></li>
-					<li><a href="./placepapers" class="dropdown-item">Placement Papers</a></li>
-					<li><a href="./jobs" class="dropdown-item">Job Alerts</a></li>
+					<li><a href="./ebooks" class="dropdown-item"> <img src="assets/images/ebook.png"> Engineering E-Books</a></li>
+					<li><a href="./qbank.html" class="dropdown-item"><img src="assets/images/questions.png"> Engineering Question Banks</a></li>
+                    <li><a href="./aptitude.php" class="dropdown-item"><img src="assets/images/questions-about-abecedary.png"> Aptitude Practice</a></li>
+					<li><a href="./placepapers" class="dropdown-item"><img src="assets/images/refresh.png"> Placement Papers</a></li>
+					<li><a href="./jobs" class="dropdown-item"><img src="assets/images/interview.png"> Job Alerts</a></li>
 				</ul>
 			</li>
+            <li class="nav-item"><a href="./events/" class="nav-link">Events</a></li>
 			<li class="nav-item"><a href="./forum/" class="nav-link">Forum</a></li>
 		</ul>
-            <form class="navbar-form form-inline" action="https://www.google.com/search" method="get">
-			<div class="input-group search-box">								
-				<input type="text" id="search" class="form-control" placeholder="Search here...">
-				<span class="input-group-addon"><i class="fa fa-search"></i></span>
-			</div>
-</form>
+           
 		<ul class="nav navbar-nav navbar-right ml-auto">							
          <?php
          if(isset($_SESSION["userid"]))
@@ -207,11 +201,14 @@ mysqli_close($conn);
             <div class="container">
             <div class="row">
                 <div class="col-md-8">
-          <h1>A Complete Guide for Engineering Students</h1>  
-            <h3>A Forum that integrates all the betterments of students that to attain success.</h3>
+          <h1>The Best Online Education Platform</h1>  
+            <h3>A Platform that integrates all the Learning  Materials, Educational updates and recent events that includes placements of students to attain success.</h3>
                     
                 <p>Better clarity <span>|</span> Better Knowledge <span>|</span> Better Career</p>
-                    <center><button class="readmore">Read More</button></center>
+                         <form class="search" action="">
+        <input  class="controls" type="text" placeholder="Search for Materials, Placements, Events, Latest News........ " name="pick" required="" >
+        <button type="submit"><i class="fa fa-search"></i> <span>Search</span></button>
+      </form>
             </div>
              
                 </div>
@@ -222,8 +219,11 @@ mysqli_close($conn);
         <div class="container border">
         <div class="row">
             <div class="col-md-4">
-                <div class="card"><h4>Engineering</h4><p>All the Engineering Notes and e-books can be viewed here</p>
+                <div class="featurecard bluish">
+                    <img src="./assets/images/engineering.png" class="medimg">
+                    <h4>Engineering</h4><p>All the Engineering Notes and e-books can be viewed here</p>
           <br>
+<!--
                     <ul>
                     <li class="parent"><img src="assets/images/ebook.png"><br><span>E-Books</span></li>
                     <li class="child"><img src="assets/images/questions.png"><br><span>Question Banks</span></li>
@@ -231,11 +231,15 @@ mysqli_close($conn);
                   <li class="child"><img src="assets/images/questions-about-abecedary.png"><br><span>Question Paper</span></li>
                      <li class="child" style="width:60%;"><img src="assets/images/refresh.png"><br>University Updates</li>
                     </ul>
+-->
                 </div>
             </div>
               <div class="col-md-4">
-                  <div class="card"><h4>Knowledge</h4><p>All the latest stuff apart from Textbook will be notified frequently</p>
+                  <div class="featurecard greenish">
+                      <img src="./assets/images/knowledge.png" class="medimg">
+                      <h4>Knowledge</h4><p>All the latest stuff apart from Textbook will be notified frequently</p>
                   <br>
+<!--
                       <ul>
                     <li class="parent"><img src="assets/images/conference.png"><br><span> Conference</span></li>
                     <li class="child"><img src="assets/images/3d-printing-software.png"><br><span> Hackathon</span></li>
@@ -243,18 +247,24 @@ mysqli_close($conn);
                         <li class="child"><img src="assets/images/world-cup.png"><br><span>Cultural Fest</span></li>
                      <li class="child"><img src="assets/images/running-man.png"><br><span> Sports Event</span> </li>
                     </ul>  
+-->
                   </div>
             </div>
               <div class="col-md-4">
-             <div class="card"><h4>Placements</h4><p>All the placements related queries and information can be viewed here</p>
+             <div class="featurecard yellowish">
+                 <img src="./assets/images/placement.png" class="medimg">
+                 <h4>Placements</h4><p>All the placements related queries and information can be viewed here</p>
                   <br>
+<!--
                       <ul>
                     <li class="parent"><img src="assets/images/briefcase.png"><br><span>Job Alerts</span></li>
                     <li class="child"><img src="assets/images/review.png"><br><span>Companies</span></li>
                     <li class="parent"><img src="assets/images/interview.png"><br><span>Aptitude</span></li> 
                         <li class="child"><img src="assets/images/learning.png"><br><span> Online Test</span></li>
                      <li class="child"><img src="assets/images/presentation.png"><br> <span>Internships</span> </li>
-                    </ul> </div>
+                    </ul> 
+-->
+                  </div>
             </div>
             </div>
          
@@ -267,6 +277,7 @@ mysqli_close($conn);
   <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
 </div>
     
+<!--
     <footer>
         <div class="container">
     <div class="row">
@@ -299,6 +310,7 @@ mysqli_close($conn);
           <center>  <p>Copyrights &copy; 2019 Educate Kid. All Rights Reserved </p></center>
         </div>
     </footer>
+-->
     
     <script>
 $(function() {

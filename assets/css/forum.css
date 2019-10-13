@@ -1,18 +1,17 @@
 .forumpad
 {
-    margin-top:60px;
-    padding:20px;
+    margin-top:80px;
+    
 }
 .bold
 {
     color:#1CBFBB;
     font-size:14px;
 }
-.divfix
-{
-   position:fixed;
-    width:100%;
-    max-width:300px;
+.divfix {
+    position: fixed;
+    width: 100%;
+    max-width: 250px;
 }
 .head
 {

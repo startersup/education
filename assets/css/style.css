@@ -77,6 +77,25 @@ body {
     background-color:#f4f4f4;
     padding:10px;
 }
+.bluish h4, .greenish h4, .yellowish h4
+{
+    font-size:30px;
+}
+ .bluish
+    {
+        background-color: #aac6fc !important;
+        border-radius:8px;
+    }
+.greenish
+{
+    background-color: #7FD7C2 !important;
+     border-radius:8px;
+}
+.yellowish
+{
+    background-color: #F5E048 !important; 
+      border-radius:8px;
+}
 @media screen and (max-width: 600px) {
  
     .display
@@ -95,19 +114,40 @@ color:#007bff;
     line-height:25px;
 }
     
-    .mainspeech h1 {
+.mainspeech h1 {
     font-family: 'ProximaNovaBold';
-    color: #000000;
-        font-size:25px;
-        margin-top:20px;
-        line-height:30px;
+    font-size: 34px !important;
+    line-height: 1.5;
+    max-width: 800px;
+    letter-spacing: .2px;
+    color: #19182e;
+    text-align: center;
+    position: relative;
 }
  .mainspeech h3 {
     font-family: 'ProximaNovaSemibold';
-    color: #000000;
-     font-size:18px;
-     line-height:30px;
+    font-size: 17px !important;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    text-align: center;
+    color: #333333;
 }   
+    .mainspeech p {
+    width: 100%;
+    max-width: 600px;
+    font-family: 'ProximaNovaSemibold';
+    font-size: 17px !important;
+    font-weight: 300;
+    line-height: 1.39;
+    letter-spacing: .6px;
+    color: #008CAD;
+    text-align: center;
+    margin: 23px auto;
+}
+    .search span
+    {
+    display: none;  
+    }
     .dep h4
     {
     font-size:15px;
@@ -130,8 +170,7 @@ color:#007bff;
     {
         margin:0px !important;
     }
-    
-
+   
 .display  span
 {
     font-size:11px;
@@ -188,12 +227,20 @@ color:#007bff;
   max-height: 0;
 }
 
-
-
 .card {
   transition: 0.3s;
     width: 100%;
     z-index: -1000;
+    background-color: #ffffff;
+    padding:20px;
+    margin-top:10px;
+}
+
+.featurecard {
+  transition: 0.3s;
+    width: 100%;
+    z-index: -1000;
+    height:380px;
     background-color: #ffffff;
     padding:20px;
     margin-top:10px;
@@ -671,34 +718,41 @@ color:#007bff;
     width:100%;
 }
 .mainspeech {
-    padding-top: 120px;
+    padding-top: 80px;
 }
 .mainspeech h1
 {
-   font-family: ProximaNovaBold;
-    font-size: 40px;
-    line-height: 43px;
-    letter-spacing: .6px;
+font-family: 'ProximaNovaBold';
+    font-size: 45px;
+    line-height: 1.5;
+    max-width:800px;
+    letter-spacing: .2px;
     color: #19182e;
-    text-align:left;
+    text-align: center;
     position: relative;
 }
 
 .mainspeech h3
 {
-   font-family: 'ProximaNovaRgRegular';
+   font-family: 'ProximaNovaSemibold';
     font-size:20px;
     letter-spacing: 0.5px;
-    line-height: 25px;
-    text-align: left;
+    line-height: 30px;
+    text-align: center;
     color:#333333;
 }
 .mainspeech p
 {
-      font-family: 'ProximaNovaSemibold';
-    font-size:20px;
-    color:#28387c;
+        width: 100%;
+    max-width: 600px;
+font-family: 'ProximaNovaSemibold';
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.39;
+    letter-spacing: .6px;
+    color: #008CAD;
     text-align: center;
+    margin: 23px auto;
 }
 .mainspeech p span
 {
@@ -710,7 +764,7 @@ color:#007bff;
 .readmore {
     border: none;
     text-decoration: none;
-    background-color: #fa9021;
+    background-color: #ff3a48;
     box-shadow: 0 10px 16px 0 #ffcfe2;
     font-size: 16px;
     font-weight: 700;
@@ -725,6 +779,57 @@ color:#007bff;
     transition: background-color .2s ease-in;
     margin-right: 0;
 }
+input[type=text], input[type=email], input[type=tel] {
+    width: 100%;
+    padding: 12px 20px;
+    min-height: 60px;
+    margin: 8px 0;
+    font-size:18px;
+    color: #000000;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 1px solid #eee;
+    font-family: 'ProximaNovaRgRegular';
+}
+
+.controls {
+    margin-top: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 60px;
+    outline: none;
+    background-color: #ffffff;
+    border: 1px solid #eee;
+    font-family: 'ProximaNovaRgRegular';
+
+}
+form.search{
+margin-top:20px;
+}
+form.search input[type=text] {
+    margin-top:0px;
+    font-size: 18px;
+    float: left;
+    border:none;
+    width: 80%;
+    background: #ffffff;
+  }
+  
+  form.search button {
+    float: left;
+    width: 20%;
+    padding:10px;
+    background: #ff3a48;
+        margin-top: -1px !important;
+    color: #fff;
+     height: 62px;
+    letter-spacing: 0.8px;
+    border:none;
+    font-size: 18px;
+    font-family: 'ProximaNovaSemibold';
+    border-left: none;
+    cursor: pointer;
+  }
 
 .border
 {
@@ -734,8 +839,13 @@ color:#007bff;
 {
    font-family: 'ProximaNovaRgRegular';
     font-size:16px;
+    color:#000000;
 }
-
+.medimg
+{
+    max-width:300px;
+    width:100%;
+}
 .parent:hover{
     border-bottom-color:green;
 }
@@ -746,11 +856,10 @@ color:#007bff;
 {
    position: relative;
     display: inline-block;
-    padding: 10px 10px 10px;
+   padding:10px;
     font-size: 14px;
     width:50%;
     text-align: center;
-    border-bottom: 1px solid #f5f5f5;
     vertical-align: bottom;
     transition: 0.5s ease;
     cursor: pointer;
@@ -759,12 +868,10 @@ color:#007bff;
 {
    position: relative;
     display: inline-block;
-    padding: 10px 10px 10px;
+    padding:10px;
     font-size: 14px;
      width:40%;
     text-align: center;
-    border-bottom: 1px solid #f5f5f5;
-    border-right: 1px solid #f5f5f5;
     vertical-align: bottom;
     transition: 0.5s ease;
     cursor: pointer;    
