@@ -1,54 +1,108 @@
 
+<?php
+ session_start();
+ include 'config.php';
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (isset($_POST["login"])) {
+     $logname=$_POST['logname'];
+     $logpass=$_POST['logpass'];
+     $sql="select userid ,uname from users where (uname='".$logname."' OR email ='".$logname."') AND password='".$logpass."'";    
+     $query=mysqli_query($conn,$sql);
+     $numrows=mysqli_num_rows($query);
+     if($numrows>0)
+     {
+      $row = mysqli_fetch_assoc($query);
+      $_SESSION["userid"]= $row["userid"]; 
+      $_SESSION["uname"]= $row["uname"];
+      session_write_close();
+      header('Location: index.php');
+      exit();
+     }
+     else
+     {
+      echo '<script language="javascript">';
+        echo 'alert("Invalid Credentials")';
+         echo '</script>';
+     }
+}else if(isset($_POST["signup"])){  
+  $id=uniqid('USR');
+  $uname = $_POST["user"];
+  $email = $_POST["email"];
+  $pass =  $_POST["pass"];
+  $sql = "INSERT INTO users (userid, uname, email, password)
+   VALUES ('".$id."', '".$uname."', '".$email."','".$pass."')";
+
+if ($conn->query($sql) === TRUE) {
+    $_SESSION["userid"]= $id; 
+    $_SESSION["uname"]= $uname;
+    session_write_close();
+    header('Location: index.php');
+     exit();
+} else {
+  echo '<script language="javascript">';
+    echo 'alert("Try Again")';
+    echo '</script>';
+}
+}
+mysqli_close($conn);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-<title>Engineering Kit</title>
+<title>Educate Kit | A Complete Guide for Engineering Students</title>
         <link rel="icon" href="./assets/images/speed.png" type="image/gif" sizes="16x16">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Roboto:500" rel="stylesheet">
+    <meta name="description" content="Get educated more by Learn and practice Aptitude questions and     answers with explanation for interview, competitive examination and entrance test. ">
+      <meta name="keywords" content="aptitude, questions, answers, interview, placement, papers, engineering, electronics, civil, mechanical, networking, hr, c, 2015, 2016, reasoning, program, verbal, gk, knowledge, language, explanation, solution, problem, online, test, exam, quiz">
 <link rel="stylesheet" href="./assets/css/style.css">
   <script src="./assets/js/sidenav.js"></script>  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Roboto:500" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Acme|Roboto:500" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/nav.css">
-    <link rel="stylesheet" href="./assets/css/fonts.css">
+      <link rel="stylesheet" href="./assets/css/fonts.css">
       <script src="./assets/js/sidenav.js"></script> 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145976909-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145976909-2');
+</script>
+
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-light">
 	<div class="container">
 	<div class="navbar-header d-flex col">
 	
-		<a class="navbar-brand" href="#">Educate<b> Kid</b></a>  		
+		<a class="navbar-brand" href="/">Educate<b><span>kid</span></b></a>  		
 			<i data-target="#navbarCollapse" onclick="openNav()" data-toggle="collapse" class="navbar-toggle navbar-toggler visible-xs visible-sm ml-auto fa fa-bars" ></i>
 	</div>
 	<div class="hidden-xs hidden-sm">
-		<ul class="nav navbar-nav">
-			<li class="nav-item"><a href="../index.php" class="nav-link">Home</a></li>
-			<li class="nav-item"><a href="./events/" class="nav-link">Events</a></li>			
-			<li class="nav-item dropdown">
-				<a data-toggle="dropdown" href="#" class="nav-link dropdown-toggle">Services<b class="caret"></b></a>
+		<ul class="nav navbar-nav">	
+			<li class="nav-item dropdown"> 
+				<a data-toggle="dropdown" href="#" class="nav-link dropdown-toggle">Services</a>
 				<ul class="dropdown-menu">					
-					<li><a href="./ebooks" class="dropdown-item">Engineering E-Books</a></li>
-					<li><a href="./qbank.html" class="dropdown-item">Engineering Question Banks</a></li>
-                    <li><a href="./aptitude.php" class="dropdown-item">Aptitude Practice</a></li>
-					<li><a href="./placepapers" class="dropdown-item">Placement Papers</a></li>
-					<li><a href="./jobs" class="dropdown-item">Job Alerts</a></li>
+					<li><a href="./ebooks" class="dropdown-item"> <img src="assets/images/ebook.png"> Engineering E-Books</a></li>
+					<li><a href="./qbank.html" class="dropdown-item"><img src="assets/images/questions.png"> Engineering Question Banks</a></li>
+                    <li><a href="./aptitude.php" class="dropdown-item"><img src="assets/images/questions-about-abecedary.png"> Aptitude Practice</a></li>
+					<li><a href="./placepapers" class="dropdown-item"><img src="assets/images/refresh.png"> Placement Papers</a></li>
+					<li><a href="./jobs" class="dropdown-item"><img src="assets/images/interview.png"> Job Alerts</a></li>
 				</ul>
 			</li>
-			<li class="nav-item"><a href="./forum/" class="nav-link">Forum</a></li>
+            <li class="nav-item"><a href="./events/" class="nav-link">Latest Events</a></li>
+			<li class="nav-item"><a href="./forum/" class="nav-link">Public Forum</a></li>
 		</ul>
-            <form class="navbar-form form-inline" action="https://www.google.com/search" method="get">
-			<div class="input-group search-box">								
-				<input type="text" id="search" class="form-control" placeholder="Search here...">
-				<span class="input-group-addon"><i class="fa fa-search"></i></span>
-			</div>
-</form>
+           
 		<ul class="nav navbar-nav navbar-right ml-auto">							
          <?php
          if(isset($_SESSION["userid"]))
@@ -65,7 +119,7 @@
                    
             }
             else{
-            echo "<li class='nav-item'><a id='log' data-toggle='dropdown' class='nav-link dropdown-toggle' href='#''>Login</a>
+            echo "<li class='nav-item'><a id='log' data-toggle='dropdown' class='login-btn' href='#''>Login</a>
         <ul class='dropdown-menu form-wrapper'>   
             <li>
             <form action='' method='post'>
@@ -87,7 +141,7 @@
               </div>
             </form>
           </li></ul><li class='nav-item'>
-        <a id='sign'  href='#' data-toggle='dropdown' class='btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1'>Sign up</a>
+        <a id='sign'  href='#' data-toggle='dropdown' class='signup-btn'>Sign up</a>
         <ul class='dropdown-menu form-wrapper'>         
           <li>
             <form action='' method='post'>
@@ -116,7 +170,7 @@
             	?>
 		</ul>
 	</div>
-<div id="myNav" class="overlay">
+  <div id="myNav" class="overlay">
  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
                    <form class="navbar-form form-inline" action="https://www.google.com/search" method="get">
@@ -144,89 +198,87 @@
         </div>
 </nav>
 
+   <section class="aptitude-main">
+    <div class="container">
+             <div class="row">
+                <div class="col-md-8">
+          <h1>Aptitude Knowledge Library</h1>           
+                <p>Better clarity <span>|</span> Better Knowledge <span>|</span> Better Career</p>
+                         <form class="search" action="">
+        <input  class="controls" type="text" placeholder="Search for Aptitude Questions set, videos, etc... " name="pick" required="" >
+        <button type="submit"><i class="fa fa-search"></i> <span>Search</span></button>
+      </form>
+            </div>
+             
+        </div>
        
-
-    <section class="main" id="main">
-        <div class="container">
+       </div>
+    </section>
+    <section class="topper">
     <div class="row">
-        <div class="col-md-10">
-         <div class="Education">
-             <br>
-    <div class="card topping">
-     <h3><i class="fa fa-star" aria-hidden="true"></i> Aptitude for Practice</h3>
-       
-        <div id="preloader">
-  <div id="status">&nbsp;</div>
-</div>
-        <div id="load">
-        <div class="row" >
-            <br>
-        <div class="col-md-4">
-            <div class="card hover jobs"><h4>Quantitative Ability</h4>
-                <p>Topics Covered</p>
-                <ul>
-                <li>Number System</li>
-                <li>Average</li>  
-                 <li>Percentage</li>   
-                  <li>Profit & Loss</li>  
-                    <li>Time, Speed & Distance</li>  
-                    <li>Data Interpretation</li>  
-                    <li>Probability</li>  
-                    <li>Mixture & Solution</li> 
-                    <li>Ratio & Proportion</li>  
-                </ul>
-                
-               <center><a href="./quants/Quantitative-Ability"><button class="button black">Start Practice</button></a></center>
-            </div>
-            </div>
-               <div class="col-md-4">
-                 <div class="card hover jobs"><h4>Logical Reasoning</h4>
-            <p>Topics Covered </p>
-                <ul>
-                <li>Arrangements</li>
-                <li>Ordering and Ranking</li>  
-                <li>Blood Relations</li> 
-                <li>Team Formations</li>
-                <li>Direction Problems</li> 
-                <li>Syllogisms</li> 
-                <li>Analytical Puzzles</li>
-                <li>Number Series</li>
-                <li>Clock and Calendar Problems</li>
-                    
-                </ul>        
-               <center><a href="./logic/Logical-Reasoning"> <button class="button black">Start Practice</button></a></center>
-            </div>
-            </div>
-               <div class="col-md-4">
-                     <div class="card hover jobs"><h4>Verbal Ability.</h4>
-            <p>Topics Covered </p>
-                <ul>
-                <li>Reading Comprehension</li>
-                <li>Jumbled sentences</li>  
-                 <li>Synonyms & Antonyms</li>  
-                    <li>Error Spotting</li>
-                    <li>Sentence Corrections</li>
-                    <li>Summary Writing</li>
-                    <li>Para-completion</li>
-                    <li>Critical Reasoning</li>
-                    <li>Listen & Answer</li>
-                </ul>
-                
-               <center><a href="./verbal/Verbal-Ability"> <button class="button black">Start Practice</button></a></center>
-            </div>
-            </div>
-        </div>
-                 
-          
-</div></div>
-            </div>
-        </div>
-        <div class="col-md-2">
-        <div class="card fixed"><h4>Popular Tags</h4> </div>
+    <div class="col-md-12">
+        <div class="col-md-6">
         
         </div>
         </div>
-             </div>
+        </div>
+    </section>
+    
+      <section class="pinkletter">
+        <div class="container">
+    <div class="row pad">
+    <div class="col-md-7">
+        <h3 class="pad"> Get the Latest Updates from EducateKid</h3>
+       
+    </div>  
+         <div class="col-md-5">
+          <form class="search" action="">
+        <input  class="controls" type="text" placeholder="Enter your Email Adress " name="pick" required="" >
+        <button type="submit">Join Now</button>
+      </form>
+    </div>
+        </div>
+            </div>
+    </section>
+    <section class="footer-lite">
+        <div class="container">
+    <div class="row">
+         <div class="col-md-4">
+      <img src="assets/images/logo.png">
+      <p> Email us : info@educatekid.in</p>
+      <p>Complaints : complaints@educatekid.in</p>
+      <p>Contribution : contribute@educatekid.in</p>
+      <p>Classes : classes@educatekid.in</p>
+    </div>    
+         <div class="col-md-2">
+        <h4>Company</h4>
+       <p>About Us</p> 
+        <p>Teacher Programs</p>
+        <p>Official Blog</p>
+        <p>Media</p>
+        <p>Sitemap</p>
+    </div>    
+    <div class="col-md-2">
+        <h4>Services</h4>
+       <p>E-books</p> 
+        <p>Question banks</p>
+        <p>Online Tutorials</p>
+        <p>Mock Test Series</p>
+        <p>Job Alerts</p>
+    </div>  
+        <div class="col-md-4">
+            <h4>Follow us on:</h4>
+         <a href="#" class="facebook-ico"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter-ico"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google-ico"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin-ico"><i class="fa fa-linkedin"></i></a>
+       </div>
+        <div class="col-md-12 topper border">
+        <p><b>&copy; 2019 Educatekid. All Rights Reserved</b></p>
+        </div>
+    </div>
+    
+    </div>
     </section>
     
          <div class="icon-bar hidden-xs">

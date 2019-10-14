@@ -12,7 +12,15 @@ body {
     background-color:#FFD3FB;
     background-size: cover!important;
 }
-
+.aptitude-main
+{
+  background-image: url(../images/aptitude.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height:430px;
+    background-color:#FFD3FB;
+    background-size: cover!important;   
+}
 .bold
 {
     font-size:18px;
@@ -110,6 +118,17 @@ color:#007bff;
     font-size:20px;
     line-height:25px;
 }
+
+ .whyus h2, .aptitude-main h2 {
+    font-family: 'ProximaNovaBold';
+    font-size: 32px !important;
+    line-height: 1.5;
+    max-width: 800px;
+    letter-spacing: .2px;
+    color: #19182e;
+    text-align: center !important;
+    position: relative;
+}    
     
 .mainspeech h1{
     font-family: 'ProximaNovaBold';
@@ -129,12 +148,13 @@ color:#007bff;
     line-height: 30px;
     text-align: center;
     color: #333333;
-}   
+}  
+   
     .mainspeech p {
     width: 100%;
     max-width: 600px;
     font-family: 'ProximaNovaSemibold';
-    font-size: 17px !important;
+    font-size: 16px !important;
     font-weight: 300;
     line-height: 1.39;
     letter-spacing: .6px;
@@ -142,6 +162,29 @@ color:#007bff;
     text-align: center;
     margin: 23px auto;
 }
+    .whyus p {
+    font-family: 'ProximaNovaRgRegular';
+    font-size: 16px !important;
+    letter-spacing: 0.5px;
+    line-height: 35px;
+    text-align: left;
+    color: #181b3b;
+}
+    .pinkletter h3 {
+    font-family: 'ProximaNovaBold';
+    font-size: 23px !important;
+    letter-spacing: .2px;
+    color: #19182e;
+    line-height: 1.5;
+}
+    .footer-lite p {
+    font-family: 'ProximaNovaRgRegular';
+    color: #000000 !important;
+    font-size: 14px !important;
+}
+    form.search button {
+    font-size: 15px !important;
+    }
     .search span
     {
     display: none;  
@@ -759,12 +802,16 @@ color:#007bff;
     max-width:600px;
     width:100%;
 }
-
+.aptitude-main
+{
+    padding:100px 0px;
+    background-color:#7FD7C2;
+}
 
 .mainspeech {
     padding-top: 100px;
 }
-.mainspeech h1
+.mainspeech h1, .aptitude-main h1 
 {
 font-family: 'ProximaNovaBold';
     font-size: 45px;
@@ -786,7 +833,7 @@ font-family: 'ProximaNovaBold';
     color:#333333;
 }
 
-.mainspeech p
+.mainspeech p, .aptitude-main p
 {
         width: 100%;
     max-width: 600px;
@@ -799,9 +846,13 @@ font-family: 'ProximaNovaSemibold';
     text-align: center;
     margin: 23px auto;
 }
-.whyus h2{
+.aptitude-main p
+{
+    color:#ffffff;
+}
+.whyus h2, .aptitude-main h2{
     font-family: 'ProximaNovaBold';
-    font-size: 48px !important;
+    font-size: 48px;
     line-height: 1.5;
     max-width: 800px;
     letter-spacing: .2px;
@@ -812,7 +863,7 @@ font-family: 'ProximaNovaSemibold';
 .pinkletter h3
 {
   font-family: 'ProximaNovaBold';
-    font-size: 32px !important; 
+    font-size: 32px; 
      letter-spacing: .2px;
      color: #19182e;
       line-height: 1.5;
@@ -994,7 +1045,7 @@ form.search input[type=text] {
 {
     font-family: 'ProximaNovaRgRegular';
     color:#000000 !important;
-    font-size:18px !important;
+    font-size:18px;
     
 }
 

@@ -84,7 +84,7 @@ mysqli_close($conn);
 	<div class="container">
 	<div class="navbar-header d-flex col">
 	
-		<a class="navbar-brand" href="../">Educate<b><span>kid</span></b></a>  		
+		<a class="navbar-brand" href="../index.php">Educate<b><span>kid</span></b></a>  		
 			<i data-target="#navbarCollapse" onclick="openNav()" data-toggle="collapse" class="navbar-toggle navbar-toggler visible-xs visible-sm ml-auto fa fa-bars" ></i>
 	</div>
 	<div class="hidden-xs hidden-sm">

@@ -83,7 +83,7 @@ mysqli_close($conn);
 	<div class="container">
 	<div class="navbar-header d-flex col">
 	
-		<a class="navbar-brand" href="/">Educate<b><span>kid</span></b></a>  		
+		<a class="navbar-brand" href="/index.php">Educate<b><span>kid</span></b></a>  		
 			<i data-target="#navbarCollapse" onclick="openNav()" data-toggle="collapse" class="navbar-toggle navbar-toggler visible-xs visible-sm ml-auto fa fa-bars" ></i>
 	</div>
 	<div class="hidden-xs hidden-sm">
@@ -245,14 +245,17 @@ mysqli_close($conn);
     <section class="whyus container">
    <center><h2>Why Searching for EducateKid</h2></center>
         <div class="row topper">
+               <div class="col-md-6 visible-xs">
+            <img src="./assets/images/educate.png" class="classyimg">
+        </div>
         <div class="col-md-6">
             <h3>Our Motto</h3>
             <p >An Education platform that has all the required
                 goalsheet from an actual start to perfect end
                 through all the resources.We creates Online course programs, exams, and labs that help you to crack the certification examinations and also learning programs and focuses on school curriculum and test preparation for engineering exams.We helps to build a strong foundation for future academic success by providing a comprehensive and engaging online and web-based curriculum to greatly assist learners to succeed. </p>
         </div>
-             <div class="col-md-6">
-            <img src="./assets/images/educate.png">
+             <div class="col-md-6 hidden-xs">
+            <img src="./assets/images/educate.png" class="classyimg">
         </div>
         </div>
                 <div class="row topper">
